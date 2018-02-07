@@ -16,21 +16,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-![](inferno.png)
+!["inferno"](inferno.png)
+![](temperature.png)
 
+![](sst.png)
+
+![](temp.png)
 
 
 ## A package to return colour gradients from CPTCITY
 
 Colour palletes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 
+Currently only 4 gradients:
+
+- "inferno"
+- "temperature"
+- "sst"
+- "temp"
 
 ## Install and use it!
 
 ```{r eval = FALSE}
 devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
-inferno <- cptcity("inferno")
-image(matrix(1:255), col = inferno)
+image(matrix(1:255), col = cptcity("inferno"))
+image(matrix(1:255), col = cptcity(4))
 ```
 
