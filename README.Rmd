@@ -39,14 +39,14 @@ Currently gradients:
 - "arendarl_zambezi_focus"
 - "arendarl_zambezi_proximity"
 
-Later I will create functions to each gradient.
+The main
 
 ## Install and use it!
 
 ```{r eval = FALSE}
 devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
-image(matrix(1:255), col = cptcity("inferno"))
-image(matrix(1:255), col = cptcity(4))
+image(matrix(1:255), col = cpt(pal = "inferno"))
+image(matrix(1:255), col = cpt(n = 4, pal  = "inferno"))
 ```
 
