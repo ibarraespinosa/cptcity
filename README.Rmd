@@ -63,9 +63,9 @@ library(raster)
 f <- system.file("external/test.grd", package="raster")
 r <- raster(f)
 plot(r)
-plot(r, col = cpt(pal = "arendarl_zambezi_focus"))
+plot(r, col = rev(cpt(pal = "arendarl_zambezi_focus")))
 spplot(r, scales = list(draw = T),
-       col.regions = cpt(n = 100, pal = "arendarl_zambezi_focus"))
+       col.regions = rev(cpt(n = 100, pal = "arendarl_zambezi_focus")))
 ```
 
 ![](p4.png)
