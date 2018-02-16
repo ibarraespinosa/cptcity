@@ -28,12 +28,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Colour palletes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 
-Currently only 4 gradients:
+Currently gradients:
 
 - "inferno"
 - "temperature"
 - "sst"
 - "temp"
+- "arendarl_arctic"
+- "arendarl_temperature"
+- "arendarl_zambezi_focus"
+- "arendarl_zambezi_proximity"
+
+Later I will create functions to each gradient.
 
 ## Install and use it!
 

@@ -23,6 +23,10 @@ pallete. Currently there are three available palletes:
   \item "temperature"
   \item "sst"
   \item "temp"
+  \item "arendarl_arctic"
+  \item "arendarl_temperature"
+  \item "arendarl_zambezi_focus"
+  \item "arendarl_zambezi_proximity"
 }
 
 The palletes are ones of the most popular.

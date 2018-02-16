@@ -1,7 +1,7 @@
 Package: cptcity
 Type: Package
 Title: Some cpt-city colour palletes
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",
         role = c("aut", "cre"),
@@ -9,6 +9,7 @@ Authors@R: c(
         comment = c(ORCID = "0000-0002-3162-1905"))) 
 Description: cpt-city is an archive of colour gradients. This package returns 
              some of the most popular colour gradients.
+Depends: R (>= 2.10)
 Imports: grDevices
 License: GPL-3
 Encoding: UTF-8
