@@ -33,14 +33,14 @@ The main
 
 ## Install and use it!
 
-```{r}
+```{r eval = FALSE}
 # devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
 image(matrix(1:100), col = cpt(pal = "inferno"))
 ```
-
+![](p1.png)
 And you can use it ggplot2
-```{r}
+```{r eval = FALSE}
 library(cptcity)
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -51,8 +51,13 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
   scale_fill_gradientn(colours = cpt(n = 100))
 ```
 
+![](p2.png)
+
+![](p3.png)
+
+
 or raster
-```{r}
+```{r eval = FALSE}
 library(cptcity)
 library(raster)
 f <- system.file("external/test.grd", package="raster")
@@ -63,3 +68,8 @@ spplot(r, scales = list(draw = T),
        col.regions = cpt(n = 100, pal = "arendarl_zambezi_focus"))
 ```
 
+![](p4.png)
+
+![](p5.png)
+
+![](p6.png)
