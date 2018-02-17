@@ -28,7 +28,7 @@
 #' scale_fill_gradientn(colours = cpt(pal = "pj_1_a_rainbow"))
 #' }
 find_cpt <- function(name, ...){
-  cpt_names <- unlist(sysdata["cpt_names"])
+  cpt_names <- sysdata[["cpt_names"]]
   y <- cpt_names[grep(pattern = name, x = cpt_names, ...)]
 return(y)
 }
