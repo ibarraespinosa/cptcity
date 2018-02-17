@@ -19,8 +19,8 @@
 #' The palletes are available here:
 #' http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 #'
-#' @param n integer; number of colors
 #' @param pal Pallete of colors available or the number of the position
+#' @param n integer; number of colors
 #' of the same
 #' @param ... ignored
 #'
@@ -39,7 +39,7 @@
 #'  geom_raster(aes(fill = density)) +
 #'  scale_fill_gradientn(colours = cpt(n = 100))
 #' }
-cpt <- function(n = 10, pal = "inferno", ...){
+cpt <- function(pal = "mpl_inferno", n = 100,  ...){
   m <- sysdata[[pal]]
   col <-  rgb(red = m$r, green = m$g, blue = m$b,
               maxColorValue = max(c(max(m$r, na.rm = T),

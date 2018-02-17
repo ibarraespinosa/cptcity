@@ -4,12 +4,12 @@
 \alias{cpt}
 \title{Function to return colour palletes functions from cpt-city}
 \usage{
-cpt(n = 10, pal = "inferno", ...)
+cpt(pal = "mpl_inferno", n = 100, ...)
 }
 \arguments{
-\item{n}{integer; number of colors}
+\item{pal}{Pallete of colors available or the number of the position}
 
-\item{pal}{Pallete of colors available or the number of the position
+\item{n}{integer; number of colors
 of the same}
 
 \item{...}{ignored}
