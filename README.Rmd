@@ -36,42 +36,42 @@ cpt::find_cpt("radar")
 
 - `cpt`: To return the colour gradient.
 
-```{r eval = FALSE}
+```{r eval = T}
 cptcity::cpt(pal = "ncl_radar_1", n = 100)
 
 ```
 
 ## Install and use it!
 
-```{r eval = FALSE}
+```{r eval = F}
 # devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 ```
 
-![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p1.png)
+![](https://i.imgur.com/CWcwXVa.png)
 
 And you can use it ggplot2
-```{r eval = FALSE}
+```{r eval = T}
 library(cptcity)
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density))
 ```
 
-![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p2.png)
-```{r eval = FALSE}
+![](https://i.imgur.com/Uso0Gzm.png)
+```{r eval = T}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
   scale_fill_gradientn(colours = cpt(n = 100))
 
 ```
 
-![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p3.png)
+![](https://i.imgur.com/VgfUO0O.png)
 
 
 or raster
-```{r eval = FALSE}
+```{r eval = T}
 library(cptcity)
 library(raster)
 f <- system.file("external/test.grd", package="raster")
@@ -80,19 +80,19 @@ spplot(r, scales = list(draw = T))
 ```
 
 
-![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p4.png)
+![](https://i.imgur.com/BXPp0bi.png)
 
-```{r eval = FALSE}
+```{r eval = T}
 spplot(r, scales = list(draw = T),
        col.regions = rev(cpt(n = 100, pal = "arendal_zambezi_focus")))
 ```
 
 
-![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p5.png)
+![](https://i.imgur.com/Ej4Hahy.png)
 
 Each pallete has a COPYING.XML files available at ins/extdata. To see each file do:
 
-```{r}
+```{r eval = T}
 library(cptcity)
 files <- list.files(system.file("extdata",
                                 package = "cptcity"),
