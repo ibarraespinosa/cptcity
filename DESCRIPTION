@@ -1,6 +1,6 @@
 Package: cptcity
 Type: Package
-Title: CPT-CITY colour gradients
+Title: CPT-CITY Colour Gradients for R
 Version: 1.0.0
 Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",

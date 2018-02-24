@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.appveyor.com/project/ibarraespinosa/cptcity)
 [![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
 [![Rdoc](http://www.rdocumentation.org/badges/version/cptcity)](http://www.rdocumentation.org/packages/cptcity)
+[![DOI](https://zenodo.org/badge/120517547.svg)](https://zenodo.org/badge/latestdoi/120517547)
 
 ## A package to return colour gradients from CPTCITY
 
@@ -48,7 +49,7 @@ library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 ```
 
-![](p1.png)
+![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p1.png)
 
 And you can use it ggplot2
 ```{r eval = FALSE}
@@ -58,7 +59,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density))
 ```
 
-![](p2.png)
+![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p2.png)
 ```{r eval = FALSE}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
@@ -66,7 +67,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 ```
 
-![](p3.png)
+![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p3.png)
 
 
 or raster
@@ -79,7 +80,7 @@ spplot(r, scales = list(draw = T))
 ```
 
 
-![](p4.png)
+![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p4.png)
 
 ```{r eval = FALSE}
 spplot(r, scales = list(draw = T),
@@ -87,4 +88,20 @@ spplot(r, scales = list(draw = T),
 ```
 
 
-![](p5.png)
+![](https://raw.githubusercontent.com/ibarraespinosa/cptcity/master/p5.png)
+
+Each pallete has a COPYING.XML files available at ins/extdata. To see each file do:
+
+```{r}
+library(cptcity)
+files <- list.files(system.file("extdata",
+                                package = "cptcity"),
+                    pattern = ".xml",
+                    recursive = T,
+                    full.names = T)
+# For instance, the COPYING files of "arendal" is
+files[1]
+# and the file
+readLines(files[1])
+```
+
