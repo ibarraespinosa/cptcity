@@ -1,13 +1,13 @@
 Package: cptcity
 Type: Package
-Title: CPT-CITY Colour Gradients
+Title: cpt-city Colour Gradients
 Version: 1.0.0
 Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",
         role = c("aut", "cre"),
         email = "sergio.ibarra@usp.br",
         comment = c(ORCID = "0000-0002-3162-1905"))) 
-Description: cptcity incorporated 7140 colour gradients from the CPTCITY web archive available at <http://soliton.vm.bytemark.co.uk/pub/cpt-city/>. 
+Description: cptcity incorporated colour gradients from the cpt-city web archive available at <http://soliton.vm.bytemark.co.uk/pub/cpt-city/>. 
 Depends: R (>= 2.10)
 Imports: grDevices
 License: GPL-3
