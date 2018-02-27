@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function to return colour palletes functions from cpt-city — cpt • cptcity</title>
+<title>Function to return colour palletes functions from 'cpt-city' — cpt • cptcity</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -78,15 +78,15 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Function to return colour palletes functions from cpt-city</h1>
+    <h1>Function to return colour palletes functions from 'cpt-city'</h1>
     </div>
 
     
     <p>This function return a collor pallete based on the name or position of the
-pallete. Currently there are three available palletes:</p>
+pallete.</p>
     
 
-    <pre class="usage"><span class='fu'>cpt</span>(<span class='kw'>pal</span> <span class='kw'>=</span> <span class='st'>"mpl_inferno"</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>cpt</span>(<span class='kw'>pal</span> <span class='kw'>=</span> <span class='st'>"mpl_inferno"</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>100</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -100,10 +100,6 @@ pallete. Currently there are three available palletes:</p>
       <td><p>integer; number of colors
 of the same</p></td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td><p>ignored</p></td>
-    </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
@@ -112,26 +108,21 @@ of the same</p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <ol>
-<li><p>"inferno"</p></li>
-<li><p>"temperature"</p></li>
-<li><p>"sst"</p></li>
-<li><p>"temp"</p></li>
-<li><p>"arendarl_arctic"</p></li>
-<li><p>"arendarl_temperature"</p></li>
-<li><p>"arendarl_zambezi_focus"</p></li>
-<li><p>"arendarl_zambezi_proximity"</p></li>
-</ol>
-    <p>The palletes are ones of the most popular.</p>
-<p>The palletes are available here:
+    <p>The cpt-city web archive comes from:
 http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <pre class="examples"><div class='input'>{
+library(cptcity)
+image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
+find_cpt("temperature")
+image(matrix(1:100), col = cpt("idv_temperature"))
+</div><div class='output co'>#&gt; <span class='error'>Error: &lt;text&gt;:7:0: unexpected end of input</span>
+#&gt; <span class='error'>5: image(matrix(1:100), col = cpt("idv_temperature"))</span>
+#&gt; <span class='error'>6: </span>
+#&gt; <span class='error'>  ^</span></div><span class='co'># NOT RUN {</span>
 <span class='co'># Do not run</span>
-<span class='fu'>library</span>(<span class='no'>cptcity</span>)
-<span class='fu'>image</span>(<span class='fu'>matrix</span>(<span class='fl'>1</span>:<span class='fl'>100</span>), <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'>cpt</span>(<span class='kw'>pal</span> <span class='kw'>=</span> <span class='st'>"inferno"</span>))
 <span class='fu'>library</span>(<span class='no'>ggplot2</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>faithfuld</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>waiting</span>, <span class='no'>eruptions</span>)) +
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile'>geom_raster</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>density</span>))
@@ -139,7 +130,10 @@ http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</p>
  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>faithfuld</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>waiting</span>, <span class='no'>eruptions</span>)) +
  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile'>geom_raster</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>density</span>)) +
  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_gradient'>scale_fill_gradientn</a></span>(<span class='kw'>colours</span> <span class='kw'>=</span> <span class='fu'>cpt</span>(<span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>100</span>))
-<span class='co'># }</span></pre>
+<span class='co'># }</span><div class='input'>}
+</div><div class='output co'>#&gt; <span class='error'>Error: &lt;text&gt;:1:1: unexpected '}'</span>
+#&gt; <span class='error'>1: }</span>
+#&gt; <span class='error'>    ^</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

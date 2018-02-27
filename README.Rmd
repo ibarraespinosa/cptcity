@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
 [![Rdoc](http://www.rdocumentation.org/badges/version/cptcity)](http://www.rdocumentation.org/packages/cptcity)
 [![DOI](https://zenodo.org/badge/120517547.svg)](https://zenodo.org/badge/latestdoi/120517547)
+[![Coverage status](https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg)](https://codecov.io/github/ibarraespinosa/cptcity?branch=master)
 
 ## A package to return colour gradients from CPTCITY
 

@@ -2,47 +2,35 @@
 % Please edit documentation in R/cpt.R
 \name{cpt}
 \alias{cpt}
-\title{Function to return colour palletes functions from cpt-city}
+\title{Function to return colour palletes functions from 'cpt-city'}
 \usage{
-cpt(pal = "mpl_inferno", n = 100, ...)
+cpt(pal = "mpl_inferno", n = 100)
 }
 \arguments{
 \item{pal}{Pallete of colors available or the number of the position}
 
 \item{n}{integer; number of colors
 of the same}
-
-\item{...}{ignored}
 }
 \value{
 A colour pallete function.
 }
 \description{
 This function return a collor pallete based on the name or position of the
-pallete. Currently there are three available palletes:
+pallete.
 }
 \details{
-\enumerate{
-  \item "inferno"
-  \item "temperature"
-  \item "sst"
-  \item "temp"
-  \item "arendarl_arctic"
-  \item "arendarl_temperature"
-  \item "arendarl_zambezi_focus"
-  \item "arendarl_zambezi_proximity"
-}
-
-The palletes are ones of the most popular.
-
-The palletes are available here:
+The cpt-city web archive comes from:
 http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 }
 \examples{
+{
+library(cptcity)
+image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
+find_cpt("temperature")
+image(matrix(1:100), col = cpt("idv_temperature"))
 \dontrun{
 # Do not run
-library(cptcity)
-image(matrix(1:100), col = cpt(pal = "inferno"))
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
 geom_raster(aes(fill = density))
@@ -50,5 +38,6 @@ geom_raster(aes(fill = density))
  ggplot(faithfuld, aes(waiting, eruptions)) +
  geom_raster(aes(fill = density)) +
  scale_fill_gradientn(colours = cpt(n = 100))
+}
 }
 }

@@ -4,12 +4,10 @@
 \alias{find_cpt}
 \title{Function to return colour palletes names}
 \usage{
-find_cpt(name, ...)
+find_cpt(name)
 }
 \arguments{
 \item{name}{character; Word to be searched among the names of the cpt gradients.}
-
-\item{...}{ignored}
 }
 \value{
 names that satisfy the search.
@@ -22,9 +20,13 @@ the search. It is a searcher. It is a mini mini mini google.
 This functions runs grep.
 }
 \examples{
-\dontrun{
-# Do not run
+{
 library(cptcity)
+find_cpt("temperature")
+image(matrix(1:100), col = cpt("idv_temperature"))
+\dontrun{
+library(cptcity)
+# Do not run
 # data names_cpt lazy loaded, already in environment
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -39,5 +41,6 @@ find_cpt("rain")
 ggplot(faithfuld, aes(waiting, eruptions)) +
 geom_raster(aes(fill = density)) +
 scale_fill_gradientn(colours = cpt(pal = "pj_1_a_rainbow"))
+}
 }
 }

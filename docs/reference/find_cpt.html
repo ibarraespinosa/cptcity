@@ -86,7 +86,7 @@
 the search. It is a searcher. It is a mini mini mini google.</p>
     
 
-    <pre class="usage"><span class='fu'>find_cpt</span>(<span class='no'>name</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>find_cpt</span>(<span class='no'>name</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -94,10 +94,6 @@ the search. It is a searcher. It is a mini mini mini google.</p>
     <tr>
       <th>name</th>
       <td><p>character; Word to be searched among the names of the cpt gradients.</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>ignored</p></td>
     </tr>
     </table>
     
@@ -111,9 +107,16 @@ the search. It is a searcher. It is a mini mini mini google.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='co'># Do not run</span>
+    <pre class="examples"><div class='input'>{
+library(cptcity)
+find_cpt("temperature")
+image(matrix(1:100), col = cpt("idv_temperature"))
+</div><div class='output co'>#&gt; <span class='error'>Error: &lt;text&gt;:6:0: unexpected end of input</span>
+#&gt; <span class='error'>4: image(matrix(1:100), col = cpt("idv_temperature"))</span>
+#&gt; <span class='error'>5: </span>
+#&gt; <span class='error'>  ^</span></div><span class='co'># NOT RUN {</span>
 <span class='fu'>library</span>(<span class='no'>cptcity</span>)
+<span class='co'># Do not run</span>
 <span class='co'># data names_cpt lazy loaded, already in environment</span>
 <span class='fu'>library</span>(<span class='no'>ggplot2</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>faithfuld</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>waiting</span>, <span class='no'>eruptions</span>)) +
@@ -128,7 +131,10 @@ the search. It is a searcher. It is a mini mini mini google.</p>
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>faithfuld</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>waiting</span>, <span class='no'>eruptions</span>)) +
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile'>geom_raster</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>density</span>)) +
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_gradient'>scale_fill_gradientn</a></span>(<span class='kw'>colours</span> <span class='kw'>=</span> <span class='fu'><a href='cpt.html'>cpt</a></span>(<span class='kw'>pal</span> <span class='kw'>=</span> <span class='st'>"pj_1_a_rainbow"</span>))
-<span class='co'># }</span></pre>
+<span class='co'># }</span><div class='input'>}
+</div><div class='output co'>#&gt; <span class='error'>Error: &lt;text&gt;:1:1: unexpected '}'</span>
+#&gt; <span class='error'>1: }</span>
+#&gt; <span class='error'>    ^</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
