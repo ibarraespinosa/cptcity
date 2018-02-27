@@ -6,7 +6,7 @@
 \title{Names of the 7140 color gradients of cptcity R Package}
 \format{A vector with the 7140 names of the color gradients}
 \source{
-\url{http://veicular.cetesb.sp.gov.br/relatorios-e-publicacoes/}
+\url{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}
 }
 \usage{
 data(cpt_names)

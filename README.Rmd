@@ -29,7 +29,8 @@ There are two functions:
 Example:
 
 ```{r eval = FALSE}
-cpt::find_cpt("radar")
+library(cptcity)
+find_cpt("radar")
 [1] "idv_radar_dbz_nws"    "idv_radar_dbz"        "idv_radar_reflect_24" "idv_radar_topo_mdr"  
 [5] "ncl_radar_1"          "ncl_radar"   
 ```
@@ -45,6 +46,7 @@ cptcity::cpt(pal = "ncl_radar_1", n = 100)
 ## Install and use it!
 
 ```{r eval = F}
+# install.packages("cptcity")
 # devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
@@ -53,7 +55,7 @@ image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 ![](https://i.imgur.com/CWcwXVa.png)
 
 And you can use it ggplot2
-```{r eval = T}
+```{r eval = F}
 library(cptcity)
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -61,7 +63,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 ```
 
 ![](https://i.imgur.com/Uso0Gzm.png)
-```{r eval = T}
+```{r eval = F}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
   scale_fill_gradientn(colours = cpt(n = 100))
@@ -72,7 +74,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 
 or raster
-```{r eval = T}
+```{r eval = F}
 library(cptcity)
 library(raster)
 f <- system.file("external/test.grd", package="raster")
@@ -83,7 +85,7 @@ spplot(r, scales = list(draw = T))
 
 ![](https://i.imgur.com/BXPp0bi.png)
 
-```{r eval = T}
+```{r eval = F}
 spplot(r, scales = list(draw = T),
        col.regions = rev(cpt(n = 100, pal = "arendal_zambezi_focus")))
 ```
