@@ -11,10 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [![Travis-CI Build Status](https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master)](https://travis-ci.org/ibarraespinosa/cptcity)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.appveyor.com/project/ibarraespinosa/cptcity)
-[![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
-[![Rdoc](http://www.rdocumentation.org/badges/version/cptcity)](http://www.rdocumentation.org/packages/cptcity)
 [![DOI](https://zenodo.org/badge/120517547.svg)](https://zenodo.org/badge/latestdoi/120517547)
 [![Coverage status](https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg)](https://codecov.io/github/ibarraespinosa/cptcity?branch=master)
+[![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
+[![Rdoc](http://www.rdocumentation.org/badges/version/cptcity)](http://www.rdocumentation.org/packages/cptcity)
 
 ## A package to return colour gradients from CPTCITY
 
