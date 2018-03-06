@@ -22,7 +22,7 @@ Colour palletes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.h
 
 Currently there are 7140 colour gradients. To se the names type `cpt_names`.
 
-There are two functions:
+There are three functions:
 
 - `find_cpt`: To search the name of the colour gradient.
 
@@ -40,14 +40,19 @@ find_cpt("radar")
 
 ```{r eval = T}
 cptcity::cpt(pal = "ncl_radar_1", n = 100)
+```
 
+- `lucky`: To cheeose a random colour gradient
+
+```{r eval = T}
+cptcity::lucky(n = 100)
 ```
 
 ## Install and use it!
 
 ```{r eval = F}
-# install.packages("cptcity")
-# devtools::install_github("ibarraespinosa/cptcity")
+# install.packages("cptcity") 1.0.0
+# devtools::install_github("ibarraespinosa/cptcity") 1.0.1
 library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 ```
@@ -92,6 +97,17 @@ spplot(r, scales = list(draw = T),
 
 
 ![](https://i.imgur.com/Ej4Hahy.png)
+
+
+**I included a random colour gradient function!**
+
+```{r eval = F}
+# install.packages("cptcity") 1.0.0
+# devtools::install_github("ibarraespinosa/cptcity") 1.0.1
+library(cptcity)
+image(matrix(1:100), col = lucky()))
+```
+
 
 Each pallete has a COPYING.XML files available at ins/extdata. To see each file do:
 

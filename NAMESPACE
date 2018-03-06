@@ -2,5 +2,7 @@
 
 export(cpt)
 export(find_cpt)
+export(lucky)
 importFrom(grDevices,colorRampPalette)
 importFrom(grDevices,rgb)
+importFrom(stats,runif)

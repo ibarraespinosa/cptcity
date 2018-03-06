@@ -1,7 +1,7 @@
 Package: cptcity
 Type: Package
 Title: 'cpt-city' Colour Gradients
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",
         role = c("aut", "cre"),

@@ -1,6 +1,13 @@
 NEWS
 ===========
 
+## cptcity v1.0.1 (Release date: 2018-03-06)
+
+### cptcity v1.0.1 (Release date: 2018-03-06)
+
+- Fix documentation
+- Included *lucky* function!
+
 ## cptcity v1.0.0 (Release date: 2018-02-23)
 
 ### cptcity v1.0.0 (Release date: 2018-02-23)
