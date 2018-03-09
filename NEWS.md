@@ -1,6 +1,12 @@
 NEWS
 ===========
 
+## cptcity v1.0.2 (Release date: 2018-03-09)
+
+### cptcity v1.0.2 (Release date: 2018-03-09)
+
+- Fix documentation
+
 ## cptcity v1.0.1 (Release date: 2018-03-06)
 
 ### cptcity v1.0.1 (Release date: 2018-03-06)

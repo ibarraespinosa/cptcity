@@ -11,7 +11,7 @@
 #' @param nseed integer; for reproducing the same colour gradient.
 #' See \code{\link{set.seed}}
 #'
-#' @return A RANDOM colour pallete function including name of the colour gradient
+#' @return A RANDOM colour palette function including name of the colour gradient
 #' and number.
 #' @importFrom grDevices rgb colorRampPalette
 #' @importFrom stats runif

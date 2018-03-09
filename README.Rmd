@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 [![Travis-CI Build Status](https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master)](https://travis-ci.org/ibarraespinosa/cptcity)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.appveyor.com/project/ibarraespinosa/cptcity)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity)
 [![DOI](https://zenodo.org/badge/120517547.svg)](https://zenodo.org/badge/latestdoi/120517547)
 [![Coverage status](https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg)](https://codecov.io/github/ibarraespinosa/cptcity?branch=master)
 [![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## A package to return colour gradients from CPTCITY
 
-Colour palletes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
+Colour palettes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 
 Currently there are 7140 colour gradients. To se the names type `cpt_names`.
 
@@ -109,7 +109,7 @@ image(matrix(1:100), col = lucky()))
 ```
 
 
-Each pallete has a COPYING.XML files available at ins/extdata. To see each file do:
+Each palette has a COPYING.XML files available at ins/extdata. To see each file do:
 
 ```{r eval = T}
 library(cptcity)

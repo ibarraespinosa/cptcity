@@ -1,4 +1,4 @@
-#' Function to return colour palletes names
+#' Function to return colour palettes names
 #'
 #' \code{\link{find_cpt}} returns the name of the colour gradient that satisfy
 #' the search. It is a searcher. It is a mini mini mini google.

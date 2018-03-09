@@ -1,16 +1,16 @@
-#' Function to return colour palletes functions from 'cpt-city'
+#' Function to return colour palettes functions from 'cpt-city'
 #'
-#' This function return a collor pallete based on the name or position of the
-#' pallete.
+#' This function return a collor palette based on the name or position of the
+#' palette.
 #'
 #' The cpt-city web archive comes from:
 #' http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 #'
-#' @param pal Pallete of colors available or the number of the position
+#' @param pal Palette of colors available or the number of the position
 #' @param n integer; number of colors
 #' of the same
 #'
-#' @return A colour pallete function.
+#' @return A colour palette function.
 #' @importFrom grDevices rgb colorRampPalette
 #' @export
 #' @examples {
