@@ -15,7 +15,7 @@ lucky(n = 100, message = TRUE, nseed)
 See \code{\link{set.seed}}}
 }
 \value{
-A RANDOM colour pallete function including name of the colour gradient
+A RANDOM colour palette function including name of the colour gradient
 and number.
 }
 \description{

@@ -2,22 +2,22 @@
 % Please edit documentation in R/cpt.R
 \name{cpt}
 \alias{cpt}
-\title{Function to return colour palletes functions from 'cpt-city'}
+\title{Function to return colour palettes functions from 'cpt-city'}
 \usage{
 cpt(pal = "mpl_inferno", n = 100)
 }
 \arguments{
-\item{pal}{Pallete of colors available or the number of the position}
+\item{pal}{Palette of colors available or the number of the position}
 
 \item{n}{integer; number of colors
 of the same}
 }
 \value{
-A colour pallete function.
+A colour palette function.
 }
 \description{
-This function return a collor pallete based on the name or position of the
-pallete.
+This function return a collor palette based on the name or position of the
+palette.
 }
 \details{
 The cpt-city web archive comes from:

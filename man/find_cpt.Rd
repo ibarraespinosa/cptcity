@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_cpt.R
 \name{find_cpt}
 \alias{find_cpt}
-\title{Function to return colour palletes names}
+\title{Function to return colour palettes names}
 \usage{
 find_cpt(name)
 }

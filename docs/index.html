@@ -68,22 +68,23 @@
 <div id="a-package-to-return-colour-gradients-from-cptcity" class="section level2">
 <h2 class="hasAnchor">
 <a href="#a-package-to-return-colour-gradients-from-cptcity" class="anchor"></a>A package to return colour gradients from CPTCITY</h2>
-<p>Colour palletes comes from <a href="http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html" class="uri">http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</a></p>
+<p>Colour palettes comes from <a href="http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html" class="uri">http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</a></p>
 <p>Currently there are 7140 colour gradients. To se the names type <code>cpt_names</code>.</p>
 <p>There are three functions:</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>
 <code>find_cpt</code>: To search the name of the colour gradient.</li>
-</ul>
+</ol>
 <p>Example:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(cptcity)
 <span class="kw"><a href="reference/find_cpt.html">find_cpt</a></span>(<span class="st">"radar"</span>)
 [<span class="dv">1</span>] <span class="st">"idv_radar_dbz_nws"</span>    <span class="st">"idv_radar_dbz"</span>        <span class="st">"idv_radar_reflect_24"</span> <span class="st">"idv_radar_topo_mdr"</span>  
-[<span class="dv">5</span>] <span class="st">"ncl_radar_1"</span>          <span class="st">"ncl_radar"</span>   </code></pre></div>
-<ul>
+[<span class="dv">5</span>] <span class="st">"ncl_radar_1"</span>          <span class="st">"ncl_radar"</span>
+<span class="co"># try find_cpt("rain")</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
 <li>
 <code>cpt</code>: To return the colour gradient.</li>
-</ul>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cptcity<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"ncl_radar_1"</span>, <span class="dt">n =</span> <span class="dv">100</span>)</code></pre></div>
 <pre><code>##   [1] "#B2F8FF" "#B2F8FF" "#B2F8FF" "#B2DCFF" "#B2BEFF" "#B2B8FF" "#B2B8FF"
 ##   [8] "#A088EE" "#8742D7" "#7D25CD" "#7D25CD" "#7322BE" "#601D9E" "#541A8B"
@@ -100,33 +101,33 @@
 ##  [85] "#A93232" "#A53131" "#A53131" "#BA2269" "#DD0AC3" "#ED00ED" "#ED00ED"
 ##  [92] "#D814E6" "#A945D7" "#8967CD" "#8967CD" "#9474CF" "#CAB5DB" "#FAF0E6"
 ##  [99] "#FAF0E6" "#FAF0E6"</code></pre>
-<ul>
+<ol start="3" style="list-style-type: decimal">
 <li>
-<code>lucky</code>: To cheeose a random colour gradient</li>
-</ul>
+<code>lucky</code>: To choose a random colour gradient</li>
+</ol>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cptcity<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>(<span class="dt">n =</span> <span class="dv">100</span>)</code></pre></div>
-<pre><code>## Colour gradient: cw_5_cw5_078, number: 1007</code></pre>
-<pre><code>##   [1] "#FBFCF6" "#FAFCF6" "#FAFCF6" "#F9FCF6" "#F9FCF6" "#F9FCF6" "#F8FCF6"
-##   [8] "#F8FCF6" "#F8FCF6" "#F7FCF6" "#F7FCF6" "#F7FCF6" "#F6FCF6" "#F6FCF6"
-##  [15] "#F6FCF6" "#F5FCF6" "#F5FCF6" "#F4FCF6" "#F4FCF6" "#F4FCF6" "#F3FCF6"
-##  [22] "#F3FCF6" "#F3FCF6" "#F2FCF6" "#F2FCF6" "#F2FCF6" "#F1FCF6" "#F1FCF6"
-##  [29] "#F1FCF6" "#F0FCF6" "#F0FCF6" "#F0FCF6" "#EFFCF6" "#EFFDF6" "#EEFDF6"
-##  [36] "#EEFDF6" "#EEFDF6" "#EDFDF6" "#EDFDF6" "#EDFDF6" "#ECFDF6" "#ECFDF6"
-##  [43] "#ECFDF6" "#EBFDF6" "#EBFDF6" "#EBFDF6" "#EAFDF6" "#EAFDF6" "#EAFDF6"
-##  [50] "#E9FDF6" "#E9FDF6" "#E8FDF6" "#E8FDF6" "#E8FDF6" "#E7FDF6" "#E7FDF6"
-##  [57] "#E7FDF6" "#E6FDF6" "#E6FDF6" "#E6FDF6" "#E5FDF6" "#E5FDF6" "#E5FDF6"
-##  [64] "#E4FDF6" "#E4FDF6" "#E4FDF6" "#E3FEF6" "#E3FEF6" "#E2FEF6" "#E2FEF6"
-##  [71] "#E2FEF6" "#E1FEF6" "#E1FEF6" "#E1FEF6" "#E0FEF6" "#E0FEF6" "#E0FEF6"
-##  [78] "#DFFEF6" "#DFFEF6" "#DFFEF6" "#DEFEF6" "#DEFEF6" "#DEFEF6" "#DDFEF6"
-##  [85] "#DDFEF6" "#DCFEF6" "#DCFEF6" "#DCFEF6" "#DBFEF6" "#DBFEF6" "#DBFEF6"
-##  [92] "#DAFEF6" "#DAFEF6" "#DAFEF6" "#D9FEF6" "#D9FEF6" "#D9FEF6" "#D8FEF6"
-##  [99] "#D8FEF6" "#D8FFF6"</code></pre>
+<pre><code>## Colour gradient: jjg_ccolo_rphnick_Emo_Barbie_Playmate, number: 4032</code></pre>
+<pre><code>##   [1] "#980607" "#980607" "#980607" "#980607" "#980607" "#980607" "#980607"
+##   [8] "#980607" "#980607" "#980607" "#980607" "#9B0809" "#9E0A0B" "#A10C0D"
+##  [15] "#A40E0F" "#A61011" "#A91213" "#AC1516" "#AF1718" "#B2191A" "#B51B1C"
+##  [22] "#B81D1E" "#BB1F20" "#BE2223" "#C12425" "#C42627" "#C72829" "#CA2B2C"
+##  [29] "#CD2D2E" "#D02F30" "#D33132" "#D43435" "#D63738" "#D73A3B" "#D93D3E"
+##  [36] "#DA4041" "#DB4344" "#DD4647" "#DE494A" "#E04C4D" "#E14F50" "#E25253"
+##  [43] "#E45556" "#E55758" "#E65A5B" "#E85D5E" "#E96061" "#EA6364" "#EC6667"
+##  [50] "#ED696A" "#EE6C6D" "#EF6F6F" "#F07272" "#F07575" "#F17977" "#F27C7A"
+##  [57] "#F37F7D" "#F4827F" "#F48582" "#F58884" "#F68B87" "#F78F8A" "#F8928C"
+##  [64] "#F9958F" "#FA9892" "#FB9B94" "#FC9E97" "#FCA199" "#FDA49C" "#FEA89F"
+##  [71] "#FEAAA1" "#FEADA2" "#FEAFA4" "#FEB2A5" "#FEB4A7" "#FDB7A9" "#FDB9AA"
+##  [78] "#FDBCAC" "#FDBEAE" "#FDC1AF" "#FCC4B1" "#FCC6B3" "#FCC9B4" "#FBCBB6"
+##  [85] "#FBCEB8" "#FBD0B9" "#FAD3BB" "#FAD5BD" "#FAD8BF" "#FADAC0" "#FADBC1"
+##  [92] "#FADBC1" "#FADBC1" "#FADBC1" "#FADBC1" "#FADBC1" "#FADBC1" "#FADBC1"
+##  [99] "#FADBC1" "#FADBC1"</code></pre>
 </div>
 <div id="install-and-use-it" class="section level2">
 <h2 class="hasAnchor">
 <a href="#install-and-use-it" class="anchor"></a>Install and use it!</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("cptcity") 1.0.0</span>
-<span class="co"># devtools::install_github("ibarraespinosa/cptcity") 1.0.1</span>
+<span class="co"># devtools::install_github("ibarraespinosa/cptcity") 1.0.2</span>
 <span class="kw">library</span>(cptcity)
 <span class="kw">image</span>(<span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"mpl_inferno"</span>))</code></pre></div>
 <div class="figure">
@@ -165,7 +166,7 @@ r &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentat
 <span class="co"># devtools::install_github("ibarraespinosa/cptcity") 1.0.1</span>
 <span class="kw">library</span>(cptcity)
 <span class="kw"><a href="http://www.rdocumentation.org/packages/raster/topics/image">image</a></span>(<span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/lucky.html">lucky</a></span>())<span class="er">)</span></code></pre></div>
-<p>Each pallete has a COPYING.XML files available at ins/extdata. To see each file do:</p>
+<p>Each palette has a COPYING.XML files available at ins/extdata. To see each file do:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(cptcity)
 files &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">system.file</span>(<span class="st">"extdata"</span>,
                                 <span class="dt">package =</span> <span class="st">"cptcity"</span>),
@@ -240,7 +241,7 @@ files[<span class="dv">1</span>]</code></pre></div>
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/ibarraespinosa/cptcity"><img src="https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="https://ci.appveyor.com/project/ibarraespinosa/cptcity"><img src="https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
+<li><a href="https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity"><img src="https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://zenodo.org/badge/latestdoi/120517547"><img src="https://zenodo.org/badge/120517547.svg" alt="DOI"></a></li>
 <li><a href="https://codecov.io/github/ibarraespinosa/cptcity?branch=master"><img src="https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg" alt="Coverage status"></a></li>
 <li><a href="http://cran.rstudio.com/web/packages/cptcity/index.html"><img src="http://cranlogs.r-pkg.org/badges/cptcity"></a></li>
