@@ -15,6 +15,8 @@ knitr::opts_chunk$set(echo = TRUE)
 [![Coverage status](https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg)](https://codecov.io/github/ibarraespinosa/cptcity?branch=master)
 [![](http://cranlogs.r-pkg.org/badges/cptcity)](http://cran.rstudio.com/web/packages/cptcity/index.html)
 [![Rdoc](http://www.rdocumentation.org/badges/version/cptcity)](http://www.rdocumentation.org/packages/cptcity)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/cptcity)](http://cran.r-project.org/web/packages/cptcity) 
+[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/cptcity?color=orange)](http://cran.r-project.org/package=cptcity)
 
 ## A package to return colour gradients from CPTCITY
 
