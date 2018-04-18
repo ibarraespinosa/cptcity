@@ -4,10 +4,12 @@
 \alias{lucky}
 \title{Random colour gradient!}
 \usage{
-lucky(n = 100, message = TRUE, nseed)
+lucky(n = 100, colorRampPalette = FALSE, message = TRUE, nseed)
 }
 \arguments{
 \item{n}{integer; number of colors}
+
+\item{colorRampPalette}{Logical; to be used in sf and mapview.}
 
 \item{message}{Logical; for printing or not the name of the colour gradient}
 

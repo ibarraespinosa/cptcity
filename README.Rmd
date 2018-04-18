@@ -80,8 +80,8 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 ![](https://i.imgur.com/VgfUO0O.png)
 
-
 or raster
+
 ```{r eval = F}
 library(cptcity)
 library(raster)
@@ -100,6 +100,29 @@ spplot(r, scales = list(draw = T),
 
 
 ![](https://i.imgur.com/Ej4Hahy.png)
+
+or sf
+![](https://i.imgur.com/9qiYZz7.png)
+```{r eval = F}
+library(cptcity)
+library(sf)
+f = st_read(system.file("shapes/", package="maptools"), "sids")
+st_crs(f) <- 4326
+plot(f["AREA"])
+plot(f["AREA"], col = cpt(), axes = T)
+```
+
+or mapview
+
+![](https://i.imgur.com/xfObebn.png)
+```{r eval = FALSE}
+library(cptcity)
+library(mapview)
+library(sf)
+f = st_read(system.file("shapes/", package="maptools"), "sids")
+st_crs(f) <- 4326
+mapview(f, zcol = "AREA", col.regions = cpt(colorRampPalette = T), legend = T)
+```
 
 
 **I included a random colour gradient function!**

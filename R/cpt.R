@@ -8,7 +8,8 @@
 #'
 #' @param pal Palette of colors available or the number of the position
 #' @param n integer; number of colors
-#' of the same
+#' @param colorRampPalette Logical; to be used in sf and mapview.
+#'
 #'
 #' @return A colour palette function.
 #' @importFrom grDevices rgb colorRampPalette
@@ -29,12 +30,16 @@
 #'  scale_fill_gradientn(colours = cpt(n = 100))
 #' }
 #' }
-cpt <- function(pal = "mpl_inferno", n = 100){
+cpt <- function(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE){
   m <- sysdata[[pal]]
   col <-  rgb(red = m$r, green = m$g, blue = m$b,
               maxColorValue = max(c(max(m$r, na.rm = T),
                                     max(m$g, na.rm = T),
                                     max(m$b, na.rm = T)))
               )
-  grDevices::colorRampPalette(col)(n)
+  if(colorRampPalette == FALSE){
+    return(grDevices::colorRampPalette(col)(n))
+  } else{
+    return(grDevices::colorRampPalette(col))
+  }
 }

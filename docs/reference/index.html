@@ -18,13 +18,16 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="Function reference" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,8 +50,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">cptcity</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">cptcity</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.0.3</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -61,7 +68,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -83,10 +90,7 @@
       <div class="row">
   <div class="col-md-9">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;1.0.2</small>
-      </h1>
+      <h1>Reference</h1>
     </div>
 
     <div class="contents">
@@ -107,15 +111,15 @@
         <tr>
           <!--  -->
           <td>
-            <p><code><a href="cpt_names.html">data</a></code> </p>
+            <p><code><a href="cpt.html">cpt()</a></code> </p>
           </td>
-          <td><p>Names of the 7140 color gradients of cptcity R Package</p></td>
+          <td><p>Function to return colour palettes functions from 'cpt-city'</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="cpt.html">cpt</a></code> </p>
+            <p><code><a href="cpt_names.html">cpt_names</a></code> </p>
           </td>
-          <td><p>Function to return colour palettes functions from 'cpt-city'</p></td>
+          <td><p>Names of the 7140 color gradients of cptcity R Package</p></td>
         </tr><tr>
           <!--  -->
           <td>
@@ -125,13 +129,13 @@
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="find_cpt.html">find_cpt</a></code> </p>
+            <p><code><a href="find_cpt.html">find_cpt()</a></code> </p>
           </td>
           <td><p>Function to return colour palettes names</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="lucky.html">lucky</a></code> </p>
+            <p><code><a href="lucky.html">lucky()</a></code> </p>
           </td>
           <td><p>Random colour gradient!</p></td>
         </tr>
@@ -162,3 +166,4 @@
 
   </body>
 </html>
+

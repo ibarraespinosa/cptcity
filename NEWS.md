@@ -1,6 +1,12 @@
 NEWS
 ===========
 
+## cptcity v1.0.3 (Release date: 2018-04-17)
+
+### cptcity v1.0.3 (Release date: 2018-04-17)
+
+- Add argument colorRampPalette to return this function
+
 ## cptcity v1.0.2 (Release date: 2018-03-09)
 
 ### cptcity v1.0.2 (Release date: 2018-03-09)

@@ -18,13 +18,20 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="Random colour gradient! — lucky" />
+
+<meta property="og:description" content="Based on "I'm Feeling Lucky" from Google. As this package includes 7140
+colour gradients, it might be hard to find the 'right'" />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,8 +54,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">cptcity</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">cptcity</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.0.3</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -61,7 +72,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -84,6 +95,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Random colour gradient!</h1>
+    <small>Source: <a href='https://github.com/ibarraespinosa/cptcity/blob/master/R/lucky.R'><code>R/lucky.R</code></a></small>
     </div>
 
     
@@ -91,14 +103,18 @@
 colour gradients, it might be hard to find the 'right'</p>
     
 
-    <pre class="usage"><span class='fu'>lucky</span>(<span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>message</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>nseed</span>)</pre>
+    <pre class="usage"><span class='fu'>lucky</span>(<span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>colorRampPalette</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>message</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>nseed</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>n</th>
       <td><p>integer; number of colors</p></td>
+    </tr>
+    <tr>
+      <th>colorRampPalette</th>
+      <td><p>Logical; to be used in sf and mapview.</p></td>
     </tr>
     <tr>
       <th>message</th>
@@ -131,7 +147,7 @@ http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</p>
 <span class='fu'>image</span>(<span class='fu'>matrix</span>(<span class='fl'>1</span>:<span class='fl'>100</span>), <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'>lucky</span>())
 <span class='fu'>image</span>(<span class='fu'>matrix</span>(<span class='fl'>1</span>:<span class='fl'>100</span>), <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'>lucky</span>())
 <span class='fu'>image</span>(<span class='fu'>matrix</span>(<span class='fl'>1</span>:<span class='fl'>100</span>), <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'>lucky</span>(<span class='kw'>nseed</span> <span class='kw'>=</span> <span class='fl'>1</span>))
-}</div><div class='output co'>#&gt; Colour gradient: cmocean_gray, number: 577</div><div class='img'><img src='lucky-1.png' alt='' width='700' height='432.632880098887' /></div><div class='output co'>#&gt; Colour gradient: nd_vermillion_Analogous_08, number: 5957</div><div class='img'><img src='lucky-2.png' alt='' width='700' height='432.632880098887' /></div><div class='output co'>#&gt; Colour gradient: jjg_polarity_PiYG, number: 4289</div><div class='img'><img src='lucky-3.png' alt='' width='700' height='432.632880098887' /></div><div class='output co'>#&gt; Colour gradient: dca_alarm.p4.2.0, number: 1122</div><div class='img'><img src='lucky-4.png' alt='' width='700' height='432.632880098887' /></div><div class='output co'>#&gt; Colour gradient: bhw_bhw1_bhw1_purplered, number: 53</div><div class='img'><img src='lucky-5.png' alt='' width='700' height='432.632880098887' /></div><div class='output co'>#&gt; Colour gradient: es_vintage_es_vintage_34, number: 1896</div><div class='img'><img src='lucky-6.png' alt='' width='700' height='432.632880098887' /></div></pre>
+}</div><div class='output co'>#&gt; Colour gradient: cmocean_gray, number: 577</div><div class='img'><img src='lucky-1.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; Colour gradient: nd_vermillion_Analogous_08, number: 5957</div><div class='img'><img src='lucky-2.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; Colour gradient: jjg_polarity_PiYG, number: 4289</div><div class='img'><img src='lucky-3.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; Colour gradient: dca_alarm.p4.2.0, number: 1122</div><div class='img'><img src='lucky-4.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; Colour gradient: bhw_bhw1_bhw1_purplered, number: 53</div><div class='img'><img src='lucky-5.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; Colour gradient: es_vintage_es_vintage_34, number: 1896</div><div class='img'><img src='lucky-6.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -162,3 +178,4 @@ http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html</p>
 
   </body>
 </html>
+

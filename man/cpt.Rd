@@ -4,13 +4,14 @@
 \alias{cpt}
 \title{Function to return colour palettes functions from 'cpt-city'}
 \usage{
-cpt(pal = "mpl_inferno", n = 100)
+cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE)
 }
 \arguments{
 \item{pal}{Palette of colors available or the number of the position}
 
-\item{n}{integer; number of colors
-of the same}
+\item{n}{integer; number of colors}
+
+\item{colorRampPalette}{Logical; to be used in sf and mapview.}
 }
 \value{
 A colour palette function.
