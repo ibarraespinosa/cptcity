@@ -62,6 +62,8 @@ image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 
 ![](https://i.imgur.com/CWcwXVa.png)
 
+## ggplot2
+
 And you can use it ggplot2
 ```{r eval = F}
 library(cptcity)
@@ -71,6 +73,8 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 ```
 
 ![](https://i.imgur.com/Uso0Gzm.png)
+
+
 ```{r eval = F}
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
@@ -79,6 +83,8 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 ```
 
 ![](https://i.imgur.com/VgfUO0O.png)
+
+## raster
 
 or raster
 
@@ -91,49 +97,55 @@ spplot(r, scales = list(draw = T))
 ```
 
 
-![](https://i.imgur.com/BXPp0bi.png)
+![](https://i.imgur.com/Olx7iPD.png)
 
 ```{r eval = F}
 spplot(r, scales = list(draw = T),
-       col.regions = rev(cpt(n = 100, pal = "arendal_zambezi_focus")))
+       col.regions = rev(cpt(n = 100, pal = "colo_Skyblue2u_Gentle_Waves")))
 ```
 
 
-![](https://i.imgur.com/Ej4Hahy.png)
+![](https://i.imgur.com/VjIJnby.png)
+
+## sf
 
 or sf
-![](https://i.imgur.com/9qiYZz7.png)
 ```{r eval = F}
 library(cptcity)
 library(sf)
 f = st_read(system.file("shapes/", package="maptools"), "sids")
 st_crs(f) <- 4326
-plot(f["AREA"])
-plot(f["AREA"], col = cpt(), axes = T)
+plot(f["AREA"], pal = cpt(colorRampPalette = T))
 ```
+
+![](https://i.imgur.com/eHrbvRX.png)
+
+
+## mapview
 
 or mapview
 
 ![](https://i.imgur.com/xfObebn.png)
-```{r eval = FALSE}
+```{r eval = F}
 library(cptcity)
 library(mapview)
 library(sf)
-f = st_read(system.file("shapes/", package="maptools"), "sids")
-st_crs(f) <- 4326
+f = st_read(system.file("shapes/", package="maptools"), "sids", crs = 4326)
 mapview(f, zcol = "AREA", col.regions = cpt(colorRampPalette = T), legend = T)
 ```
 
 
-**I included a random colour gradient function!**
+# **I included a random colour gradient function!**
 
-```{r eval = F}
+```{r eval = T}
 # install.packages("cptcity") 1.0.0
 # devtools::install_github("ibarraespinosa/cptcity") 1.0.1
 library(cptcity)
-image(matrix(1:100), col = lucky()))
+image(matrix(1:100), col = lucky())
 ```
 
+
+## COPYING
 
 Each palette has a COPYING.XML files available at ins/extdata. To see each file do:
 
