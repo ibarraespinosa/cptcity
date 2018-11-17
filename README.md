@@ -37,8 +37,9 @@ find_cpt("radar")
 
 2) `cpt`: To return the colour gradient.
 
+
 ```r
-cptcity::cpt(pal = "ncl_radar_1", n = 100)
+cpt(pal = "ncl_radar_1", n = 100)
 
  [1]  "#B2F8FF" "#B2F8FF" "#B2F8FF" "#B2DCFF" "#B2BEFF" "#B2B8FF"
  [7]  "#B2B8FF" "#A088EE" "#8742D7" "#7D25CD" "#7D25CD" "#7322BE"
@@ -57,7 +58,7 @@ cptcity::cpt(pal = "ncl_radar_1", n = 100)
  [85] "#A93232" "#A53131" "#A53131" "#BA2269" "#DD0AC3" "#ED00ED"
  [91] "#ED00ED" "#D814E6" "#A945D7" "#8967CD" "#8967CD" "#9474CF"
  [97] "#CAB5DB" "#FAF0E6" "#FAF0E6" "#FAF0E6"
- ```
+```
 
 3) `lucky`: To choose a random colour gradient
 

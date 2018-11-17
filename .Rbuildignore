@@ -6,3 +6,4 @@
 ^appveyor.yml$
 ^docs$
 ^codecov\.yml$
+^README.md$
