@@ -1,9 +1,11 @@
 ---
 title: "cptcity package"
 author: "Sergio Ibarra-Espinosa"
-date: "6 de Febrero de 2018"
+date: "17 de Noviembre de 2018"
 output: html_document
 ---
+
+![](https://i.imgur.com/6WGBmIO.gif)
 
 [![Travis-CI Build Status](https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master)](https://travis-ci.org/ibarraespinosa/cptcity)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity)
@@ -57,7 +59,7 @@ cptcity::cpt(pal = "ncl_radar_1", n = 100)
  [85] "#A93232" "#A53131" "#A53131" "#BA2269" "#DD0AC3" "#ED00ED"
  [91] "#ED00ED" "#D814E6" "#A945D7" "#8967CD" "#8967CD" "#9474CF"
  [97] "#CAB5DB" "#FAF0E6" "#FAF0E6" "#FAF0E6"
- ```
+```
 
 3) `lucky`: To choose a random colour gradient
 
