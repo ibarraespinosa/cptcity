@@ -4,7 +4,7 @@ author: "Sergio Ibarra-Espinosa"
 date: "6 de Febrero de 2018"
 output: html_document
 ---
-![](https://i.imgur.com/6WGBmIO.gif)
+![](https://i.imgur.com/4v9WMQv.gif)
 
 [![Travis-CI Build Status](https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master)](https://travis-ci.org/ibarraespinosa/cptcity)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&svg=true)](https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity)
