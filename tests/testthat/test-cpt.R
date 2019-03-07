@@ -7,3 +7,9 @@ test_that("cpt works", {
                  "#F7D03C", "#FCFFA4")
                )
 })
+
+test_that("cpt works", {
+  expect_equal(cpt("mpl_inferno", 1, rev = TRUE),
+               c("#FCFFA4")
+  )
+})

@@ -4,7 +4,8 @@
 \alias{cpt}
 \title{Function to return colour palettes functions from 'cpt-city'}
 \usage{
-cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE)
+cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE,
+  rev = FALSE)
 }
 \arguments{
 \item{pal}{Palette of colors available or the number of the position}
@@ -12,6 +13,8 @@ cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE)
 \item{n}{integer; number of colors}
 
 \item{colorRampPalette}{Logical; to be used in sf and mapview.}
+
+\item{rev}{Logical; to internally revert order of rgb color vectors.}
 }
 \value{
 A colour palette function.
@@ -30,6 +33,7 @@ library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 find_cpt("temperature")
 image(matrix(1:100), col = cpt("idv_temperature"))
+image(matrix(1:100), col = cpt("idv_temperature", rev = TRUE))
 \dontrun{
 # Do not run
 library(ggplot2)

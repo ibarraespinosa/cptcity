@@ -4,12 +4,15 @@
 \alias{lucky}
 \title{Random colour gradient!}
 \usage{
-lucky(n = 100, colorRampPalette = FALSE, message = TRUE, nseed)
+lucky(n = 100, colorRampPalette = FALSE, rev = FALSE,
+  message = TRUE, nseed)
 }
 \arguments{
 \item{n}{integer; number of colors}
 
 \item{colorRampPalette}{Logical; to be used in sf and mapview.}
+
+\item{rev}{Logical; to internally revert order of rgb color vectors.}
 
 \item{message}{Logical; for printing or not the name of the colour gradient}
 
@@ -36,6 +39,7 @@ image(matrix(1:100), col = lucky())
 image(matrix(1:100), col = lucky())
 image(matrix(1:100), col = lucky())
 image(matrix(1:100), col = lucky())
+image(matrix(1:100), col = lucky(rev = TRUE))
 image(matrix(1:100), col = lucky(nseed = 1))
 }
 }
