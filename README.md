@@ -169,16 +169,41 @@ f = st_read(system.file("shapes/", package="maptools"), "sids", crs = 4326)
 mapview(f, zcol = "AREA", col.regions = cpt(colorRampPalette = T), legend = T)
 ```
 
+## stars
+
+![](https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png)
+
+```r
+library(cptcity)
+library(ctars)
+tif = system.file("tif/L7_ETMs.tif", package = "stars")
+(x1 = read_stars(tif))
+
+plot(x1, col = cptcity::cpt(819))
+```
+
+## terra
+
+![](https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png)
+
+```r
+library(cptcity)
+library(terra)
+f <- system.file("exdata/test.tif", package="terra")
+r <- rast(f)
+image(r, col = cptcity::lucky())
+# Colour gradient: dca_alarm.p4.0.1, number: 1115 
+```
+
 
 # **I included a random colour gradient function!**
 
 ```r
-# install.packages("cptcity") 1.0.0
-# devtools::install_github("ibarraespinosa/cptcity") 1.0.1
+# install.packages("cptcity")
+# devtools::install_github("ibarraespinosa/cptcity")
 library(cptcity)
 image(matrix(1:100), col = lucky())
 ```
-
 
 ## COPYING
 
