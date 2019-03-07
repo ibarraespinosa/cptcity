@@ -202,33 +202,40 @@ f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation
 <h2 class="hasAnchor">
 <a href="#mapview" class="anchor"></a>mapview</h2>
 <p>or mapview</p>
-<p><img src="https://i.imgur.com/xfObebn.png"> ```</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
+<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(mapview)
+<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)
+f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_read">st_read</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"shapes/"</span>, <span class="dt">package=</span><span class="st">"maptools"</span>), <span class="st">"sids"</span>, <span class="dt">crs =</span> <span class="dv">4326</span>)
+<span class="kw"><a href="https://www.rdocumentation.org/packages/mapview/topics/mapView">mapview</a></span>(f, <span class="dt">zcol =</span> <span class="st">"AREA"</span>, <span class="dt">col.regions =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">colorRampPalette =</span> T), <span class="dt">legend =</span> T)</code></pre></div>
+<div class="figure">
+<img src="https://i.imgur.com/xfObebn.png">
+</div>
 </div>
 <div id="stars" class="section level2">
 <h2 class="hasAnchor">
 <a href="#stars" class="anchor"></a>stars</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
+<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(stars)
+tif =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"tif/L7_ETMs.tif"</span>, <span class="dt">package =</span> <span class="st">"stars"</span>)
+(<span class="dt">x1 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stars/topics/read_stars">read_stars</a></span>(tif))
+
+<span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(x1, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dv">819</span>))</code></pre></div>
 <div class="figure">
 <img src="https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png">
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ctars)
-tif =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"tif/L7_ETMs.tif"</span>, <span class="dt">package =</span> <span class="st">"stars"</span>)
-(<span class="dt">x1 =</span> <span class="kw">read_stars</span>(tif))
-
-<span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(x1, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dv">819</span>))</code></pre></div>
 </div>
 <div id="terra" class="section level2">
 <h2 class="hasAnchor">
 <a href="#terra" class="anchor"></a>terra</h2>
-<div class="figure">
-<img src="https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png">
-</div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(terra)
 f &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"exdata/test.tif"</span>, <span class="dt">package=</span><span class="st">"terra"</span>)
 r &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/terra/topics/rast">rast</a></span>(f)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/terra/topics/plot">image</a></span>(r, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>())
 <span class="co"># Colour gradient: dca_alarm.p4.0.1, number: 1115 </span></code></pre></div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png">
+</div>
 </div>
 <div id="i-included-a-random-colour-gradient-function" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">

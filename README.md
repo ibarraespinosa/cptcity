@@ -159,7 +159,6 @@ plot(f["AREA"], pal = cpt(colorRampPalette = T))
 
 or mapview
 
-![](https://i.imgur.com/xfObebn.png)
 
 ```r
 library(cptcity)
@@ -168,23 +167,25 @@ library(sf)
 f = st_read(system.file("shapes/", package="maptools"), "sids", crs = 4326)
 mapview(f, zcol = "AREA", col.regions = cpt(colorRampPalette = T), legend = T)
 ```
+![](https://i.imgur.com/xfObebn.png)
+
 
 ## stars
 
-![](https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png)
 
 ```r
 library(cptcity)
-library(ctars)
+library(stars)
 tif = system.file("tif/L7_ETMs.tif", package = "stars")
 (x1 = read_stars(tif))
 
 plot(x1, col = cptcity::cpt(819))
 ```
+![](https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png)
+
 
 ## terra
 
-![](https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png)
 
 ```r
 library(cptcity)
@@ -194,6 +195,7 @@ r <- rast(f)
 image(r, col = cptcity::lucky())
 # Colour gradient: dca_alarm.p4.0.1, number: 1115 
 ```
+![](https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png)
 
 
 # **I included a random colour gradient function!**
