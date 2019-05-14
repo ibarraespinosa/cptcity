@@ -38,9 +38,8 @@ find_cpt("radar")
 
 2) `cpt`: To return the colour gradient.
 
-
 ```r
-cpt(pal = "ncl_radar_1", n = 100)
+cptcity::cpt(pal = "ncl_radar_1", n = 100)
 
  [1]  "#B2F8FF" "#B2F8FF" "#B2F8FF" "#B2DCFF" "#B2BEFF" "#B2B8FF"
  [7]  "#B2B8FF" "#A088EE" "#8742D7" "#7D25CD" "#7D25CD" "#7322BE"
@@ -94,7 +93,7 @@ library(cptcity)
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 ```
 
-![](https://i.imgur.com/CWcwXVa.png)
+![](https://camo.githubusercontent.com/59d35f37ea4f3fcacf78273a78ad503419d3c7a1/68747470733a2f2f692e696d6775722e636f6d2f435763775856612e706e67)
 
 ## ggplot2
 
@@ -106,17 +105,17 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density))
 ```
 
-![](https://i.imgur.com/Uso0Gzm.png)
+![](https://camo.githubusercontent.com/4417a85826aab5f7f7153c383d04066dde56bdf2/68747470733a2f2f692e696d6775722e636f6d2f55736f30477a6d2e706e67)
 
 
 ```r
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density)) +
-  scale_fill_gradientn(colours = cpt(n = 100))
+  scale_fill_gradientn(colours = cpt())
 
 ```
 
-![](https://i.imgur.com/VgfUO0O.png)
+![](https://camo.githubusercontent.com/c0c0377793982e77db2a30efd7383a25c9e10070/68747470733a2f2f692e696d6775722e636f6d2f566766554f304f2e706e67)
 
 ## raster
 
@@ -131,7 +130,7 @@ spplot(r, scales = list(draw = T))
 ```
 
 
-![](https://i.imgur.com/Olx7iPD.png)
+![](https://camo.githubusercontent.com/ab1bb9975e45ee172d1163b87d914127d718c74d/68747470733a2f2f692e696d6775722e636f6d2f4f6c78376950442e706e67)
 
 ```r
 spplot(r, scales = list(draw = T),
@@ -139,7 +138,8 @@ spplot(r, scales = list(draw = T),
 ```
 
 
-![](https://i.imgur.com/VjIJnby.png)
+![](https://camo.githubusercontent.com/d4364a2df8a6df47ce196de9f7c49d3e6fff91b3/68747470733a2f2f692e696d6775722e636f6d2f566a494a6e62792e706e67)
+
 
 ## sf
 
@@ -152,7 +152,7 @@ st_crs(f) <- 4326
 plot(f["AREA"], pal = cpt(colorRampPalette = T))
 ```
 
-![](https://i.imgur.com/eHrbvRX.png)
+![](https://camo.githubusercontent.com/6440b0882e7c6f000f50b976e4861ce918da65a4/68747470733a2f2f692e696d6775722e636f6d2f654872627652582e706e67)
 
 
 ## mapview
@@ -167,7 +167,7 @@ library(sf)
 f = st_read(system.file("shapes/", package="maptools"), "sids", crs = 4326)
 mapview(f, zcol = "AREA", col.regions = cpt(colorRampPalette = T), legend = T)
 ```
-![](https://i.imgur.com/xfObebn.png)
+![](https://camo.githubusercontent.com/a56248d08ddf653a62ee23ea8855cc24e77a2c69/68747470733a2f2f692e696d6775722e636f6d2f78664f6265626e2e706e67)
 
 
 ## stars

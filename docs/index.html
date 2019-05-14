@@ -71,10 +71,8 @@
 
     
     
-<div class="figure">
-<img src="https://i.imgur.com/4v9WMQv.gif">
-</div>
-
+<p><img src="https://i.imgur.com/4v9WMQv.gif"></p>
+<p><a href="https://travis-ci.org/ibarraespinosa/cptcity"><img src="https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master" alt="Travis-CI Build Status"></a> <a href="https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity"><img src="https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a> <a href="https://zenodo.org/badge/latestdoi/120517547"><img src="https://zenodo.org/badge/120517547.svg" alt="DOI"></a> <a href="https://codecov.io/github/ibarraespinosa/cptcity?branch=master"><img src="https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg" alt="Coverage status"></a> <a href="http://cran.rstudio.com/web/packages/cptcity/index.html"><img src="http://cranlogs.r-pkg.org/badges/cptcity"></a> <a href="http://www.rdocumentation.org/packages/cptcity"><img src="http://www.rdocumentation.org/badges/version/cptcity" alt="Rdoc"></a> <a href="http://cran.r-project.org/web/packages/cptcity"><img src="http://www.r-pkg.org/badges/version/cptcity" alt="CRAN_Status_Badge"></a> <a href="http://cran.r-project.org/package=cptcity"><img src="http://cranlogs.r-pkg.org/badges/grand-total/cptcity?color=orange" alt="CRAN Downloads"></a></p>
 <div id="a-package-to-return-colour-gradients-from-cptcity" class="section level2">
 <h2 class="hasAnchor">
 <a href="#a-package-to-return-colour-gradients-from-cptcity" class="anchor"></a>A package to return colour gradients from CPTCITY</h2>
@@ -86,214 +84,196 @@
 <code>find_cpt</code>: To search the name of the colour gradient.</li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="reference/find_cpt.html">find_cpt</a></span>(<span class="st">"radar"</span>)
-[<span class="dv">1</span>] <span class="st">"idv_radar_dbz_nws"</span>    <span class="st">"idv_radar_dbz"</span>        <span class="st">"idv_radar_reflect_24"</span> <span class="st">"idv_radar_topo_mdr"</span>  
-[<span class="dv">5</span>] <span class="st">"ncl_radar_1"</span>          <span class="st">"ncl_radar"</span>
-<span class="co"># try find_cpt("rain")</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="reference/find_cpt.html">find_cpt</a></span>(<span class="st">"radar"</span>)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">[<span class="dv">1</span>] <span class="st">"idv_radar_dbz_nws"</span>    <span class="st">"idv_radar_dbz"</span>        <span class="st">"idv_radar_reflect_24"</span> <span class="st">"idv_radar_topo_mdr"</span>  </a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">[<span class="dv">5</span>] <span class="st">"ncl_radar_1"</span>          <span class="st">"ncl_radar"</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co"># try find_cpt("rain")</span></a></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>
 <code>cpt</code>: To return the colour gradient.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"ncl_radar_1"</span>, <span class="dt">n =</span> <span class="dv">100</span>)
-
- [<span class="dv">1</span>]  <span class="st">"#B2F8FF"</span> <span class="st">"#B2F8FF"</span> <span class="st">"#B2F8FF"</span> <span class="st">"#B2DCFF"</span> <span class="st">"#B2BEFF"</span> <span class="st">"#B2B8FF"</span>
- [<span class="dv">7</span>]  <span class="st">"#B2B8FF"</span> <span class="st">"#A088EE"</span> <span class="st">"#8742D7"</span> <span class="st">"#7D25CD"</span> <span class="st">"#7D25CD"</span> <span class="st">"#7322BE"</span>
- [<span class="dv">13</span>] <span class="st">"#601D9E"</span> <span class="st">"#541A8B"</span> <span class="st">"#541A8B"</span> <span class="st">"#66328A"</span> <span class="st">"#AF9387"</span> <span class="st">"#EDE685"</span>
- [<span class="dv">19</span>] <span class="st">"#EDE685"</span> <span class="st">"#ECE584"</span> <span class="st">"#DDD67C"</span> <span class="st">"#CDC673"</span> <span class="st">"#CDC673"</span> <span class="st">"#CDC673"</span>
- [<span class="dv">25</span>] <span class="st">"#B7B380"</span> <span class="st">"#9D9C91"</span> <span class="st">"#969696"</span> <span class="st">"#969696"</span> <span class="st">"#B4B4B4"</span> <span class="st">"#E6E6E6"</span>
- [<span class="dv">31</span>] <span class="st">"#FFFFFF"</span> <span class="st">"#FFFFFF"</span> <span class="st">"#EEFFFF"</span> <span class="st">"#C6FFFF"</span> <span class="st">"#AAFFFF"</span> <span class="st">"#AAFFFF"</span>
- [<span class="dv">37</span>] <span class="st">"#A2F6FF"</span> <span class="st">"#79C9FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#3A55FF"</span>
- [<span class="dv">43</span>] <span class="st">"#2009FF"</span> <span class="st">"#1D00FF"</span> <span class="st">"#1D00FF"</span> <span class="st">"#4053C3"</span> <span class="st">"#6EBF75"</span> <span class="st">"#7EE55B"</span>
- [<span class="dv">49</span>] <span class="st">"#7EE55B"</span> <span class="st">"#71DE54"</span> <span class="st">"#5AD249"</span> <span class="st">"#4ECC43"</span> <span class="st">"#4ECC43"</span> <span class="st">"#48C741"</span>
- [<span class="dv">55</span>] <span class="st">"#39BB3C"</span> <span class="st">"#2EB239"</span> <span class="st">"#2EB239"</span> <span class="st">"#2DB039"</span> <span class="st">"#25A43B"</span> <span class="st">"#1E993D"</span>
- [<span class="dv">61</span>] <span class="st">"#1E993D"</span> <span class="st">"#1E993D"</span> <span class="st">"#7FC54E"</span> <span class="st">"#EAF562"</span> <span class="st">"#FFFF66"</span> <span class="st">"#FFFF66"</span>
- [<span class="dv">67</span>] <span class="st">"#FFED66"</span> <span class="st">"#FFD566"</span> <span class="st">"#FFCC66"</span> <span class="st">"#FFCC66"</span> <span class="st">"#FFBC5F"</span> <span class="st">"#FF9B53"</span>
- [<span class="dv">73</span>] <span class="st">"#FF884C"</span> <span class="st">"#FF884C"</span> <span class="st">"#FF7945"</span> <span class="st">"#FF442D"</span> <span class="st">"#FF1919"</span> <span class="st">"#FF1919"</span>
- [<span class="dv">79</span>] <span class="st">"#FD1A1A"</span> <span class="st">"#E52B2B"</span> <span class="st">"#CD3C3C"</span> <span class="st">"#CC3D3D"</span> <span class="st">"#CC3D3D"</span> <span class="st">"#BC3838"</span>
- [<span class="dv">85</span>] <span class="st">"#A93232"</span> <span class="st">"#A53131"</span> <span class="st">"#A53131"</span> <span class="st">"#BA2269"</span> <span class="st">"#DD0AC3"</span> <span class="st">"#ED00ED"</span>
- [<span class="dv">91</span>] <span class="st">"#ED00ED"</span> <span class="st">"#D814E6"</span> <span class="st">"#A945D7"</span> <span class="st">"#8967CD"</span> <span class="st">"#8967CD"</span> <span class="st">"#9474CF"</span>
- [<span class="dv">97</span>] <span class="st">"#CAB5DB"</span> <span class="st">"#FAF0E6"</span> <span class="st">"#FAF0E6"</span> <span class="st">"#FAF0E6"</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"ncl_radar_1"</span>, <span class="dt">n =</span> <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"> [<span class="dv">1</span>]  <span class="st">"#B2F8FF"</span> <span class="st">"#B2F8FF"</span> <span class="st">"#B2F8FF"</span> <span class="st">"#B2DCFF"</span> <span class="st">"#B2BEFF"</span> <span class="st">"#B2B8FF"</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"> [<span class="dv">7</span>]  <span class="st">"#B2B8FF"</span> <span class="st">"#A088EE"</span> <span class="st">"#8742D7"</span> <span class="st">"#7D25CD"</span> <span class="st">"#7D25CD"</span> <span class="st">"#7322BE"</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"> [<span class="dv">13</span>] <span class="st">"#601D9E"</span> <span class="st">"#541A8B"</span> <span class="st">"#541A8B"</span> <span class="st">"#66328A"</span> <span class="st">"#AF9387"</span> <span class="st">"#EDE685"</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"> [<span class="dv">19</span>] <span class="st">"#EDE685"</span> <span class="st">"#ECE584"</span> <span class="st">"#DDD67C"</span> <span class="st">"#CDC673"</span> <span class="st">"#CDC673"</span> <span class="st">"#CDC673"</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7"> [<span class="dv">25</span>] <span class="st">"#B7B380"</span> <span class="st">"#9D9C91"</span> <span class="st">"#969696"</span> <span class="st">"#969696"</span> <span class="st">"#B4B4B4"</span> <span class="st">"#E6E6E6"</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"> [<span class="dv">31</span>] <span class="st">"#FFFFFF"</span> <span class="st">"#FFFFFF"</span> <span class="st">"#EEFFFF"</span> <span class="st">"#C6FFFF"</span> <span class="st">"#AAFFFF"</span> <span class="st">"#AAFFFF"</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"> [<span class="dv">37</span>] <span class="st">"#A2F6FF"</span> <span class="st">"#79C9FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#55A0FF"</span> <span class="st">"#3A55FF"</span></a>
+<a class="sourceLine" id="cb2-10" data-line-number="10"> [<span class="dv">43</span>] <span class="st">"#2009FF"</span> <span class="st">"#1D00FF"</span> <span class="st">"#1D00FF"</span> <span class="st">"#4053C3"</span> <span class="st">"#6EBF75"</span> <span class="st">"#7EE55B"</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11"> [<span class="dv">49</span>] <span class="st">"#7EE55B"</span> <span class="st">"#71DE54"</span> <span class="st">"#5AD249"</span> <span class="st">"#4ECC43"</span> <span class="st">"#4ECC43"</span> <span class="st">"#48C741"</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"> [<span class="dv">55</span>] <span class="st">"#39BB3C"</span> <span class="st">"#2EB239"</span> <span class="st">"#2EB239"</span> <span class="st">"#2DB039"</span> <span class="st">"#25A43B"</span> <span class="st">"#1E993D"</span></a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"> [<span class="dv">61</span>] <span class="st">"#1E993D"</span> <span class="st">"#1E993D"</span> <span class="st">"#7FC54E"</span> <span class="st">"#EAF562"</span> <span class="st">"#FFFF66"</span> <span class="st">"#FFFF66"</span></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"> [<span class="dv">67</span>] <span class="st">"#FFED66"</span> <span class="st">"#FFD566"</span> <span class="st">"#FFCC66"</span> <span class="st">"#FFCC66"</span> <span class="st">"#FFBC5F"</span> <span class="st">"#FF9B53"</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"> [<span class="dv">73</span>] <span class="st">"#FF884C"</span> <span class="st">"#FF884C"</span> <span class="st">"#FF7945"</span> <span class="st">"#FF442D"</span> <span class="st">"#FF1919"</span> <span class="st">"#FF1919"</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"> [<span class="dv">79</span>] <span class="st">"#FD1A1A"</span> <span class="st">"#E52B2B"</span> <span class="st">"#CD3C3C"</span> <span class="st">"#CC3D3D"</span> <span class="st">"#CC3D3D"</span> <span class="st">"#BC3838"</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"> [<span class="dv">85</span>] <span class="st">"#A93232"</span> <span class="st">"#A53131"</span> <span class="st">"#A53131"</span> <span class="st">"#BA2269"</span> <span class="st">"#DD0AC3"</span> <span class="st">"#ED00ED"</span></a>
+<a class="sourceLine" id="cb2-18" data-line-number="18"> [<span class="dv">91</span>] <span class="st">"#ED00ED"</span> <span class="st">"#D814E6"</span> <span class="st">"#A945D7"</span> <span class="st">"#8967CD"</span> <span class="st">"#8967CD"</span> <span class="st">"#9474CF"</span></a>
+<a class="sourceLine" id="cb2-19" data-line-number="19"> [<span class="dv">97</span>] <span class="st">"#CAB5DB"</span> <span class="st">"#FAF0E6"</span> <span class="st">"#FAF0E6"</span> <span class="st">"#FAF0E6"</span></a></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>
 <code>lucky</code>: To choose a random colour gradient</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>(<span class="dt">n =</span> <span class="dv">100</span>)
-Colour gradient<span class="op">:</span><span class="st"> </span>occ_<span class="dv">2</span>_occ093, number<span class="op">:</span><span class="st"> </span><span class="dv">6450</span>
- [<span class="dv">1</span>]  <span class="st">"#FF754C"</span> <span class="st">"#FE764D"</span> <span class="st">"#FE774E"</span> <span class="st">"#FE794F"</span> <span class="st">"#FE7A50"</span> <span class="st">"#FE7B52"</span>
- [<span class="dv">7</span>]  <span class="st">"#FE7D53"</span> <span class="st">"#FE7E54"</span> <span class="st">"#FE7F55"</span> <span class="st">"#FE8157"</span> <span class="st">"#FE8258"</span> <span class="st">"#FE8359"</span>
- [<span class="dv">13</span>] <span class="st">"#FE855A"</span> <span class="st">"#FE865C"</span> <span class="st">"#FE875D"</span> <span class="st">"#FE895E"</span> <span class="st">"#FE8A5F"</span> <span class="st">"#FD8B60"</span>
- [<span class="dv">19</span>] <span class="st">"#FD8D62"</span> <span class="st">"#FD8E63"</span> <span class="st">"#FD8F64"</span> <span class="st">"#FD9165"</span> <span class="st">"#FD9267"</span> <span class="st">"#FD9368"</span>
- [<span class="dv">25</span>] <span class="st">"#FD9569"</span> <span class="st">"#FD966A"</span> <span class="st">"#FD976C"</span> <span class="st">"#FD996D"</span> <span class="st">"#FD9A6E"</span> <span class="st">"#FD9B6F"</span>
- [<span class="dv">31</span>] <span class="st">"#FD9D70"</span> <span class="st">"#FD9E72"</span> <span class="st">"#FD9F73"</span> <span class="st">"#FDA174"</span> <span class="st">"#FCA275"</span> <span class="st">"#FCA377"</span>
- [<span class="dv">37</span>] <span class="st">"#FCA578"</span> <span class="st">"#FCA679"</span> <span class="st">"#FCA77A"</span> <span class="st">"#FCA97C"</span> <span class="st">"#FCAA7D"</span> <span class="st">"#FCAB7E"</span>
- [<span class="dv">43</span>] <span class="st">"#FCAD7F"</span> <span class="st">"#FCAE80"</span> <span class="st">"#FCAF82"</span> <span class="st">"#FCB183"</span> <span class="st">"#FCB284"</span> <span class="st">"#FCB385"</span>
- [<span class="dv">49</span>] <span class="st">"#FCB587"</span> <span class="st">"#FCB688"</span> <span class="st">"#FCB789"</span> <span class="st">"#FCB88A"</span> <span class="st">"#FCB98B"</span> <span class="st">"#FCB98C"</span>
- [<span class="dv">55</span>] <span class="st">"#FCBA8D"</span> <span class="st">"#FCBB8E"</span> <span class="st">"#FCBC8F"</span> <span class="st">"#FCBD8F"</span> <span class="st">"#FCBE90"</span> <span class="st">"#FCBE91"</span>
- [<span class="dv">61</span>] <span class="st">"#FCBF92"</span> <span class="st">"#FCC093"</span> <span class="st">"#FCC194"</span> <span class="st">"#FCC295"</span> <span class="st">"#FCC396"</span> <span class="st">"#FCC397"</span>
- [<span class="dv">67</span>] <span class="st">"#FCC498"</span> <span class="st">"#FCC599"</span> <span class="st">"#FCC69A"</span> <span class="st">"#FCC79B"</span> <span class="st">"#FCC79C"</span> <span class="st">"#FCC89C"</span>
- [<span class="dv">73</span>] <span class="st">"#FCC99D"</span> <span class="st">"#FCCA9E"</span> <span class="st">"#FCCB9F"</span> <span class="st">"#FCCCA0"</span> <span class="st">"#FCCCA1"</span> <span class="st">"#FCCDA2"</span>
- [<span class="dv">79</span>] <span class="st">"#FCCEA3"</span> <span class="st">"#FCCFA4"</span> <span class="st">"#FCD0A5"</span> <span class="st">"#FCD1A6"</span> <span class="st">"#FCD1A7"</span> <span class="st">"#FCD2A8"</span>
- [<span class="dv">85</span>] <span class="st">"#FCD3A9"</span> <span class="st">"#FCD4A9"</span> <span class="st">"#FCD5AA"</span> <span class="st">"#FCD6AB"</span> <span class="st">"#FCD6AC"</span> <span class="st">"#FCD7AD"</span>
- [<span class="dv">91</span>] <span class="st">"#FCD8AE"</span> <span class="st">"#FCD9AF"</span> <span class="st">"#FCDAB0"</span> <span class="st">"#FCDBB1"</span> <span class="st">"#FCDBB2"</span> <span class="st">"#FCDCB3"</span>
- [<span class="dv">97</span>] <span class="st">"#FCDDB4"</span> <span class="st">"#FCDEB5"</span> <span class="st">"#FCDFB6"</span> <span class="st">"#FDE0B7"</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>(<span class="dt">n =</span> <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">Colour gradient<span class="op">:</span><span class="st"> </span>occ_<span class="dv">2</span>_occ093, number<span class="op">:</span><span class="st"> </span><span class="dv">6450</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"> [<span class="dv">1</span>]  <span class="st">"#FF754C"</span> <span class="st">"#FE764D"</span> <span class="st">"#FE774E"</span> <span class="st">"#FE794F"</span> <span class="st">"#FE7A50"</span> <span class="st">"#FE7B52"</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"> [<span class="dv">7</span>]  <span class="st">"#FE7D53"</span> <span class="st">"#FE7E54"</span> <span class="st">"#FE7F55"</span> <span class="st">"#FE8157"</span> <span class="st">"#FE8258"</span> <span class="st">"#FE8359"</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"> [<span class="dv">13</span>] <span class="st">"#FE855A"</span> <span class="st">"#FE865C"</span> <span class="st">"#FE875D"</span> <span class="st">"#FE895E"</span> <span class="st">"#FE8A5F"</span> <span class="st">"#FD8B60"</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"> [<span class="dv">19</span>] <span class="st">"#FD8D62"</span> <span class="st">"#FD8E63"</span> <span class="st">"#FD8F64"</span> <span class="st">"#FD9165"</span> <span class="st">"#FD9267"</span> <span class="st">"#FD9368"</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"> [<span class="dv">25</span>] <span class="st">"#FD9569"</span> <span class="st">"#FD966A"</span> <span class="st">"#FD976C"</span> <span class="st">"#FD996D"</span> <span class="st">"#FD9A6E"</span> <span class="st">"#FD9B6F"</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"> [<span class="dv">31</span>] <span class="st">"#FD9D70"</span> <span class="st">"#FD9E72"</span> <span class="st">"#FD9F73"</span> <span class="st">"#FDA174"</span> <span class="st">"#FCA275"</span> <span class="st">"#FCA377"</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"> [<span class="dv">37</span>] <span class="st">"#FCA578"</span> <span class="st">"#FCA679"</span> <span class="st">"#FCA77A"</span> <span class="st">"#FCA97C"</span> <span class="st">"#FCAA7D"</span> <span class="st">"#FCAB7E"</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"> [<span class="dv">43</span>] <span class="st">"#FCAD7F"</span> <span class="st">"#FCAE80"</span> <span class="st">"#FCAF82"</span> <span class="st">"#FCB183"</span> <span class="st">"#FCB284"</span> <span class="st">"#FCB385"</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"> [<span class="dv">49</span>] <span class="st">"#FCB587"</span> <span class="st">"#FCB688"</span> <span class="st">"#FCB789"</span> <span class="st">"#FCB88A"</span> <span class="st">"#FCB98B"</span> <span class="st">"#FCB98C"</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"> [<span class="dv">55</span>] <span class="st">"#FCBA8D"</span> <span class="st">"#FCBB8E"</span> <span class="st">"#FCBC8F"</span> <span class="st">"#FCBD8F"</span> <span class="st">"#FCBE90"</span> <span class="st">"#FCBE91"</span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"> [<span class="dv">61</span>] <span class="st">"#FCBF92"</span> <span class="st">"#FCC093"</span> <span class="st">"#FCC194"</span> <span class="st">"#FCC295"</span> <span class="st">"#FCC396"</span> <span class="st">"#FCC397"</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"> [<span class="dv">67</span>] <span class="st">"#FCC498"</span> <span class="st">"#FCC599"</span> <span class="st">"#FCC69A"</span> <span class="st">"#FCC79B"</span> <span class="st">"#FCC79C"</span> <span class="st">"#FCC89C"</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"> [<span class="dv">73</span>] <span class="st">"#FCC99D"</span> <span class="st">"#FCCA9E"</span> <span class="st">"#FCCB9F"</span> <span class="st">"#FCCCA0"</span> <span class="st">"#FCCCA1"</span> <span class="st">"#FCCDA2"</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"> [<span class="dv">79</span>] <span class="st">"#FCCEA3"</span> <span class="st">"#FCCFA4"</span> <span class="st">"#FCD0A5"</span> <span class="st">"#FCD1A6"</span> <span class="st">"#FCD1A7"</span> <span class="st">"#FCD2A8"</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"> [<span class="dv">85</span>] <span class="st">"#FCD3A9"</span> <span class="st">"#FCD4A9"</span> <span class="st">"#FCD5AA"</span> <span class="st">"#FCD6AB"</span> <span class="st">"#FCD6AC"</span> <span class="st">"#FCD7AD"</span></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"> [<span class="dv">91</span>] <span class="st">"#FCD8AE"</span> <span class="st">"#FCD9AF"</span> <span class="st">"#FCDAB0"</span> <span class="st">"#FCDBB1"</span> <span class="st">"#FCDBB2"</span> <span class="st">"#FCDCB3"</span></a>
+<a class="sourceLine" id="cb3-19" data-line-number="19"> [<span class="dv">97</span>] <span class="st">"#FCDDB4"</span> <span class="st">"#FCDEB5"</span> <span class="st">"#FCDFB6"</span> <span class="st">"#FDE0B7"</span></a></code></pre></div>
 </div>
 <div id="install-and-use-it" class="section level2">
 <h2 class="hasAnchor">
 <a href="#install-and-use-it" class="anchor"></a>Install and use it!</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("cptcity") 1.0.0</span>
-<span class="co"># devtools::install_github("ibarraespinosa/cptcity") 1.0.2</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/image">image</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/matrix">matrix</a></span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"mpl_inferno"</span>))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/CWcwXVa.png">
-</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="co"># install.packages("cptcity") 1.0.0</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co"># devtools::install_github("ibarraespinosa/cptcity") 1.0.2</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/image">image</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/matrix">matrix</a></span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">pal =</span> <span class="st">"mpl_inferno"</span>))</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/59d35f37ea4f3fcacf78273a78ad503419d3c7a1/68747470733a2f2f692e696d6775722e636f6d2f435763775856612e706e67"></p>
 </div>
 <div id="ggplot2" class="section level2">
 <h2 class="hasAnchor">
 <a href="#ggplot2" class="anchor"></a>ggplot2</h2>
 <p>And you can use it ggplot2</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)
-<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(faithfuld, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(waiting, eruptions)) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">fill =</span> density))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/Uso0Gzm.png">
-</div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(faithfuld, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(waiting, eruptions)) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">fill =</span> density)) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html">scale_fill_gradientn</a></span>(<span class="dt">colours =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">n =</span> <span class="dv">100</span>))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/VgfUO0O.png">
-</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(faithfuld, <span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(waiting, eruptions)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_raster</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> density))</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/4417a85826aab5f7f7153c383d04066dde56bdf2/68747470733a2f2f692e696d6775722e636f6d2f55736f30477a6d2e706e67"></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(faithfuld, <span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(waiting, eruptions)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_raster</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> density)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/scale_gradient">scale_fill_gradientn</a></span>(<span class="dt">colours =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>())</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/c0c0377793982e77db2a30efd7383a25c9e10070/68747470733a2f2f692e696d6775722e636f6d2f566766554f304f2e706e67"></p>
 </div>
 <div id="raster" class="section level2">
 <h2 class="hasAnchor">
 <a href="#raster" class="anchor"></a>raster</h2>
 <p>or raster</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(raster)
-f &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"external/test.grd"</span>, <span class="dt">package=</span><span class="st">"raster"</span>)
-r &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/raster">raster</a></span>(f)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/spplot">spplot</a></span>(r, <span class="dt">scales =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">draw =</span> T))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/Olx7iPD.png">
-</div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/spplot">spplot</a></span>(r, <span class="dt">scales =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">draw =</span> T),
-       <span class="dt">col.regions =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rev">rev</a></span>(<span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">n =</span> <span class="dv">100</span>, <span class="dt">pal =</span> <span class="st">"colo_Skyblue2u_Gentle_Waves"</span>)))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/VjIJnby.png">
-</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(raster)</a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">f &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"external/test.grd"</span>, <span class="dt">package=</span><span class="st">"raster"</span>)</a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">r &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/raster">raster</a></span>(f)</a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/spplot">spplot</a></span>(r, <span class="dt">scales =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">draw =</span> T))</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/ab1bb9975e45ee172d1163b87d914127d718c74d/68747470733a2f2f692e696d6775722e636f6d2f4f6c78376950442e706e67"></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/spplot">spplot</a></span>(r, <span class="dt">scales =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">draw =</span> T),</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">       <span class="dt">col.regions =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rev">rev</a></span>(<span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">n =</span> <span class="dv">100</span>, <span class="dt">pal =</span> <span class="st">"colo_Skyblue2u_Gentle_Waves"</span>)))</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/d4364a2df8a6df47ce196de9f7c49d3e6fff91b3/68747470733a2f2f692e696d6775722e636f6d2f566a494a6e62792e706e67"></p>
 </div>
 <div id="sf" class="section level2">
 <h2 class="hasAnchor">
 <a href="#sf" class="anchor"></a>sf</h2>
 <p>or sf</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)
-f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_read">st_read</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"shapes/"</span>, <span class="dt">package=</span><span class="st">"maptools"</span>), <span class="st">"sids"</span>)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_crs">st_crs</a></span>(f) &lt;-<span class="st"> </span><span class="dv">4326</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(f[<span class="st">"AREA"</span>], <span class="dt">pal =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">colorRampPalette =</span> T))</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/eHrbvRX.png">
-</div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_read">st_read</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"shapes/"</span>, <span class="dt">package=</span><span class="st">"maptools"</span>), <span class="st">"sids"</span>)</a>
+<a class="sourceLine" id="cb9-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_crs">st_crs</a></span>(f) &lt;-<span class="st"> </span><span class="dv">4326</span></a>
+<a class="sourceLine" id="cb9-5" data-line-number="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(f[<span class="st">"AREA"</span>], <span class="dt">pal =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">colorRampPalette =</span> T))</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/6440b0882e7c6f000f50b976e4861ce918da65a4/68747470733a2f2f692e696d6775722e636f6d2f654872627652582e706e67"></p>
 </div>
 <div id="mapview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#mapview" class="anchor"></a>mapview</h2>
 <p>or mapview</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(mapview)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)
-f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_read">st_read</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"shapes/"</span>, <span class="dt">package=</span><span class="st">"maptools"</span>), <span class="st">"sids"</span>, <span class="dt">crs =</span> <span class="dv">4326</span>)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/mapview/topics/mapView">mapview</a></span>(f, <span class="dt">zcol =</span> <span class="st">"AREA"</span>, <span class="dt">col.regions =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">colorRampPalette =</span> T), <span class="dt">legend =</span> T)</code></pre></div>
-<div class="figure">
-<img src="https://i.imgur.com/xfObebn.png">
-</div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(mapview)</a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sf)</a>
+<a class="sourceLine" id="cb10-4" data-line-number="4">f =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/st_read">st_read</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"shapes/"</span>, <span class="dt">package=</span><span class="st">"maptools"</span>), <span class="st">"sids"</span>, <span class="dt">crs =</span> <span class="dv">4326</span>)</a>
+<a class="sourceLine" id="cb10-5" data-line-number="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/mapview/topics/mapView">mapview</a></span>(f, <span class="dt">zcol =</span> <span class="st">"AREA"</span>, <span class="dt">col.regions =</span> <span class="kw"><a href="reference/cpt.html">cpt</a></span>(<span class="dt">colorRampPalette =</span> T), <span class="dt">legend =</span> T)</a></code></pre></div>
+<p><img src="https://camo.githubusercontent.com/a56248d08ddf653a62ee23ea8855cc24e77a2c69/68747470733a2f2f692e696d6775722e636f6d2f78664f6265626e2e706e67"></p>
 </div>
 <div id="stars" class="section level2">
 <h2 class="hasAnchor">
 <a href="#stars" class="anchor"></a>stars</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(stars)
-tif =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"tif/L7_ETMs.tif"</span>, <span class="dt">package =</span> <span class="st">"stars"</span>)
-(<span class="dt">x1 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stars/topics/read_stars">read_stars</a></span>(tif))
-
-<span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(x1, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dv">819</span>))</code></pre></div>
-<div class="figure">
-<img src="https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png">
-</div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(stars)</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">tif =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"tif/L7_ETMs.tif"</span>, <span class="dt">package =</span> <span class="st">"stars"</span>)</a>
+<a class="sourceLine" id="cb11-4" data-line-number="4">(<span class="dt">x1 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stars/topics/read_stars">read_stars</a></span>(tif))</a>
+<a class="sourceLine" id="cb11-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb11-6" data-line-number="6"><span class="kw"><a href="https://www.rdocumentation.org/packages/sf/topics/plot">plot</a></span>(x1, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/cpt">cpt</a></span>(<span class="dv">819</span>))</a></code></pre></div>
+<p><img src="https://user-images.githubusercontent.com/27447280/53952592-1ccb2880-410c-11e9-8d2e-a0b85a4ae3d3.png"></p>
 </div>
 <div id="terra" class="section level2">
 <h2 class="hasAnchor">
 <a href="#terra" class="anchor"></a>terra</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(terra)
-f &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"exdata/test.tif"</span>, <span class="dt">package=</span><span class="st">"terra"</span>)
-r &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/terra/topics/rast">rast</a></span>(f)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/terra/topics/plot">image</a></span>(r, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>())
-<span class="co"># Colour gradient: dca_alarm.p4.0.1, number: 1115 </span></code></pre></div>
-<div class="figure">
-<img src="https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png">
-</div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb12-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(terra)</a>
+<a class="sourceLine" id="cb12-3" data-line-number="3">f &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"exdata/test.tif"</span>, <span class="dt">package=</span><span class="st">"terra"</span>)</a>
+<a class="sourceLine" id="cb12-4" data-line-number="4">r &lt;-<span class="st"> </span><span class="kw">rast</span>(f)</a>
+<a class="sourceLine" id="cb12-5" data-line-number="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/image">image</a></span>(r, <span class="dt">col =</span> cptcity<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/cptcity/topics/lucky">lucky</a></span>())</a>
+<a class="sourceLine" id="cb12-6" data-line-number="6"><span class="co"># Colour gradient: dca_alarm.p4.0.1, number: 1115 </span></a></code></pre></div>
+<p><img src="https://user-images.githubusercontent.com/27447280/53952837-e2ae5680-410c-11e9-8783-60d7600aa771.png"></p>
 </div>
 <div id="i-included-a-random-colour-gradient-function" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#i-included-a-random-colour-gradient-function" class="anchor"></a><strong>I included a random colour gradient function!</strong>
 </h1></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("cptcity")</span>
-<span class="co"># devtools::install_github("ibarraespinosa/cptcity")</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/terra/topics/plot">image</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/matrix">matrix</a></span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/lucky.html">lucky</a></span>())</code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="co"># install.packages("cptcity")</span></a>
+<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="co"># devtools::install_github("ibarraespinosa/cptcity")</span></a>
+<a class="sourceLine" id="cb13-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb13-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/raster/topics/image">image</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/matrix">matrix</a></span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span>), <span class="dt">col =</span> <span class="kw"><a href="reference/lucky.html">lucky</a></span>())</a></code></pre></div>
 <div id="copying" class="section level2">
 <h2 class="hasAnchor">
 <a href="#copying" class="anchor"></a>COPYING</h2>
 <p>Each palette has a COPYING.XML files available at ins/extdata. To see each file do:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)
-files &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list.files">list.files</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"extdata"</span>,
-                                <span class="dt">package =</span> <span class="st">"cptcity"</span>),
-                    <span class="dt">pattern =</span> <span class="st">".xml"</span>,
-                    <span class="dt">recursive =</span> T,
-                    <span class="dt">full.names =</span> T)
-<span class="co"># For instance, the COPYING files of "arendal" is</span>
-files[<span class="dv">1</span>]
-<span class="co"># and the file</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/readLines">readLines</a></span>(files[<span class="dv">1</span>])
-<span class="dv">1</span>] <span class="st">"/usr/local/lib/R/site-library/cptcity/extdata/arendal/COPYING.xml"</span>
- [<span class="dv">1</span>] <span class="st">"&lt;?xml version=</span><span class="ch">\"</span><span class="st">1.0</span><span class="ch">\"</span><span class="st">?&gt;"</span>                                                                        
- [<span class="dv">2</span>] <span class="st">"&lt;copying&gt;"</span>                                                                                      
- [<span class="dv">3</span>] <span class="st">"  &lt;authors&gt;"</span>                                                                                    
- [<span class="dv">4</span>] <span class="st">"    &lt;author href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/</span><span class="ch">\"</span><span class="st">&gt;"</span>                                         
- [<span class="dv">5</span>] <span class="st">"      &lt;name&gt;GRID-Arendal&lt;/name&gt;"</span>                                                                
- [<span class="dv">6</span>] <span class="st">"    &lt;/author&gt;"</span>                                                                                  
- [<span class="dv">7</span>] <span class="st">"  &lt;/authors&gt;"</span>                                                                                   
- [<span class="dv">8</span>] <span class="st">"  &lt;license&gt;"</span>                                                                                    
- [<span class="dv">9</span>] <span class="st">"    &lt;informal&gt;"</span>                                                                                 
-[<span class="dv">10</span>] <span class="st">"      Attribution and linkback requested."</span>                                                      
-[<span class="dv">11</span>] <span class="st">"    &lt;/informal&gt;"</span>                                                                                
-[<span class="dv">12</span>] <span class="st">"    &lt;year&gt;2014&lt;/year&gt;"</span>                                                                          
-[<span class="dv">13</span>] <span class="st">"    &lt;text&gt;"</span>                                                                                     
-[<span class="dv">14</span>] <span class="st">"      Using this graphic and referring to it is encouraged, "</span>                                   
-[<span class="dv">15</span>] <span class="st">"      and please use it in presentations, web pages, newspapers, "</span>                              
-[<span class="dv">16</span>] <span class="st">"      blogs and reports."</span>                                                                       
-[<span class="dv">17</span>] <span class="st">""</span>                                                                                               
-[<span class="dv">18</span>] <span class="st">"      For any form of publication, please include the link to "</span>                                 
-[<span class="dv">19</span>] <span class="st">"      this page and give the cartographer/designer credit."</span>                                     
-[<span class="dv">20</span>] <span class="st">"    &lt;/text&gt;"</span>                                                                                    
-[<span class="dv">21</span>] <span class="st">"  &lt;/license&gt;"</span>                                                                                   
-[<span class="dv">22</span>] <span class="st">"  &lt;src&gt;"</span>                                                                                        
-[<span class="dv">23</span>] <span class="st">"    &lt;format&gt;PNG images&lt;/format&gt;"</span>                                                                
-[<span class="dv">24</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/mean-surface-temperature_c7e4</span><span class="ch">\"</span><span class="st">"</span>        
-[<span class="dv">25</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Temperature&lt;/link&gt;"</span>                                                                        
-[<span class="dv">26</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/arctic-topography-and-bathymetry_5645</span><span class="ch">\"</span><span class="st">"</span>
-[<span class="dv">27</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Arctic bathymetry&lt;/link&gt;"</span>                                                                  
-[<span class="dv">28</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/map-of-zimbabwe_36a5</span><span class="ch">\"</span><span class="st">"</span>                 
-[<span class="dv">29</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Zambezi&lt;/link&gt;"</span>                                                                            
-[<span class="dv">30</span>] <span class="st">"  &lt;/src&gt;"</span>                                                                                       
-[<span class="dv">31</span>] <span class="st">"  &lt;distribute&gt;"</span>                                                                                 
-[<span class="dv">32</span>] <span class="st">"    &lt;qgis distribute=</span><span class="ch">\"</span><span class="st">yes</span><span class="ch">\"</span><span class="st"> license=</span><span class="ch">\"</span><span class="st">other</span><span class="ch">\"</span><span class="st">/&gt;"</span>                                               
-[<span class="dv">33</span>] <span class="st">"  &lt;/distribute&gt;"</span>                                                                                
-[<span class="dv">34</span>] <span class="st">"&lt;/copying&gt;"</span>  </code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(cptcity)</a>
+<a class="sourceLine" id="cb14-2" data-line-number="2">files &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list.files">list.files</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.file">system.file</a></span>(<span class="st">"extdata"</span>,</a>
+<a class="sourceLine" id="cb14-3" data-line-number="3">                                <span class="dt">package =</span> <span class="st">"cptcity"</span>),</a>
+<a class="sourceLine" id="cb14-4" data-line-number="4">                    <span class="dt">pattern =</span> <span class="st">".xml"</span>,</a>
+<a class="sourceLine" id="cb14-5" data-line-number="5">                    <span class="dt">recursive =</span> T,</a>
+<a class="sourceLine" id="cb14-6" data-line-number="6">                    <span class="dt">full.names =</span> T)</a>
+<a class="sourceLine" id="cb14-7" data-line-number="7"><span class="co"># For instance, the COPYING files of "arendal" is</span></a>
+<a class="sourceLine" id="cb14-8" data-line-number="8">files[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb14-9" data-line-number="9"><span class="co"># and the file</span></a>
+<a class="sourceLine" id="cb14-10" data-line-number="10"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/readLines">readLines</a></span>(files[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb14-11" data-line-number="11"><span class="dv">1</span>] <span class="st">"/usr/local/lib/R/site-library/cptcity/extdata/arendal/COPYING.xml"</span></a>
+<a class="sourceLine" id="cb14-12" data-line-number="12"> [<span class="dv">1</span>] <span class="st">"&lt;?xml version=</span><span class="ch">\"</span><span class="st">1.0</span><span class="ch">\"</span><span class="st">?&gt;"</span>                                                                        </a>
+<a class="sourceLine" id="cb14-13" data-line-number="13"> [<span class="dv">2</span>] <span class="st">"&lt;copying&gt;"</span>                                                                                      </a>
+<a class="sourceLine" id="cb14-14" data-line-number="14"> [<span class="dv">3</span>] <span class="st">"  &lt;authors&gt;"</span>                                                                                    </a>
+<a class="sourceLine" id="cb14-15" data-line-number="15"> [<span class="dv">4</span>] <span class="st">"    &lt;author href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/</span><span class="ch">\"</span><span class="st">&gt;"</span>                                         </a>
+<a class="sourceLine" id="cb14-16" data-line-number="16"> [<span class="dv">5</span>] <span class="st">"      &lt;name&gt;GRID-Arendal&lt;/name&gt;"</span>                                                                </a>
+<a class="sourceLine" id="cb14-17" data-line-number="17"> [<span class="dv">6</span>] <span class="st">"    &lt;/author&gt;"</span>                                                                                  </a>
+<a class="sourceLine" id="cb14-18" data-line-number="18"> [<span class="dv">7</span>] <span class="st">"  &lt;/authors&gt;"</span>                                                                                   </a>
+<a class="sourceLine" id="cb14-19" data-line-number="19"> [<span class="dv">8</span>] <span class="st">"  &lt;license&gt;"</span>                                                                                    </a>
+<a class="sourceLine" id="cb14-20" data-line-number="20"> [<span class="dv">9</span>] <span class="st">"    &lt;informal&gt;"</span>                                                                                 </a>
+<a class="sourceLine" id="cb14-21" data-line-number="21">[<span class="dv">10</span>] <span class="st">"      Attribution and linkback requested."</span>                                                      </a>
+<a class="sourceLine" id="cb14-22" data-line-number="22">[<span class="dv">11</span>] <span class="st">"    &lt;/informal&gt;"</span>                                                                                </a>
+<a class="sourceLine" id="cb14-23" data-line-number="23">[<span class="dv">12</span>] <span class="st">"    &lt;year&gt;2014&lt;/year&gt;"</span>                                                                          </a>
+<a class="sourceLine" id="cb14-24" data-line-number="24">[<span class="dv">13</span>] <span class="st">"    &lt;text&gt;"</span>                                                                                     </a>
+<a class="sourceLine" id="cb14-25" data-line-number="25">[<span class="dv">14</span>] <span class="st">"      Using this graphic and referring to it is encouraged, "</span>                                   </a>
+<a class="sourceLine" id="cb14-26" data-line-number="26">[<span class="dv">15</span>] <span class="st">"      and please use it in presentations, web pages, newspapers, "</span>                              </a>
+<a class="sourceLine" id="cb14-27" data-line-number="27">[<span class="dv">16</span>] <span class="st">"      blogs and reports."</span>                                                                       </a>
+<a class="sourceLine" id="cb14-28" data-line-number="28">[<span class="dv">17</span>] <span class="st">""</span>                                                                                               </a>
+<a class="sourceLine" id="cb14-29" data-line-number="29">[<span class="dv">18</span>] <span class="st">"      For any form of publication, please include the link to "</span>                                 </a>
+<a class="sourceLine" id="cb14-30" data-line-number="30">[<span class="dv">19</span>] <span class="st">"      this page and give the cartographer/designer credit."</span>                                     </a>
+<a class="sourceLine" id="cb14-31" data-line-number="31">[<span class="dv">20</span>] <span class="st">"    &lt;/text&gt;"</span>                                                                                    </a>
+<a class="sourceLine" id="cb14-32" data-line-number="32">[<span class="dv">21</span>] <span class="st">"  &lt;/license&gt;"</span>                                                                                   </a>
+<a class="sourceLine" id="cb14-33" data-line-number="33">[<span class="dv">22</span>] <span class="st">"  &lt;src&gt;"</span>                                                                                        </a>
+<a class="sourceLine" id="cb14-34" data-line-number="34">[<span class="dv">23</span>] <span class="st">"    &lt;format&gt;PNG images&lt;/format&gt;"</span>                                                                </a>
+<a class="sourceLine" id="cb14-35" data-line-number="35">[<span class="dv">24</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/mean-surface-temperature_c7e4</span><span class="ch">\"</span><span class="st">"</span>        </a>
+<a class="sourceLine" id="cb14-36" data-line-number="36">[<span class="dv">25</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Temperature&lt;/link&gt;"</span>                                                                        </a>
+<a class="sourceLine" id="cb14-37" data-line-number="37">[<span class="dv">26</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/arctic-topography-and-bathymetry_5645</span><span class="ch">\"</span><span class="st">"</span></a>
+<a class="sourceLine" id="cb14-38" data-line-number="38">[<span class="dv">27</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Arctic bathymetry&lt;/link&gt;"</span>                                                                  </a>
+<a class="sourceLine" id="cb14-39" data-line-number="39">[<span class="dv">28</span>] <span class="st">"    &lt;link href=</span><span class="ch">\"</span><span class="st">http://www.grida.no/graphicslib/detail/map-of-zimbabwe_36a5</span><span class="ch">\"</span><span class="st">"</span>                 </a>
+<a class="sourceLine" id="cb14-40" data-line-number="40">[<span class="dv">29</span>] <span class="st">"</span><span class="ch">\t</span><span class="st">  &gt;Zambezi&lt;/link&gt;"</span>                                                                            </a>
+<a class="sourceLine" id="cb14-41" data-line-number="41">[<span class="dv">30</span>] <span class="st">"  &lt;/src&gt;"</span>                                                                                       </a>
+<a class="sourceLine" id="cb14-42" data-line-number="42">[<span class="dv">31</span>] <span class="st">"  &lt;distribute&gt;"</span>                                                                                 </a>
+<a class="sourceLine" id="cb14-43" data-line-number="43">[<span class="dv">32</span>] <span class="st">"    &lt;qgis distribute=</span><span class="ch">\"</span><span class="st">yes</span><span class="ch">\"</span><span class="st"> license=</span><span class="ch">\"</span><span class="st">other</span><span class="ch">\"</span><span class="st">/&gt;"</span>                                               </a>
+<a class="sourceLine" id="cb14-44" data-line-number="44">[<span class="dv">33</span>] <span class="st">"  &lt;/distribute&gt;"</span>                                                                                </a>
+<a class="sourceLine" id="cb14-45" data-line-number="45">[<span class="dv">34</span>] <span class="st">"&lt;/copying&gt;"</span>  </a></code></pre></div>
 </div>
 </div>
   </div>
@@ -329,20 +309,7 @@ files[<span class="dv">1</span>]
 </ul>
 </div>
 
-      <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://travis-ci.org/ibarraespinosa/cptcity"><img src="https://travis-ci.org/ibarraespinosa/cptcity.svg?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="https://ci.apalettepveyor.com/project/ibarraespinosa/cptcity"><img src="https://ci.appveyor.com/api/projects/status/github/ibarraespinosa/cptcity?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
-<li><a href="https://zenodo.org/badge/latestdoi/120517547"><img src="https://zenodo.org/badge/120517547.svg" alt="DOI"></a></li>
-<li><a href="https://codecov.io/github/ibarraespinosa/cptcity?branch=master"><img src="https://codecov.io/gh/ibarraespinosa/cptcity/branch/master/graph/badge.svg" alt="Coverage status"></a></li>
-<li><a href="http://cran.rstudio.com/web/packages/cptcity/index.html"><img src="http://cranlogs.r-pkg.org/badges/cptcity"></a></li>
-<li><a href="http://www.rdocumentation.org/packages/cptcity"><img src="http://www.rdocumentation.org/badges/version/cptcity" alt="Rdoc"></a></li>
-<li><a href="http://cran.r-project.org/web/packages/cptcity"><img src="http://www.r-pkg.org/badges/version/cptcity" alt="CRAN_Status_Badge"></a></li>
-<li><a href="http://cran.r-project.org/package=cptcity"><img src="http://cranlogs.r-pkg.org/badges/grand-total/cptcity?color=orange" alt="CRAN Downloads"></a></li>
-</ul>
-</div>
-</div>
+      </div>
 
 </div>
 
