@@ -260,3 +260,7 @@ readLines(files[1])
 
 ```
 
+## Other insteresing packages
+
+- [paletter](https://github.com/AndreaCirilloAC/paletter/) To create colour paletter from images
+
