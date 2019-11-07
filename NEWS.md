@@ -1,26 +1,26 @@
 NEWS
 ===========
 
-## cptcity v1.0.3 (Release date: 2018-04-17)
+## cptcity v1.0.5 (Release date: 2019-11-07)
+
+### cptcity v1.0.5 (Release date: 2019-11-07)
+
+- Add argument frgb to change internal rgb composition
 
 ### cptcity v1.0.3 (Release date: 2018-04-17)
 
 - Add argument colorRampPalette to return this function
 
-## cptcity v1.0.2 (Release date: 2018-03-09)
 
 ### cptcity v1.0.2 (Release date: 2018-03-09)
 
 - Fix documentation
-
-## cptcity v1.0.1 (Release date: 2018-03-06)
 
 ### cptcity v1.0.1 (Release date: 2018-03-06)
 
 - Fix documentation
 - Included *lucky* function!
 
-## cptcity v1.0.0 (Release date: 2018-02-23)
 
 ### cptcity v1.0.0 (Release date: 2018-02-23)
 

@@ -5,7 +5,7 @@
 \title{Random colour gradient!}
 \usage{
 lucky(n = 100, colorRampPalette = FALSE, rev = FALSE,
-  message = TRUE, nseed)
+  message = TRUE, nseed, frgb = rep(1, 3))
 }
 \arguments{
 \item{n}{integer; number of colors}
@@ -18,6 +18,9 @@ lucky(n = 100, colorRampPalette = FALSE, rev = FALSE,
 
 \item{nseed}{integer; for reproducing the same colour gradient.
 See \code{\link{set.seed}}}
+
+\item{frgb}{Numeric; vector of 3 to change internal rgb composition
+The order is red, green, blue}
 }
 \value{
 A RANDOM colour palette function including name of the colour gradient
