@@ -10,8 +10,8 @@
 #' @param n integer; number of colors
 #' @param colorRampPalette Logical; to be used in sf and mapview.
 #' @param rev Logical; to internally revert order of rgb color vectors.
-#'
-#'
+#' @param frgb Numeric; vector of 3 to change internal rgb composition.
+#' The order is red, green, blue
 #' @return A colour palette function.
 #' @importFrom grDevices rgb colorRampPalette
 #' @export
@@ -32,10 +32,14 @@
 #'  scale_fill_gradientn(colours = cpt(n = 100))
 #' }
 #' }
-cpt <- function(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE, rev = FALSE){
+cpt <- function(pal = "mpl_inferno",
+                n = 100,
+                colorRampPalette = FALSE,
+                rev = FALSE,
+                frgb = rep(1, 3)){
   m <- sysdata[[pal]]
   if(rev) m <- m[nrow(m):1, ]
-  col <-  rgb(red = m$r, green = m$g, blue = m$b,
+  col <-  rgb(red = m$r*frgb[1], green = m$g*frgb[2], blue = m$b*frgb[3],
               maxColorValue = max(c(max(m$r, na.rm = T),
                                     max(m$g, na.rm = T),
                                     max(m$b, na.rm = T)))

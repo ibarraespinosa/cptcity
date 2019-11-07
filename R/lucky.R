@@ -12,7 +12,8 @@
 #' @param message Logical; for printing or not the name of the colour gradient
 #' @param nseed integer; for reproducing the same colour gradient.
 #' See \code{\link{set.seed}}
-#'
+#' @param frgb Numeric; vector of 3 to change internal rgb composition
+#' The order is red, green, blue
 #' @return A RANDOM colour palette function including name of the colour gradient
 #' and number.
 #' @importFrom grDevices rgb colorRampPalette
@@ -28,7 +29,12 @@
 #' image(matrix(1:100), col = lucky(rev = TRUE))
 #' image(matrix(1:100), col = lucky(nseed = 1))
 #' }
-lucky <- function(n = 100, colorRampPalette = FALSE, rev = FALSE, message = TRUE, nseed){
+lucky <- function(n = 100,
+                  colorRampPalette = FALSE,
+                  rev = FALSE,
+                  message = TRUE,
+                  nseed,
+                  frgb = rep(1, 3)){
   if(!missing(nseed)){
     set.seed(nseed)
     numero <- round(runif(n = 1L, min = 0, max = 7140))
@@ -40,8 +46,8 @@ lucky <- function(n = 100, colorRampPalette = FALSE, rev = FALSE, message = TRUE
 
   if(rev) m <- m[nrow(m):1, ]
 
-    col <-  rgb(red = m$r, green = m$g, blue = m$b,
-                maxColorValue = max(c(max(m$r, na.rm = T),
+  col <-  rgb(red = m$r*frgb[1], green = m$g*frgb[2], blue = m$b*frgb[3],
+              maxColorValue = max(c(max(m$r, na.rm = T),
                                       max(m$g, na.rm = T),
                                       max(m$b, na.rm = T)))
     )

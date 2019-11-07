@@ -5,7 +5,7 @@
 \title{Function to return colour palettes functions from 'cpt-city'}
 \usage{
 cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE,
-  rev = FALSE)
+  rev = FALSE, frgb = rep(1, 3))
 }
 \arguments{
 \item{pal}{Palette of colors available or the number of the position}
@@ -15,6 +15,9 @@ cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE,
 \item{colorRampPalette}{Logical; to be used in sf and mapview.}
 
 \item{rev}{Logical; to internally revert order of rgb color vectors.}
+
+\item{frgb}{Numeric; vector of 3 to change internal rgb composition.
+The order is red, green, blue}
 }
 \value{
 A colour palette function.
