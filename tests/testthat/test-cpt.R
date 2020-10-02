@@ -9,6 +9,9 @@ test_that("cpt works", {
   expect_equal(cpt(pal = "mpl_inferno",n =  10, colorRampPalette = TRUE)(1),
                c("#000004")
   )
+  expect_equal(cpt(pal = c("mpl_inferno", "mpl_viridis"),n =  10, colorRampPalette = TRUE)(1),
+               c("#000004")
+  )
 })
 
 test_that("cpt works", {
@@ -16,3 +19,4 @@ test_that("cpt works", {
                c("#FCFFA4")
   )
 })
+
