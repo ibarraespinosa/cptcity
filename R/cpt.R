@@ -21,6 +21,11 @@
 #' find_cpt("temperature")
 #' image(matrix(1:100), col = cpt("idv_temperature"))
 #' image(matrix(1:100), col = cpt("idv_temperature", rev = TRUE))
+#' # now you can select more than one palette!!!
+#' image(matrix(1:100),
+#'      col = cpt(pal = c("idv_temperature",
+#'                        "arendal_temperature"),
+#'                rev = TRUE))
 #' \dontrun{
 #' # Do not run
 #' library(ggplot2)
@@ -37,7 +42,13 @@ cpt <- function(pal = "mpl_inferno",
                 colorRampPalette = FALSE,
                 rev = FALSE,
                 frgb = rep(1, 3)){
-  m <- sysdata[[pal]]
+  if(length(pal) > 1) {
+    m <- as.data.frame(do.call("rbind",lapply(seq_along(pal), function(i){
+      sysdata[[pal[i]]]
+    })))
+  } else {
+    m <- sysdata[[pal]]
+  }
   if(rev) m <- m[nrow(m):1, ]
   col <-  rgb(red = m$r*frgb[1], green = m$g*frgb[2], blue = m$b*frgb[3],
               maxColorValue = max(c(max(m$r, na.rm = T),

@@ -1,7 +1,9 @@
 NEWS
 ===========
 
-## cptcity v1.0.5 (Release date: 2019-11-07)
+### cptcity v1.0.6 (Release date:  2020-10-02()
+
+- Add argument frgb to change internal rgb composition
 
 ### cptcity v1.0.5 (Release date: 2019-11-07)
 

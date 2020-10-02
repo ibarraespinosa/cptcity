@@ -4,8 +4,14 @@
 \alias{lucky}
 \title{Random colour gradient!}
 \usage{
-lucky(n = 100, colorRampPalette = FALSE, rev = FALSE,
-  message = TRUE, nseed, frgb = rep(1, 3))
+lucky(
+  n = 100,
+  colorRampPalette = FALSE,
+  rev = FALSE,
+  message = TRUE,
+  nseed,
+  frgb = rep(1, 3)
+)
 }
 \arguments{
 \item{n}{integer; number of colors}
