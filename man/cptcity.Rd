@@ -3,7 +3,6 @@
 \docType{package}
 \name{cptcity}
 \alias{cptcity}
-\alias{cptcity-package}
 \title{A package to return colour gradients from CPTCITY}
 \description{
 Colour palettes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html

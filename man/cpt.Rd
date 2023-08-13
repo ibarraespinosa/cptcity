@@ -4,8 +4,13 @@
 \alias{cpt}
 \title{Function to return colour palettes functions from 'cpt-city'}
 \usage{
-cpt(pal = "mpl_inferno", n = 100, colorRampPalette = FALSE,
-  rev = FALSE, frgb = rep(1, 3))
+cpt(
+  pal = "mpl_inferno",
+  n = 100,
+  colorRampPalette = FALSE,
+  rev = FALSE,
+  frgb = rep(1, 3)
+)
 }
 \arguments{
 \item{pal}{Palette of colors available or the number of the position}

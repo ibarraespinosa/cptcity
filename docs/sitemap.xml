@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/news/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cpt.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cpt_names.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cptcity.html</loc>
+  </url>
+  <url>
+    <loc>/reference/find_cpt.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lucky.html</loc>
+  </url>
+</urlset>

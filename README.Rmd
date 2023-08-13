@@ -28,13 +28,21 @@ There are three functions:
 
 Example:
 
-```r
+```{r}
 library(cptcity)
 find_cpt("radar")
-[1] "idv_radar_dbz_nws"    "idv_radar_dbz"        "idv_radar_reflect_24" "idv_radar_topo_mdr"  
-[5] "ncl_radar_1"          "ncl_radar"
-# try find_cpt("rain")
+
 ```
+
+
+2) `show_cpt`: Visually selectyour palette
+
+
+```{r}
+pals <- find_cpt("radar")
+show_cpt(pals)
+```
+
 
 
 2) `cpt`: To return the colour gradient.
