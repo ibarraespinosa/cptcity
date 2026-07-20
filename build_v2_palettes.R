@@ -1000,6 +1000,912 @@ misc[["misc_noir"]] <- qpal(c(
 ))
 
 # ══════════════════════════════════════════════════════════════════════════
+#  MUSIC GENRES
+# ══════════════════════════════════════════════════════════════════════════
+
+music <- list()
+
+music[["music_jazz"]] <- qpal(c(
+  "#1A0A0A", "#3A1A0A", "#C4A020",
+  "#E8C878", "#F0E0A0", "#C4A020",
+  "#8B5A2A", "#4A2A1A", "#1A0A0A"
+))
+
+music[["music_blues"]] <- qpal(c(
+  "#0A0A2A", "#1A1A4A", "#2A2A6B",
+  "#4A4A8B", "#C4A060", "#E8C878",
+  "#8B6B4A", "#4A3A2A", "#0A0A0A"
+))
+
+music[["music_rock"]] <- qpal(c(
+  "#0A0A0A", "#C4202A", "#E84545",
+  "#F4A0A0", "#0A0A0A", "#6B6B6B",
+  "#C4202A", "#8B0000", "#0A0A0A"
+))
+
+music[["music_metal"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#6B0000", "#8B0000", "#C4202A",
+  "#3A3A3A", "#1A1A1A", "#0A0A0A"
+))
+
+music[["music_punk"]] <- qpal(c(
+  "#FF1493", "#0A0A0A", "#FFD700",
+  "#0A0A0A", "#00CED1", "#0A0A0A",
+  "#C4202A", "#FFFFFF", "#0A0A0A"
+))
+
+music[["music_hip_hop"]] <- qpal(c(
+  "#0A0A0A", "#C4A020", "#E8D440",
+  "#F0E860", "#C4A020", "#8B6B20",
+  "#4A3A10", "#0A0A0A", "#C4A020"
+))
+
+music[["music_electronic"]] <- qpal(c(
+  "#0A002A", "#C400FF", "#FF00FF",
+  "#00FFFF", "#00FF00", "#FFD700",
+  "#FF00FF", "#C400FF", "#0A002A"
+))
+
+music[["music_techno"]] <- qpal(c(
+  "#0A0A0A", "#1A1A2A", "#3A3A5A",
+  "#FF00FF", "#00FFFF", "#FFD700",
+  "#3A3A5A", "#1A1A2A", "#0A0A0A"
+))
+
+music[["music_house"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF1493",
+  "#00CED1", "#32CD32", "#FFD700",
+  "#FF4500", "#FF1493", "#00CED1"
+))
+
+music[["music_drum_and_bass"]] <- qpal(c(
+  "#0A0A0A", "#1A2A3A", "#3A5A6B",
+  "#FFD700", "#FF4500", "#00CED1",
+  "#3A5A6B", "#1A2A3A", "#0A0A0A"
+))
+
+music[["music_reggae"]] <- qpal(c(
+  "#006B0A", "#00A020", "#FFD700",
+  "#C4202A", "#00A020", "#FFD700",
+  "#C4202A", "#006B0A", "#002A00"
+))
+
+music[["music_classical"]] <- qpal(c(
+  "#2A2A1A", "#4A3A2A", "#8B6B4A",
+  "#C4A080", "#E8D4C0", "#F0E8D8",
+  "#C4A080", "#8B6B4A", "#2A2A1A"
+))
+
+music[["music_bossa_nova"]] <- qpal(c(
+  "#2A4A2A", "#4A6B3A", "#8BA060",
+  "#C4D480", "#E8E8A0", "#C4D480",
+  "#8BA060", "#4A6B3A", "#2A3A2A"
+))
+
+music[["music_samba"]] <- qpal(c(
+  "#00A000", "#FFD700", "#00A000",
+  "#1E90FF", "#FFFFFF", "#FFD700",
+  "#00A000", "#FFD700", "#00A000"
+))
+
+music[["music_synthwave"]] <- qpal(c(
+  "#0A0020", "#2A0050", "#C400FF",
+  "#FF00FF", "#FF1493", "#FFD700",
+  "#FF00FF", "#6B00B0", "#0A0020"
+))
+
+music[["music_vaporwave"]] <- qpal(c(
+  "#FF71CE", "#01CDFE", "#05FFA1",
+  "#B967FF", "#FFFB96", "#01CDFE",
+  "#B967FF", "#FF71CE", "#01CDFE"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  ANIME
+# ══════════════════════════════════════════════════════════════════════════
+
+anime <- list()
+
+anime[["anime_studio_ghibli"]] <- qpal(c(
+  "#2A4A2A", "#4A8B4A", "#8BC4A0",
+  "#C4E0C0", "#F0E8D8", "#E8C8A0",
+  "#C4A060", "#8B6B3A", "#4A3A2A"
+))
+
+anime[["anime_evangelion"]] <- qpal(c(
+  "#9400D3", "#C400FF", "#00FF00",
+  "#FF4500", "#0A0A0A", "#C4202A",
+  "#9400D3", "#C400FF", "#0A0A0A"
+))
+
+anime[["anime_cowboy_bebop"]] <- qpal(c(
+  "#0A0A2A", "#1A2A4A", "#3A5A6B",
+  "#C4A060", "#E8C878", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#0A0A2A"
+))
+
+anime[["anime_dragon_ball"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#1E90FF",
+  "#FFFFFF", "#FF4500", "#FFD700",
+  "#00A000", "#FF4500", "#1E90FF"
+))
+
+anime[["anime_sailor_moon"]] <- qpal(c(
+  "#FF1493", "#FFFFFF", "#FFD700",
+  "#1E90FF", "#FF69B4", "#FF1493",
+  "#FFFFFF", "#FFD700", "#1E90FF"
+))
+
+anime[["anime_akira"]] <- qpal(c(
+  "#C4202A", "#E84545", "#F4A0A0",
+  "#0A0A0A", "#2A2A2A", "#8B8B8B",
+  "#C4202A", "#8B0000", "#0A0A0A"
+))
+
+anime[["anime_totoro"]] <- qpal(c(
+  "#4A6B4A", "#8BA06A", "#C4D48B",
+  "#E8E0A0", "#8B8B6B", "#6B6B4A",
+  "#4A4A3A", "#2A2A1A", "#1A1A0A"
+))
+
+anime[["anime_spirited_away"]] <- qpal(c(
+  "#C4202A", "#E8783A", "#F4A020",
+  "#FFD700", "#E8C8A0", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#2A2A1A"
+))
+
+anime[["anime_one_punch"]] <- qpal(c(
+  "#FFD700", "#C4202A", "#FFFFFF",
+  "#C4202A", "#FFD700", "#FFFFFF",
+  "#C4202A", "#1E90FF", "#FFD700"
+))
+
+anime[["anime_attack_titan"]] <- qpal(c(
+  "#4A3A2A", "#8B6B4A", "#C4A060",
+  "#C4202A", "#8B0000", "#4A3A2A",
+  "#6B6B4A", "#3A3A2A", "#1A1A0A"
+))
+
+anime[["anime_death_note"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#C4202A", "#8B0000", "#C4202A",
+  "#3A3A3A", "#1A1A1A", "#0A0A0A"
+))
+
+anime[["anime_your_name"]] <- qpal(c(
+  "#FF69B4", "#FFB6C1", "#FFFFFF",
+  "#87CEEB", "#FF4500", "#FF69B4",
+  "#87CEEB", "#FFB6C1", "#FFFFFF"
+))
+
+anime[["anime_naruto"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#1E90FF",
+  "#FF4500", "#FFD700", "#00A000",
+  "#FF4500", "#1E90FF", "#FFD700"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  CITIES
+# ══════════════════════════════════════════════════════════════════════════
+
+cities <- list()
+
+cities[["city_tokyo_neon"]] <- qpal(c(
+  "#0A0A1A", "#C400FF", "#FF00FF",
+  "#00FFFF", "#FF1493", "#FFD700",
+  "#FF00FF", "#C400FF", "#0A0A1A"
+))
+
+cities[["city_new_york"]] <- qpal(c(
+  "#1A2A3A", "#3A4A5A", "#6B7B8B",
+  "#C4A020", "#E8D440", "#F0E8C0",
+  "#8B8B83", "#4A4A3A", "#1A1A0A"
+))
+
+cities[["city_rio_de_janeiro"]] <- qpal(c(
+  "#00A000", "#00C420", "#FFD700",
+  "#1E90FF", "#FFFFFF", "#00A000",
+  "#FFD700", "#1E90FF", "#00C420"
+))
+
+cities[["city_paris"]] <- qpal(c(
+  "#2A3A4A", "#4A6B8B", "#8BB0C0",
+  "#C4A8A0", "#E8C8B0", "#F0E0D0",
+  "#C4A8A0", "#8B7B6B", "#2A3A4A"
+))
+
+cities[["city_marrakesh"]] <- qpal(c(
+  "#C4401A", "#E8783A", "#F4A020",
+  "#FFD700", "#E8C8A0", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#2A2A1A"
+))
+
+cities[["city_havana"]] <- qpal(c(
+  "#FF1493", "#FFD700", "#00CED1",
+  "#FF4500", "#F0E8C0", "#FFD700",
+  "#FF1493", "#00CED1", "#FF4500"
+))
+
+cities[["city_london"]] <- qpal(c(
+  "#2A2A2A", "#4A4A4A", "#8B8B8B",
+  "#C4202A", "#004C99", "#8B8B8B",
+  "#4A4A4A", "#2A2A2A", "#0A0A0A"
+))
+
+cities[["city_los_angeles"]] <- qpal(c(
+  "#FF1493", "#FFD700", "#FF4500",
+  "#1E90FF", "#FF69B4", "#00CED1",
+  "#FFD700", "#FF4500", "#FF1493"
+))
+
+cities[["city_berlin"]] <- qpal(c(
+  "#1A1A1A", "#3A3A3A", "#6B6B6B",
+  "#FFD700", "#C4202A", "#FFD700",
+  "#6B6B6B", "#3A3A3A", "#1A1A1A"
+))
+
+cities[["city_mumbai"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF1493",
+  "#FF6347", "#F4A020", "#FFD700",
+  "#FF4500", "#FF1493", "#FF6347"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  MYTHOLOGY
+# ══════════════════════════════════════════════════════════════════════════
+
+myth <- list()
+
+myth[["myth_norse"]] <- qpal(c(
+  "#0A2A4A", "#1A4A6B", "#2A6B8B",
+  "#4A8BA0", "#8B8B8B", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#0A0A0A"
+))
+
+myth[["myth_greek"]] <- qpal(c(
+  "#F0E8D8", "#E0D4C0", "#D0C0A8",
+  "#C0B098", "#B0A088", "#A09078",
+  "#908068", "#807058", "#706048"
+))
+
+myth[["myth_egyptian"]] <- qpal(c(
+  "#C4A020", "#E8D440", "#F0E860",
+  "#C49A4A", "#A08040", "#8B6B3A",
+  "#C4202A", "#8B0000", "#0A0A0A"
+))
+
+myth[["myth_aztec"]] <- qpal(c(
+  "#C4202A", "#E8783A", "#F4A020",
+  "#FFD700", "#00A000", "#C4A020",
+  "#E8783A", "#C4202A", "#0A0A0A"
+))
+
+myth[["myth_celtic"]] <- qpal(c(
+  "#0A2A0A", "#1A4A1A", "#2A6B2A",
+  "#4A8B4A", "#C4A060", "#E8C878",
+  "#8B6B4A", "#4A3A2A", "#0A0A0A"
+))
+
+myth[["myth_japanese"]] <- qpal(c(
+  "#C4202A", "#FFFFFF", "#0A0A0A",
+  "#C4202A", "#FFFFFF", "#C4A060",
+  "#8B6B4A", "#4A3A2A", "#0A0A0A"
+))
+
+myth[["myth_hindu"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF1493",
+  "#9400D3", "#1E90FF", "#00A000",
+  "#FF4500", "#FFD700", "#FF1493"
+))
+
+myth[["myth_native_american"]] <- qpal(c(
+  "#8B4513", "#CD853F", "#DEB887",
+  "#F5DEB3", "#D2691E", "#A0522D",
+  "#8B4513", "#6B3410", "#4A2008"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  SCIENTIFIC & MEDICAL
+# ══════════════════════════════════════════════════════════════════════════
+
+sci <- list()
+
+sci[["sci_thermal"]] <- qpal(c(
+  "#0A0A2A", "#0000FF", "#00FFFF",
+  "#00FF00", "#FFFF00", "#FF0000",
+  "#FF00FF", "#FFFFFF", "#FF0000"
+))
+
+sci[["sci_xray"]] <- qpal(c(
+  "#0A0A2A", "#1A2A4A", "#3A5A6B",
+  "#6B8B8B", "#8BA0A0", "#C0C0C0",
+  "#E0E0E0", "#F0F0FF", "#FFFFFF"
+))
+
+sci[["sci_petri_dish"]] <- qpal(c(
+  "#FF69B4", "#FF1493", "#FFB6C1",
+  "#F0E0D0", "#E8C8B0", "#D4B098",
+  "#C4A080", "#A08060", "#8B6B4A"
+))
+
+sci[["sci_spectrum"]] <- qpal(c(
+  "#8B00FF", "#0000FF", "#00FF00",
+  "#FFFF00", "#FF8C00", "#FF0000",
+  "#8B00FF", "#0000FF", "#00FF00"
+))
+
+sci[["sci_electromagnetic"]] <- qpal(c(
+  "#9400D3", "#0000FF", "#00FFFF",
+  "#00FF00", "#FFFF00", "#FFA500",
+  "#FF0000", "#C400FF", "#9400D3"
+))
+
+sci[["sci_dna"]] <- qpal(c(
+  "#C4202A", "#1E90FF", "#C4202A",
+  "#1E90FF", "#C4202A", "#1E90FF",
+  "#C4202A", "#1E90FF", "#C4202A"
+))
+
+sci[["sci_mri_rainbow"]] <- qpal(c(
+  "#0A0A2A", "#0000FF", "#00FFFF",
+  "#00A000", "#FFD700", "#FF0000",
+  "#00FFFF", "#0000FF", "#0A0A2A"
+))
+
+sci[["sci_microscope"]] <- qpal(c(
+  "#1A002A", "#3A0060", "#6B00A0",
+  "#C400FF", "#FF69B4", "#C400FF",
+  "#6B00A0", "#3A0060", "#1A002A"
+))
+
+sci[["sci_periodic_table"]] <- qpal(c(
+  "#FF0000", "#FF4500", "#FFD700",
+  "#00A000", "#1E90FF", "#004C99",
+  "#C4A020", "#808080", "#0A0A0A"
+))
+
+sci[["sci_cell_biology"]] <- qpal(c(
+  "#FF69B4", "#FF1493", "#FFB6C1",
+  "#00CED1", "#1E90FF", "#98FB98",
+  "#FFD700", "#FF69B4", "#FF1493"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  BRAZIL
+# ══════════════════════════════════════════════════════════════════════════
+
+brazil <- list()
+
+brazil[["brazil_carnival"]] <- qpal(c(
+  "#00A000", "#FFD700", "#1E90FF",
+  "#FFFFFF", "#FF1493", "#FFD700",
+  "#00A000", "#1E90FF", "#FF1493"
+))
+
+brazil[["brazil_amazon"]] <- qpal(c(
+  "#0A2A0A", "#005000", "#00A000",
+  "#00C420", "#8B6B20", "#6B4A10",
+  "#00A000", "#005000", "#0A2A0A"
+))
+
+brazil[["brazil_flag"]] <- qpal(c(
+  "#009C3B", "#FFDF00", "#009C3B",
+  "#002776", "#FFFFFF", "#009C3B",
+  "#FFDF00", "#002776", "#009C3B"
+))
+
+brazil[["brazil_bossa_nova"]] <- qpal(c(
+  "#4A6B4A", "#8BA06A", "#C4D48B",
+  "#F0E0C0", "#E8C8A0", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#2A2A1A"
+))
+
+brazil[["brazil_tropicalia"]] <- qpal(c(
+  "#FF1493", "#FFD700", "#00CED1",
+  "#FF4500", "#32CD32", "#FF69B4",
+  "#FFD700", "#FF4500", "#FF1493"
+))
+
+brazil[["brazil_oscar_niemeyer"]] <- qpal(c(
+  "#F8F8F8", "#E8E8E0", "#D0D0C8",
+  "#B8B8B0", "#A0A098", "#C0C0B8",
+  "#E0E0D8", "#F0F0E8", "#FFFFFF"
+))
+
+brazil[["brazil_ipanema"]] <- qpal(c(
+  "#FFD700", "#F4A020", "#E8783A",
+  "#1E90FF", "#00CED1", "#FFD700",
+  "#F4A020", "#E8783A", "#FFFFFF"
+))
+
+brazil[["brazil_pantanal"]] <- qpal(c(
+  "#1A4A2A", "#2A6B3A", "#4A8B4A",
+  "#8BC4A0", "#C4E0C0", "#F0E8D8",
+  "#E8C8A0", "#8B6B3A", "#2A4A2A"
+))
+
+brazil[["brazil_caatinga"]] <- qpal(c(
+  "#4A3A2A", "#8B6B4A", "#C49A6A",
+  "#D4B080", "#C4A060", "#8B6B4A",
+  "#6B5A3A", "#4A3A2A", "#2A2A1A"
+))
+
+brazil[["brazil_cerrado"]] <- qpal(c(
+  "#4A3A2A", "#8B5A2A", "#C4783A",
+  "#E8A838", "#FFD700", "#E8A838",
+  "#8B5A2A", "#4A3A2A", "#2A2A1A"
+))
+
+brazil[["brazil_sao_paulo"]] <- qpal(c(
+  "#1A1A1A", "#3A3A3A", "#6B6B6B",
+  "#A0A0A0", "#C4A020", "#E8D440",
+  "#A0A0A0", "#6B6B6B", "#1A1A1A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  FILMS
+# ══════════════════════════════════════════════════════════════════════════
+
+films <- list()
+
+films[["film_star_wars"]] <- qpal(c(
+  "#0A0A0A", "#1A2A4A", "#FFD700",
+  "#C4A020", "#C4202A", "#00A000",
+  "#1E90FF", "#FFD700", "#0A0A0A"
+))
+
+films[["film_jurassic_park"]] <- qpal(c(
+  "#0A2A0A", "#1A4A1A", "#2A6B2A",
+  "#C4A020", "#E8783A", "#C4202A",
+  "#2A6B2A", "#1A4A1A", "#0A0A0A"
+))
+
+films[["film_indiana_jones"]] <- qpal(c(
+  "#4A3A2A", "#8B6B4A", "#C49A6A",
+  "#D4B080", "#C4202A", "#8B0000",
+  "#C49A6A", "#8B6B4A", "#4A3A2A"
+))
+
+films[["film_alien"]] <- qpal(c(
+  "#0A0A0A", "#1A2A1A", "#2A4A2A",
+  "#4A6B4A", "#6B8B6B", "#4A6B4A",
+  "#2A4A2A", "#1A2A1A", "#0A0A0A"
+))
+
+films[["film_the_shining"]] <- qpal(c(
+  "#C4202A", "#E84545", "#F4A0A0",
+  "#FFFFFF", "#C4202A", "#8B0000",
+  "#4A2A1A", "#2A1A0A", "#0A0A0A"
+))
+
+films[["film_inception"]] <- qpal(c(
+  "#0A0A2A", "#1A2A4A", "#3A5A6B",
+  "#F4A020", "#FFD700", "#F4A020",
+  "#3A5A6B", "#1A2A4A", "#0A0A2A"
+))
+
+films[["film_mad_max"]] <- qpal(c(
+  "#F4A020", "#FFD700", "#E8783A",
+  "#C4401A", "#8B0000", "#0A0A0A",
+  "#1E90FF", "#00CED1", "#F4A020"
+))
+
+films[["film_interstellar"]] <- qpal(c(
+  "#0A0A0A", "#1A2A3A", "#3A5A6B",
+  "#6B8BA0", "#C4D4D4", "#F0E8D8",
+  "#3A5A6B", "#1A2A3A", "#0A0A0A"
+))
+
+films[["film_pulp_fiction"]] <- qpal(c(
+  "#C4202A", "#FFD700", "#0A0A0A",
+  "#FFFFFF", "#C4202A", "#FFD700",
+  "#0A0A0A", "#FFFFFF", "#C4202A"
+))
+
+films[["film_the_godfather"]] <- qpal(c(
+  "#0A0A0A", "#2A1A0A", "#4A2A1A",
+  "#8B0000", "#C4202A", "#8B0000",
+  "#4A2A1A", "#2A1A0A", "#0A0A0A"
+))
+
+films[["film_spirited_away"]] <- qpal(c(
+  "#C4202A", "#E8783A", "#F4A020",
+  "#FFD700", "#E8C8A0", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#2A2A1A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  GEMSTONES & MINERALS
+# ══════════════════════════════════════════════════════════════════════════
+
+gems <- list()
+
+gems[["gem_amethyst"]] <- qpal(c(
+  "#2A1A4A", "#4A2A6B", "#6B3A8B",
+  "#A060C4", "#C480E0", "#A060C4",
+  "#6B3A8B", "#4A2A6B", "#2A1A4A"
+))
+
+gems[["gem_emerald"]] <- qpal(c(
+  "#0A2A2A", "#005A4A", "#008B6A",
+  "#00C48B", "#00E8A0", "#00C48B",
+  "#008B6A", "#005A4A", "#0A2A2A"
+))
+
+gems[["gem_ruby"]] <- qpal(c(
+  "#2A0A0A", "#6B0000", "#8B0000",
+  "#C4202A", "#E84545", "#C4202A",
+  "#8B0000", "#6B0000", "#2A0A0A"
+))
+
+gems[["gem_sapphire"]] <- qpal(c(
+  "#0A0A2A", "#00006B", "#00008B",
+  "#1E40C4", "#1E6BE8", "#1E40C4",
+  "#00008B", "#00006B", "#0A0A2A"
+))
+
+gems[["gem_obsidian"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#2A2A2A",
+  "#4A004A", "#6B006B", "#4A004A",
+  "#2A2A2A", "#1A1A1A", "#0A0A0A"
+))
+
+gems[["gem_opal"]] <- qpal(c(
+  "#FF69B4", "#00CED1", "#FFD700",
+  "#FFFFFF", "#FF69B4", "#00CED1",
+  "#FFD700", "#FFFFFF", "#FF69B4"
+))
+
+gems[["gem_topaz"]] <- qpal(c(
+  "#FFD700", "#F4A020", "#E8783A",
+  "#FFD700", "#F4A020", "#E8783A",
+  "#FFD700", "#F4A020", "#E8783A"
+))
+
+gems[["gem_turquoise"]] <- qpal(c(
+  "#00CED1", "#20B2AA", "#3CB371",
+  "#00CED1", "#48D1CC", "#00CED1",
+  "#20B2AA", "#3CB371", "#00CED1"
+))
+
+gems[["gem_citrine"]] <- qpal(c(
+  "#FFD700", "#FFC107", "#FFB300",
+  "#FFA000", "#FF8F00", "#FFA000",
+  "#FFB300", "#FFC107", "#FFD700"
+))
+
+gems[["gem_malachite"]] <- qpal(c(
+  "#0A2A0A", "#005020", "#008030",
+  "#00C450", "#00E860", "#00C450",
+  "#008030", "#005020", "#0A2A0A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  WEATHER
+# ══════════════════════════════════════════════════════════════════════════
+
+weather <- list()
+
+weather[["weather_hurricane"]] <- qpal(c(
+  "#0A0A2A", "#1A2A6B", "#2A5A8B",
+  "#E8783A", "#C4401A", "#F4A020",
+  "#2A5A8B", "#1A2A5A", "#0A0A2A"
+))
+
+weather[["weather_rainbow"]] <- qpal(c(
+  "#FF0000", "#FF7F00", "#FFFF00",
+  "#00FF00", "#0000FF", "#4B0082",
+  "#9400D3", "#FF0000", "#FF7F00"
+))
+
+weather[["weather_blizzard"]] <- qpal(c(
+  "#FFFFFF", "#F0F0FF", "#E0E8FF",
+  "#C0D0F0", "#A0C0E0", "#C0D0F0",
+  "#E0E8FF", "#F0F0FF", "#FFFFFF"
+))
+
+weather[["weather_fog"]] <- qpal(c(
+  "#C0C0C0", "#B0B0B0", "#A0A0A0",
+  "#909090", "#808080", "#909090",
+  "#A0A0A0", "#B0B0B0", "#C0C0C0"
+))
+
+weather[["weather_lightning_storm"]] <- qpal(c(
+  "#0A0A1A", "#2A2A4A", "#6B6B8B",
+  "#F8F8FF", "#FFFFFF", "#FFD700",
+  "#6B6B8B", "#2A2A4A", "#0A0A1A"
+))
+
+weather[["weather_twilight"]] <- qpal(c(
+  "#0A0A2A", "#1A0040", "#C4401A",
+  "#E8783A", "#FF69B4", "#9400D3",
+  "#4A00A0", "#1A0050", "#0A0A2A"
+))
+
+weather[["weather_desert_heat"]] <- qpal(c(
+  "#FFD700", "#F4A020", "#E8783A",
+  "#C4401A", "#FFD700", "#F4A020",
+  "#E8783A", "#C4401A", "#8B0000"
+))
+
+weather[["weather_ocean_storm"]] <- qpal(c(
+  "#0A2A4A", "#004080", "#0060A0",
+  "#FFFFFF", "#C0D0E0", "#FFFFFF",
+  "#0060A0", "#004080", "#0A2A4A"
+))
+
+weather[["weather_sunrise"]] <- qpal(c(
+  "#0A0A2A", "#2A0050", "#C4401A",
+  "#E8783A", "#F4A020", "#FFD700",
+  "#FF69B4", "#FFB6C1", "#FFFFFF"
+))
+
+weather[["weather_fire_sky"]] <- qpal(c(
+  "#0A0A0A", "#2A0A0A", "#C4401A",
+  "#E8783A", "#F4A020", "#E8783A",
+  "#C4401A", "#6B1A0A", "#0A0A0A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  COMICS & MANGA
+# ══════════════════════════════════════════════════════════════════════════
+
+comics <- list()
+
+comics[["comics_marvel"]] <- qpal(c(
+  "#C4202A", "#FFFFFF", "#004C99",
+  "#C4202A", "#FFD700", "#C4202A",
+  "#FFFFFF", "#004C99", "#C4202A"
+))
+
+comics[["comics_dc"]] <- qpal(c(
+  "#004C99", "#1E90FF", "#C4202A",
+  "#FFD700", "#004C99", "#1E90FF",
+  "#C4202A", "#FFD700", "#004C99"
+))
+
+comics[["comics_watchmen"]] <- qpal(c(
+  "#FFD700", "#000000", "#FFD700",
+  "#C4A020", "#8B0000", "#000000",
+  "#FFD700", "#000000", "#FFD700"
+))
+
+comics[["comics_sin_city"]] <- qpal(c(
+  "#FFFFFF", "#C0C0C0", "#808080",
+  "#C4202A", "#FFD700", "#C4202A",
+  "#808080", "#C0C0C0", "#FFFFFF"
+))
+
+comics[["comics_manga_panel"]] <- qpal(c(
+  "#FFFFFF", "#E0E0E0", "#C0C0C0",
+  "#A0A0A0", "#808080", "#606060",
+  "#404040", "#202020", "#000000"
+))
+
+comics[["comics_hellboy"]] <- qpal(c(
+  "#C4202A", "#E84545", "#F4A020",
+  "#0A0A0A", "#3A3A3A", "#C4202A",
+  "#E84545", "#8B0000", "#0A0A0A"
+))
+
+comics[["comics_tintin"]] <- qpal(c(
+  "#1E90FF", "#FFFFFF", "#C4202A",
+  "#FFD700", "#1E90FF", "#FFFFFF",
+  "#00A000", "#1E90FF", "#FFFFFF"
+))
+
+comics[["comics_calvin_hobbes"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#0A0A0A",
+  "#FFFFFF", "#FF4500", "#FFD700",
+  "#00A000", "#FFFFFF", "#FF4500"
+))
+
+comics[["comics_asterix"]] <- qpal(c(
+  "#C4202A", "#004C99", "#FFFFFF",
+  "#FFD700", "#00A000", "#C4202A",
+  "#004C99", "#FFFFFF", "#FFD700"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  FOOD & DRINK
+# ══════════════════════════════════════════════════════════════════════════
+
+food <- list()
+
+food[["food_coffee"]] <- qpal(c(
+  "#2A1A0A", "#4A2A1A", "#6B3A2A",
+  "#8B5A3A", "#A06B4A", "#8B5A3A",
+  "#6B3A2A", "#4A2A1A", "#2A1A0A"
+))
+
+food[["food_wine"]] <- qpal(c(
+  "#2A0A0A", "#4A1A1A", "#6B2A2A",
+  "#8B1A3A", "#6B0A2A", "#4A0A1A",
+  "#8B1A3A", "#6B2A2A", "#2A0A0A"
+))
+
+food[["food_sushi"]] <- qpal(c(
+  "#FF4500", "#FFFFFF", "#00A000",
+  "#FFD700", "#FF4500", "#FFFFFF",
+  "#FF69B4", "#FF4500", "#00A000"
+))
+
+food[["food_tropical"]] <- qpal(c(
+  "#FFD700", "#FF4500", "#FF1493",
+  "#00A000", "#FFD700", "#FF4500",
+  "#FF1493", "#00CED1", "#FFD700"
+))
+
+food[["food_pizza"]] <- qpal(c(
+  "#C4A060", "#D4B080", "#E8C8A0",
+  "#C4202A", "#FFFFFF", "#C4202A",
+  "#C4A060", "#8B6B4A", "#4A3A2A"
+))
+
+food[["food_matcha"]] <- qpal(c(
+  "#4A8B4A", "#6BA86B", "#8BC48B",
+  "#A0D8A0", "#C4E8C4", "#A0D8A0",
+  "#6BA86B", "#4A8B4A", "#2A5A2A"
+))
+
+food[["food_chocolate"]] <- qpal(c(
+  "#2A1A0A", "#4A2A1A", "#6B3A2A",
+  "#8B5A3A", "#6B3A2A", "#4A2A1A",
+  "#8B5A3A", "#C4A080", "#E8D4C0"
+))
+
+food[["food_berries"]] <- qpal(c(
+  "#8B0000", "#C4202A", "#9400D3",
+  "#FF1493", "#C4202A", "#8B0000",
+  "#9400D3", "#FF69B4", "#FF1493"
+))
+
+food[["food_citrus"]] <- qpal(c(
+  "#FFD700", "#FFA500", "#FF4500",
+  "#00A000", "#FFD700", "#FFA500",
+  "#FF4500", "#00CED1", "#FFD700"
+))
+
+food[["food_bbq"]] <- qpal(c(
+  "#2A0A0A", "#6B1A0A", "#C4401A",
+  "#E8783A", "#F4A020", "#C4401A",
+  "#6B1A0A", "#2A0A0A", "#0A0A0A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  ICONIC ALBUMS
+# ══════════════════════════════════════════════════════════════════════════
+
+albums <- list()
+
+albums[["album_dark_side"]] <- qpal(c(
+  "#0A0A0A", "#FFFFFF", "#0A0A0A",
+  "#C4202A", "#FFD700", "#00A000",
+  "#004C99", "#FFFFFF", "#0A0A0A"
+))
+
+albums[["album_abbey_road"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#6B6B6B", "#A0A0A0", "#C0C0C0",
+  "#6B6B6B", "#3A3A3A", "#0A0A0A"
+))
+
+albums[["album_unknown_pleasures"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#2A2A2A",
+  "#FFFFFF", "#E0E0E0", "#FFFFFF",
+  "#2A2A2A", "#1A1A1A", "#0A0A0A"
+))
+
+albums[["album_purple_rain"]] <- qpal(c(
+  "#9400D3", "#C400FF", "#6B00B0",
+  "#FF1493", "#C400FF", "#9400D3",
+  "#FFD700", "#C400FF", "#9400D3"
+))
+
+albums[["album_nevermind"]] <- qpal(c(
+  "#1E90FF", "#00CED1", "#0A0A0A",
+  "#FFD700", "#1E90FF", "#00CED1",
+  "#0A0A0A", "#1E90FF", "#00CED1"
+))
+
+albums[["album_ok_computer"]] <- qpal(c(
+  "#FFFFFF", "#C0C0C0", "#808080",
+  "#1E90FF", "#C4202A", "#1E90FF",
+  "#808080", "#C0C0C0", "#FFFFFF"
+))
+
+albums[["album_rumours"]] <- qpal(c(
+  "#0A0A0A", "#FFFFFF", "#C4A060",
+  "#F0E8D8", "#E8D4C0", "#C4A060",
+  "#FFFFFF", "#0A0A0A", "#C4A060"
+))
+
+albums[["album_thriller"]] <- qpal(c(
+  "#FFFFFF", "#C4202A", "#FFD700",
+  "#C4202A", "#FFFFFF", "#0A0A0A",
+  "#C4202A", "#FFD700", "#FFFFFF"
+))
+
+albums[["album_random_access"]] <- qpal(c(
+  "#0A0A0A", "#C0C0C0", "#FFD700",
+  "#FF4500", "#C0C0C0", "#0A0A0A",
+  "#FFD700", "#C0C0C0", "#0A0A0A"
+))
+
+albums[["album_velvet_underground"]] <- qpal(c(
+  "#FFD700", "#F4A020", "#C4A020",
+  "#0A0A0A", "#FFD700", "#0A0A0A",
+  "#F4A020", "#C4A020", "#0A0A0A"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
+#  PHOTOGRAPHY FILM STOCKS
+# ══════════════════════════════════════════════════════════════════════════
+
+photo <- list()
+
+photo[["photo_kodachrome"]] <- qpal(c(
+  "#C4202A", "#E8783A", "#F4A020",
+  "#FFD700", "#E8C8A0", "#C4A060",
+  "#8B6B3A", "#4A3A2A", "#2A2A1A"
+))
+
+photo[["photo_fuji_velvia"]] <- qpal(c(
+  "#2A4A2A", "#4A8B4A", "#00A0A0",
+  "#1E90FF", "#C4A020", "#F4A020",
+  "#E8783A", "#6B4A2A", "#2A2A1A"
+))
+
+photo[["photo_tri_x"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#6B6B6B", "#A0A0A0", "#C0C0C0",
+  "#6B6B6B", "#3A3A3A", "#0A0A0A"
+))
+
+photo[["photo_ilford_hp5"]] <- qpal(c(
+  "#1A1A1A", "#2A2A2A", "#4A4A4A",
+  "#6B6B6B", "#8B8B8B", "#6B6B6B",
+  "#4A4A4A", "#2A2A2A", "#1A1A1A"
+))
+
+photo[["photo_portra"]] <- qpal(c(
+  "#F0D8C0", "#E8C8B0", "#D4B098",
+  "#C4A080", "#D4B098", "#E8C8B0",
+  "#F0D8C0", "#F8E8D8", "#FFF0E8"
+))
+
+photo[["photo_ektachrome"]] <- qpal(c(
+  "#004C99", "#1E90FF", "#00CED1",
+  "#C4A020", "#F4A020", "#E8783A",
+  "#C4202A", "#8B0000", "#2A0A0A"
+))
+
+photo[["photo_daguerreotype"]] <- qpal(c(
+  "#C4A080", "#B09070", "#A08060",
+  "#908050", "#807040", "#908050",
+  "#A08060", "#B09070", "#C4A080"
+))
+
+photo[["photo_cyanotype"]] <- qpal(c(
+  "#FFFFFF", "#E0E8F0", "#C0D0E0",
+  "#4A8BB8", "#1A5A9B", "#0A2A6B",
+  "#4A8BB8", "#C0D0E0", "#FFFFFF"
+))
+
+photo[["photo_lomography"]] <- qpal(c(
+  "#FF1493", "#FF4500", "#FFD700",
+  "#00A000", "#1E90FF", "#FF1493",
+  "#FF4500", "#FFD700", "#00A000"
+))
+
+photo[["photo_polaroid"]] <- qpal(c(
+  "#FFFFFF", "#F8F0E0", "#F0E0C0",
+  "#E8D4A0", "#F0E0C0", "#F8F0E0",
+  "#FFFFFF", "#E0E0E0", "#C0C0C0"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
 #  ASSEMBLE ALL NEW PALETTES
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -1015,7 +1921,20 @@ all_categories <- list(
   tv     = tv,
   era    = era,
   nature = nature,
-  misc   = misc
+  misc   = misc,
+  music  = music,
+  anime  = anime,
+  cities = cities,
+  myth   = myth,
+  sci    = sci,
+  brazil = brazil,
+  films  = films,
+  gems   = gems,
+  weather = weather,
+  comics = comics,
+  food   = food,
+  albums = albums,
+  photo  = photo
 )
 
 new_palettes <- list()
