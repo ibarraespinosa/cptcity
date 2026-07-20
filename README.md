@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cptcity <img src="README_files/figure-gfm/hero_banner.png" align="right" width="50%" />
+# cptcity <img src="man/figures/hero_banner.png" align="right" width="50%" alt="cptcity hero banner" />
 
 **7,489 colour palettes for R — from scientific gradients to the
 Spider-Verse.**
@@ -35,7 +35,7 @@ albums, photography, and the entire **Spider-Verse.**
 
 <p align="center">
 
-<img src="README_files/figure-gfm/category_grid.png" width="100%" alt="All 12 categories" />
+<img src="man/figures/category_grid.png" width="100%" alt="All 12 categories grid" />
 </p>
 
 ------------------------------------------------------------------------
@@ -66,7 +66,11 @@ show_cpt(find_cpt("spider_miles"))
 
 ## 🕷️ Spider-Verse Spotlight — 63 Palettes. Every Dimension.
 
-![](README_files/figure-gfm/spider_showcase.png)
+<figure>
+<img src="man/figures/spider_showcase.png"
+alt="Spider-Verse Showcase" />
+<figcaption aria-hidden="true">Spider-Verse Showcase</figcaption>
+</figure>
 
 > *“What’s up, danger?”*
 >
@@ -83,7 +87,7 @@ show_cpt(find_cpt("spider_miles"))
 | `spider_miles_graffiti` | **Brooklyn Street Art** — spray-can magenta, electric cyan, subway tagger glow |
 | `spider_earth_1610` | **Earth-1610** — Miles’ home dimension, halftone dots, vibrant urban comic culture |
 | `spider_brooklyn` | **Brooklyn Skyline** — brownstone brick, evening purple, street lamp gold |
-| `spider_prowler` | **The Prowler (Uncle Aaron)** |
+| `spider_prowler` | **The Prowler (Uncle Aaron)** — sinister predator purple, green claw glare, menacing shadow |
 
 ``` r
 library(cptcity)
@@ -184,7 +188,11 @@ image(matrix(1:100), col = cpt("spider_miles_morales"), main = "Spider-Miles Ste
 
 ------------------------------------------------------------------------
 
-![](README_files/figure-gfm/spider_dimensions.png)
+<figure>
+<img src="man/figures/spider_dimensions.png"
+alt="Spider-Verse Dimensions" />
+<figcaption aria-hidden="true">Spider-Verse Dimensions</figcaption>
+</figure>
 
 **Every world has its own colour language.** That’s the genius of the
 Spider-Verse films — and why these palettes exist. Earth-65 breathes in
@@ -197,21 +205,30 @@ cyber-blue. The Web of Destiny glows gold against infinite black.
 
 ### 🎮 Games
 
-![](README_files/figure-gfm/games_showcase.png)
+<figure>
+<img src="man/figures/games_showcase.png" alt="Games Showcase" />
+<figcaption aria-hidden="true">Games Showcase</figcaption>
+</figure>
 
 Street Fighter, Pac-Man, Tetris, Mario, Zelda, Metroid, Sonic, Doom,
 Portal — arcade history in colour.
 
 ### 🚀 Space agencies
 
-![](README_files/figure-gfm/space_showcase.png)
+<figure>
+<img src="man/figures/space_showcase.png" alt="Space Showcase" />
+<figcaption aria-hidden="true">Space Showcase</figcaption>
+</figure>
 
 NASA, NOAA, JAXA, ESA, SpaceX, Roscosmos. Plus Hubble, JWST, Mars Rover,
 Apollo, Voyager.
 
 ### 🎨 Art movements
 
-![](README_files/figure-gfm/art_showcase.png)
+<figure>
+<img src="man/figures/art_showcase.png" alt="Art Showcase" />
+<figcaption aria-hidden="true">Art Showcase</figcaption>
+</figure>
 
 16 movements: Impressionism (Monet), Van Gogh, Cubism (Picasso),
 Surrealism (Dalí), Kandinsky, Mondrian, Pop Art (Warhol), Expressionism
@@ -220,7 +237,10 @@ Renaissance, Rococo.
 
 ### ⏳ Decades timeline
 
-![](README_files/figure-gfm/decades_timeline.png)
+<figure>
+<img src="man/figures/decades_timeline.png" alt="Decades Timeline" />
+<figcaption aria-hidden="true">Decades Timeline</figcaption>
+</figure>
 
 From 1920s Gatsby to 2020s gradient design. Each era’s aesthetic
 distilled into a colour ramp.
