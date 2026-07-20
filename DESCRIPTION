@@ -23,6 +23,7 @@ Encoding: UTF-8
 LazyData: true
 Suggests:
     covr,
+    sf,
     testthat
 Date: 2026-07-20
 Config/roxygen2/version: 8.0.0

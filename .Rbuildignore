@@ -7,4 +7,4 @@
 ^docs$
 ^codecov\.yml$
 ^README.md$
-^build_v2_palettes\.R$
+^README_files$
