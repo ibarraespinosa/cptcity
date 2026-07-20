@@ -1,6 +1,21 @@
 NEWS
 ===========
 
+### cptcity v2.0.0 (Release date: 2026-07-20)
+
+- **148 new colour palettes** spanning 12 thematic categories:
+  Art Movements (15), Architecture (12), Decades (18), Books (14),
+  Cyberpunk (7), Space Agencies (14), Cinema (8), Video Games (18),
+  TV & Era (8), Historical Eras (9), Nature (14), Miscellaneous (11).
+- **Total palettes: 7288** (up from 7140).
+- Palette highlights: `cyber_2077_night_city`, `space_nasa`,
+  `game_street_fighter_ryu`, `nature_aurora_borealis`,
+  `decade_1980s_synthwave`, `book_dune_arrakis`, `art_impressionism_monet`,
+  `arch_fallingwater_wright`, `tv_stranger_things`.
+- All new palettes prefixed by category (`art_`, `arch_`, `decade_`, etc.)
+  for easy discovery with `find_cpt()`.
+- Generation script at `build_v2_palettes.R` for reproducibility.
+
 ### cptcity v1.1.1 (Release date: 2026-07-20)
 
 - **URL:** cpt-city archive moved from `soliton.vm.bytemark.co.uk` to `phillips.shef.ac.uk`. All documentation updated.

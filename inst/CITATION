@@ -1,13 +1,12 @@
 citHeader("If you want to cite the cptcity R package, please use:")
-year <- 2018
-# note <- sprintf("R package version %s", meta$Version)
+year <- 2026
 
 citEntry(entry = "Manual",
-         title   = "cptcity: incorporating the cpt-city archive into R",
+         title   = "cptcity: 'cpt-city' colour gradients for R",
          author  = "Sergio Ibarra-Espinosa",
          year    = "2017",
-         note    = "Colour gradients from https://phillips.shef.ac.uk/pub/cpt-city/",
-         url     = "https://CRAN.R-project.org/package=vein",
+         note    = sprintf("R package version %s. Colour gradients from https://phillips.shef.ac.uk/pub/cpt-city/", meta$Version),
+         url     = "https://CRAN.R-project.org/package=cptcity",
          textVersion =
-           paste("Sergio Ibarra-Espinosa (2018) cptcity: incorporating the cpt-city archive into R. R package version 1.0.0. https://CRAN.R-project.org/package=cptcity")
+           paste("Sergio Ibarra-Espinosa (2026) cptcity: incorporating the cpt-city archive into R. R package version 2.0.0. https://CRAN.R-project.org/package=cptcity")
 )
