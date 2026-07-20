@@ -3,6 +3,7 @@ NEWS
 
 ### cptcity v1.1.1 (Release date: 2026-07-20)
 
+- **URL:** cpt-city archive moved from `soliton.vm.bytemark.co.uk` to `phillips.shef.ac.uk`. All documentation updated.
 - **`cpt()`:** added error message for unknown palette names.
 - **`cpt()`:** improved documentation explaining `colorRampPalette` vs character-vector return — `sf` users need `colorRampPalette = TRUE`.
 - **`find_cpt()`:** now case-insensitive by default (`ignore.case = TRUE`). Added `fixed` argument for literal (non-regex) matching.

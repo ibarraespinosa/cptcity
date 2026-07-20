@@ -2,7 +2,7 @@
 #'
 #' @description
 #' Incorporates 7140 colour gradients from the
-#' \href{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}{cpt-city web archive}
+#' \href{https://phillips.shef.ac.uk/pub/cpt-city/}{cpt-city web archive}
 #' into R. Each palette is stored as a \code{data.frame} with columns
 #' \code{id}, \code{r}, \code{g}, \code{b}.
 #'

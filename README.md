@@ -21,7 +21,7 @@ Downloads](http://cranlogs.r-pkg.org/badges/grand-total/cptcity?color=orange)](h
 ## A package to return colour gradients from CPTCITY
 
 Colour palettes comes from
-<http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html>
+<https://phillips.shef.ac.uk/pub/cpt-city/index.html>
 
 Currently there are 7140 colour gradients. To se the names type
 `cpt_names`.

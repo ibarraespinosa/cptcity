@@ -8,7 +8,7 @@ Authors@R: c(
         email = "sergio.ibarra-espinosa@noaa.gov",
         comment = c(ORCID = "0000-0002-3162-1905"))) 
 Description: Incorporates colour gradients from the 'cpt-city' web archive
-    available at <http://soliton.vm.bytemark.co.uk/pub/cpt-city/>. Provides
+    available at <https://phillips.shef.ac.uk/pub/cpt-city/>. Provides
     functions to search, preview, and return colour palettes as either
     interpolated hex vectors or colorRampPalette functions for use with
     base graphics, ggplot2, and sf.

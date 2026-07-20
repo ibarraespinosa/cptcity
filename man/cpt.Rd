@@ -43,7 +43,7 @@ A character vector of hex colours (length \code{n}) when
 database and returns either a character vector of \code{n} interpolated
 hex colours or the underlying \code{\link[grDevices]{colorRampPalette}}
 function itself. The package ships 7140 colour gradients from
-\url{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}.
+\url{https://phillips.shef.ac.uk/pub/cpt-city/}.
 }
 \details{
 **`sf` / `ggplot2` users:** use \code{colorRampPalette = TRUE}.

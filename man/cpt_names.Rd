@@ -8,7 +8,7 @@
 A character vector of length 7140.
 }
 \source{
-\url{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}
+\url{https://phillips.shef.ac.uk/pub/cpt-city/}
 }
 \usage{
 data(cpt_names)
