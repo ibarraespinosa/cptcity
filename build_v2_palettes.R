@@ -2147,6 +2147,158 @@ spider[["spider_silk"]] <- qpal(c(
   "#E0D0F0", "#F0E8F8", "#FFFFFF"
 ))
 
+# ── More Characters & Worlds ──────────────────────────────────────────────
+
+spider[["spider_prowler"]] <- qpal(c(
+  "#9400D3", "#6B00A0", "#0A0A0A",
+  "#C400FF", "#FF00FF", "#C400FF",
+  "#9400D3", "#0A0A0A", "#6B00A0"
+))
+
+spider[["spider_prowler_earth42"]] <- qpal(c(
+  "#C4202A", "#8B0000", "#0A0A0A",
+  "#9400D3", "#C400FF", "#9400D3",
+  "#C4202A", "#0A0A0A", "#8B0000"
+))
+
+spider[["spider_rio_morales"]] <- qpal(c(
+  "#FF69B4", "#FF1493", "#FFB6C1",
+  "#FFD700", "#F4A020", "#FF69B4",
+  "#FF1493", "#FFB6C1", "#FFFFFF"
+))
+
+spider[["spider_jefferson_davis"]] <- qpal(c(
+  "#1A2A4A", "#004C99", "#1E90FF",
+  "#00CED1", "#1A2A4A", "#C0C0C0",
+  "#004C99", "#1E90FF", "#0A0A1A"
+))
+
+spider[["spider_aunt_may"]] <- qpal(c(
+  "#F0E0D0", "#E8D4C0", "#D4B898",
+  "#C4A080", "#D4B898", "#E8D4C0",
+  "#F0E0D0", "#F8F0E8", "#FFFFFF"
+))
+
+spider[["spider_jessica_drew"]] <- qpal(c(
+  "#FFD700", "#F4A020", "#00A000",
+  "#00C420", "#FFD700", "#FFFFFF",
+  "#00A000", "#FFD700", "#F4A020"
+))
+
+spider[["spider_peter_b_parker"]] <- qpal(c(
+  "#C4202A", "#8B6B6B", "#A09080",
+  "#C4B0A0", "#C4202A", "#1E90FF",
+  "#C4B0A0", "#8B6B6B", "#C4202A"
+))
+
+spider[["spider_mayday"]] <- qpal(c(
+  "#FF69B4", "#FFB6C1", "#FFFFFF",
+  "#FFD700", "#FF69B4", "#1E90FF",
+  "#FFB6C1", "#FFFFFF", "#FFD700"
+))
+
+spider[["spider_web_of_destiny"]] <- qpal(c(
+  "#0A0A0A", "#1A1A2A", "#C4A020",
+  "#FFD700", "#F0E8C0", "#FFD700",
+  "#C4A020", "#1A1A2A", "#0A0A0A"
+))
+
+spider[["spider_great_web"]] <- qpal(c(
+  "#0A0A1A", "#2A2A4A", "#C4A020",
+  "#E8D440", "#F0E860", "#E8D440",
+  "#C4A020", "#2A2A4A", "#0A0A1A"
+))
+
+spider[["spider_spider_society"]] <- qpal(c(
+  "#FF4500", "#C4A020", "#FFD700",
+  "#0A0A0A", "#1A2A4A", "#FF4500",
+  "#C4A020", "#FFD700", "#0A0A0A"
+))
+
+spider[["spider_portal"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF8C00",
+  "#FF6347", "#F0E860", "#FFD700",
+  "#FF8C00", "#FF4500", "#FFD700"
+))
+
+spider[["spider_gwen_world"]] <- qpal(c(
+  "#FF69B4", "#FFB6C1", "#E8D0E8",
+  "#FFFFFF", "#00CED1", "#87CEEB",
+  "#FF69B4", "#E8D0E8", "#FFFFFF"
+))
+
+spider[["spider_brooklyn"]] <- qpal(c(
+  "#4A3A2A", "#8B6B4A", "#C4202A",
+  "#1E90FF", "#6B4A3A", "#C4A080",
+  "#8B6B4A", "#4A3A2A", "#2A2A1A"
+))
+
+spider[["spider_alchemax"]] <- qpal(c(
+  "#00A000", "#00C420", "#0A2A0A",
+  "#C0C0C0", "#E0E0E0", "#C0C0C0",
+  "#00A000", "#0A2A0A", "#00C420"
+))
+
+spider[["spider_collider"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#C400FF",
+  "#FF00FF", "#00FFFF", "#FF00FF",
+  "#C400FF", "#FFD700", "#FF4500"
+))
+
+spider[["spider_spot_ascended"]] <- qpal(c(
+  "#FFFFFF", "#0A0A0A", "#FFFFFF",
+  "#0A0A0A", "#FFFFFF", "#0A0A0A",
+  "#FFFFFF", "#0A0A0A", "#FFFFFF"
+))
+
+spider[["spider_spider_cat"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#0A0A0A",
+  "#FFFFFF", "#FF69B4", "#FF4500",
+  "#FFD700", "#0A0A0A", "#FFFFFF"
+))
+
+spider[["spider_scorpion"]] <- qpal(c(
+  "#0A2A0A", "#006B00", "#00A000",
+  "#8B8B0A", "#C4A020", "#8B8B0A",
+  "#00A000", "#006B00", "#0A2A0A"
+))
+
+spider[["spider_tombstone"]] <- qpal(c(
+  "#C0C0C0", "#A0A0A0", "#808080",
+  "#FFFFFF", "#E0E0E0", "#FFFFFF",
+  "#808080", "#A0A0A0", "#C0C0C0"
+))
+
+spider[["spider_ben_reilly_sensational"]] <- qpal(c(
+  "#1E90FF", "#004C99", "#FFD700",
+  "#C4A020", "#1E90FF", "#004C99",
+  "#FFD700", "#C4A020", "#FFD700"
+))
+
+spider[["spider_go_home_machine"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF8C00",
+  "#FFFFFF", "#FFD700", "#FF8C00",
+  "#FF4500", "#FFD700", "#FFFFFF"
+))
+
+spider[["spider_miles_graffiti"]] <- qpal(c(
+  "#FF1493", "#FF00FF", "#C400FF",
+  "#00FFFF", "#FFD700", "#FF4500",
+  "#FF1493", "#C400FF", "#0A0A0A"
+))
+
+spider[["spider_miles_leap_of_faith"]] <- qpal(c(
+  "#0A0A2A", "#1A1A4A", "#2A2A5A",
+  "#C4202A", "#E84545", "#C4202A",
+  "#FFFFFF", "#F0F0F0", "#0A0A2A"
+))
+
+spider[["spider_interdimensional"]] <- qpal(c(
+  "#FF1493", "#FF4500", "#FFD700",
+  "#00FF88", "#1E90FF", "#C400FF",
+  "#FF00FF", "#00FFFF", "#FF1493"
+))
+
 # ══════════════════════════════════════════════════════════════════════════
 #  ASSEMBLE ALL NEW PALETTES
 # ══════════════════════════════════════════════════════════════════════════
