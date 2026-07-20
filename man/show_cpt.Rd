@@ -2,25 +2,36 @@
 % Please edit documentation in R/show_cpt.R
 \name{show_cpt}
 \alias{show_cpt}
-\title{Show me some colors!}
+\title{Visualise one or more colour palettes side-by-side}
 \usage{
 show_cpt(x, label = TRUE)
 }
 \arguments{
-\item{x}{character;  names of the cpt gradients.}
+\item{x}{Character vector. Palette names (e.g. output from
+\code{\link{find_cpt}}).}
 
-\item{label}{Logical, to show labels or not.}
+\item{label}{Logical. If \code{TRUE} (default), overlay a
+numbered label on each colour bar.}
 }
 \value{
-names color matrix
+Called for its side effect (a plot). Invisibly returns
+  the palette names.
 }
 \description{
-\code{\link{show_cpt}} returns a color matrix which prints
-and show the colors
+Draws each palette as a horizontal colour bar using
+\code{\link[graphics]{image}}, arranged in a grid that
+automatically adapts to the number of palettes.
 }
 \examples{
-{
 library(cptcity)
-show_cpt(find_cpt("radar"))
-}
+
+# Search then visualise
+pals <- find_cpt("radar")
+show_cpt(pals)
+
+# Without labels
+show_cpt(pals, label = FALSE)
+
+# Single palette
+show_cpt("mpl_inferno")
 }

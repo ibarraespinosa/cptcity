@@ -1,90 +1,111 @@
-#' Show me some colors!
+#' Visualise one or more colour palettes side-by-side
 #'
-#' \code{\link{show_cpt}} returns a color matrix which prints
-#' and show the colors
+#' Draws each palette as a horizontal colour bar using
+#' \code{\link[graphics]{image}}, arranged in a grid that
+#' automatically adapts to the number of palettes.
 #'
-#' @param x character;  names of the cpt gradients.
-#' @param label Logical, to show labels or not.
-#' @return names color matrix
+#' @param x Character vector. Palette names (e.g. output from
+#'   \code{\link{find_cpt}}).
+#' @param label Logical. If \code{TRUE} (default), overlay a
+#'   numbered label on each colour bar.
+#'
+#' @return Called for its side effect (a plot). Invisibly returns
+#'   the palette names.
+#'
 #' @importFrom graphics image par text
 #' @export
-#' @examples {
+#'
+#' @examples
 #' library(cptcity)
-#' show_cpt(find_cpt("radar"))
-#' }
+#'
+#' # Search then visualise
+#' pals <- find_cpt("radar")
+#' show_cpt(pals)
+#'
+#' # Without labels
+#' show_cpt(pals, label = FALSE)
+#'
+#' # Single palette
+#' show_cpt("mpl_inferno")
 show_cpt <- function(x, label = TRUE) {
+
   oldpar <- graphics::par(no.readonly = TRUE)
-  if(length(x)<= 4) {
-    vec <- c(2,2)
-  } else if(length(x) > 4 & length(x) <= 6){
-    vec <- c(2,3)
-  } else if(length(x) > 6 & length(x) <= 9){
-    vec <- c(3,3)
-  } else if(length(x) > 9 & length(x) <= 12){
-    vec <- c(3,4)
-  } else if(length(x) > 12 & length(x) <= 16){
-    vec <- c(4,4)
-  } else if(length(x) > 16 & length(x) <= 20){
-    vec <- c(4,5)
-  } else if(length(x) > 20 & length(x) <= 24){
-    vec <- c(4,6)
-  } else if(length(x) > 24 & length(x) <= 30){
-    vec <- c(5,6)
-  } else if(length(x) > 30 & length(x) <= 35){
-    vec <- c(5,7)
-  } else  if(length(x) > 35 & length(x) <= 49){
-    vec <- c(7, 7)
-  } else  if(length(x) > 49 & length(x) <= 64){
-    vec <- c(8, 8)
-  } else  if(length(x) > 64 & length(x) <= 80){
-    vec <- c(8, 10)
-  } else  if(length(x) > 80 & length(x) <= 100){
-    vec <- c(10, 10)
-  } else  if(length(x) > 100 & length(x) <= 150){
-    vec <- c(10, 15)
-  } else  if(length(x) > 150 & length(x) <= 216){
-    vec <- c(12, 18)
-  } else  if(length(x) > 216 & length(x) <= 304){
-    vec <- c(16, 19)
-  } else  if(length(x) > 304 & length(x) <= 572){
-    vec <- c(22, 26)
-  } else {
-    stop("Please, select less than 527 colors")
+  on.exit(graphics::par(oldpar))
 
+  nx <- length(x)
+
+  # --- compute square-ish grid dimensions ---
+  if (nx <= 2) {
+    nrow <- 1; ncol <- nx
+  } else if (nx <= 4) {
+    nrow <- 2; ncol <- 2
+  } else if (nx <= 6) {
+    nrow <- 2; ncol <- 3
+  } else if (nx <= 9) {
+    nrow <- 3; ncol <- 3
+  } else if (nx <= 12) {
+    nrow <- 3; ncol <- 4
+  } else if (nx <= 16) {
+    nrow <- 4; ncol <- 4
+  } else if (nx <= 20) {
+    nrow <- 4; ncol <- 5
+  } else if (nx <= 25) {
+    nrow <- 5; ncol <- 5
+  } else if (nx <= 30) {
+    nrow <- 5; ncol <- 6
+  } else if (nx <= 36) {
+    nrow <- 6; ncol <- 6
+  } else if (nx <= 49) {
+    nrow <- 7; ncol <- 7
+  } else if (nx <= 64) {
+    nrow <- 8; ncol <- 8
+  } else if (nx <= 100) {
+    nrow <- 10; ncol <- 10
+  } else if (nx <= 150) {
+    nrow <- 10; ncol <- 15
+  } else if (nx <= 216) {
+    nrow <- 12; ncol <- 18
+  } else if (nx <= 304) {
+    nrow <- 16; ncol <- 19
+  } else if (nx <= 572) {
+    nrow <- 22; ncol <- 26
+  } else {
+    stop("Please select fewer than 573 palettes at once.")
   }
 
-  cat("Creating ", vec, "matrix\n")
-  graphics::par(mfrow = vec,
-                mar =c(0,0,0,0))
+  cat("Creating", nrow, "x", ncol, "matrix\n")
 
-  if(label) {
-    for(i in seq_along(x)){
-      graphics::image(matrix(1:50),
-                      col = cpt(x[i]),
-                      frame = T,
-                      xaxt = "n",
-                      yaxt = "n")
-      graphics::text(x = 0.52,
-                     y = -0.05,
-                     labels = i,
-                     cex = 1.5,
-                     col = "white")
-      graphics::text(x = 0.5,
-                     y = 0,
-                     labels = i,
-                     cex = 1.5)
+  graphics::par(
+    mfrow = c(nrow, ncol),
+    mar   = c(0, 0, 0, 0)
+  )
+
+  for (i in seq_along(x)) {
+    graphics::image(
+      matrix(1:50),
+      col   = cpt(x[i]),
+      frame = TRUE,
+      xaxt  = "n",
+      yaxt  = "n"
+    )
+
+    if (isTRUE(label)) {
+      # white shadow for contrast on any background
+      graphics::text(
+        x      = 0.52,
+        y      = -0.05,
+        labels = i,
+        cex    = 1.5,
+        col    = "white"
+      )
+      graphics::text(
+        x      = 0.5,
+        y      = 0,
+        labels = i,
+        cex    = 1.5
+      )
     }
-    on.exit(par(oldpar))
-
-  } else {
-    for(i in seq_along(x)){
-      graphics::image(matrix(1:50),
-                      col = cpt(x[i]),
-                      frame = T,
-                      xaxt = "n",
-                      yaxt = "n")
-    }
-    on.exit(par(oldpar))
-
   }
+
+  invisible(x)
 }

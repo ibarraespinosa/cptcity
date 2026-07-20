@@ -1,6 +1,16 @@
 NEWS
 ===========
 
+### cptcity v1.1.1 (Release date: 2026-07-20)
+
+- **`cpt()`:** added error message for unknown palette names.
+- **`cpt()`:** improved documentation explaining `colorRampPalette` vs character-vector return — `sf` users need `colorRampPalette = TRUE`.
+- **`find_cpt()`:** now case-insensitive by default (`ignore.case = TRUE`). Added `fixed` argument for literal (non-regex) matching.
+- **`lucky()`:** deduplicated internal `runif` call. Guards against out-of-range index.
+- **`show_cpt()`:** moved `on.exit(par(oldpar))` to top of function. Cleaner grid layout logic and better margins.
+- **Tests:** added tests for sf integration, `find_cpt` case sensitivity, `frgb` scaling, unknown palette error, and `colorRampPalette` return type.
+- **Documentation:** all `.R` files re-documented with comprehensive roxygen2 entries.
+
 ### cptcity v1.1.0 (Release date: 2023-08-13)
 
 - Planned release

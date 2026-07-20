@@ -3,13 +3,40 @@
 \docType{package}
 \name{cptcity}
 \alias{cptcity}
-\title{A package to return colour gradients from CPTCITY}
+\alias{cptcity-package}
+\title{cpt-city: Colour Gradients for R}
 \description{
-Colour palettes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
-Rhw function \code{\link{cpt}} has two arguments \strong{n} for the numbers
-and \strong{pal} for the name or number of the palette:
+Incorporates 7140 colour gradients from the
+\href{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}{cpt-city web archive}
+into R. Each palette is stored as a \code{data.frame} with columns
+\code{id}, \code{r}, \code{g}, \code{b}.
 }
-\details{
-The palettes are available here:
-http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
+\section{Functions}{
+
+\describe{
+  \item{\code{\link{cpt}}}{Return an interpolated colour palette or
+    \code{colorRampPalette} function.}
+  \item{\code{\link{find_cpt}}}{Search palette names by keyword.}
+  \item{\code{\link{lucky}}}{Pick a random palette —
+    "I'm Feeling Lucky" for colours.}
+  \item{\code{\link{show_cpt}}}{Display multiple palettes side-by-side.}
+}
+}
+
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ibarraespinosa/cptcity}
+  \item Report bugs at \url{https://github.com/ibarraespinosa/cptcity/issues/}
+}
+
+}
+\author{
+\strong{Maintainer}: Sergio Ibarra-Espinosa \email{sergio.ibarra-espinosa@noaa.gov} (\href{https://orcid.org/0000-0002-3162-1905}{ORCID})
+
+Authors:
+\itemize{
+  \item Sergio Ibarra-Espinosa \email{sergio.ibarra-espinosa@noaa.gov} (\href{https://orcid.org/0000-0002-3162-1905}{ORCID})
+}
+
 }

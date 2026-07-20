@@ -1,12 +1,22 @@
-#' A package to return colour gradients from CPTCITY
+#' cpt-city: Colour Gradients for R
 #'
-#' Colour palettes comes from http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
-#' Rhw function \code{\link{cpt}} has two arguments \strong{n} for the numbers
-#' and \strong{pal} for the name or number of the palette:
+#' @description
+#' Incorporates 7140 colour gradients from the
+#' \href{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}{cpt-city web archive}
+#' into R. Each palette is stored as a \code{data.frame} with columns
+#' \code{id}, \code{r}, \code{g}, \code{b}.
 #'
+#' @section Functions:
+#' \describe{
+#'   \item{\code{\link{cpt}}}{Return an interpolated colour palette or
+#'     \code{colorRampPalette} function.}
+#'   \item{\code{\link{find_cpt}}}{Search palette names by keyword.}
+#'   \item{\code{\link{lucky}}}{Pick a random palette —
+#'     "I'm Feeling Lucky" for colours.}
+#'   \item{\code{\link{show_cpt}}}{Display multiple palettes side-by-side.}
+#' }
 #'
-#' The palettes are available here:
-#' http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
 #' @docType package
 #' @name cptcity
-NULL
+#' @aliases cptcity-package
+"_PACKAGE"

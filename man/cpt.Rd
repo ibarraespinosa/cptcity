@@ -2,7 +2,7 @@
 % Please edit documentation in R/cpt.R
 \name{cpt}
 \alias{cpt}
-\title{Function to return colour palettes functions from 'cpt-city'}
+\title{Return a colour palette function or vector from the cpt-city archive}
 \usage{
 cpt(
   pal = "mpl_inferno",
@@ -13,44 +13,67 @@ cpt(
 )
 }
 \arguments{
-\item{pal}{Palette of colors available or the number of the position}
+\item{pal}{Character. Name or position of the colour gradient in the
+cpt-city archive. Default \code{"mpl_inferno"}.}
 
-\item{n}{integer; number of colors}
+\item{n}{Integer. Number of colours to return when
+\code{colorRampPalette = FALSE}. Ignored when
+\code{colorRampPalette = TRUE}.}
 
-\item{colorRampPalette}{Logical; to be used in sf and mapview.}
+\item{colorRampPalette}{Logical. If \code{FALSE} (default), returns a
+character vector of \code{n} hex colours. If \code{TRUE}, returns a
+\code{colorRampPalette} *function* — this is what you need for
+\code{\link[sf]{plot}} (\code{pal =}) and
+\code{\link[ggplot2]{scale_fill_gradientn}} (\code{colours =}).}
 
-\item{rev}{Logical; to internally revert order of rgb color vectors.}
+\item{rev}{Logical. If \code{TRUE}, reverses the order of colours before
+interpolation.}
 
-\item{frgb}{Numeric; vector of 3 to change internal rgb composition.
-The order is red, green, blue}
+\item{frgb}{Numeric vector of length 3. Per-channel scaling factors for
+\code{c(red, green, blue)}. Values > 1 boost the channel, < 1 reduce it.
+Default \code{c(1, 1, 1)} (no scaling).}
 }
 \value{
-A colour palette function.
+A character vector of hex colours (length \code{n}) when
+  \code{colorRampPalette = FALSE}, or a \code{colorRampPalette} function
+  when \code{colorRampPalette = TRUE}.
 }
 \description{
-This function return a collor palette based on the name or position of the
-palette.
+\code{cpt} extracts a named colour palette from the internal cpt-city
+database and returns either a character vector of \code{n} interpolated
+hex colours or the underlying \code{\link[grDevices]{colorRampPalette}}
+function itself. The package ships 7140 colour gradients from
+\url{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}.
 }
 \details{
-The cpt-city web archive comes from:
-http://soliton.vm.bytemark.co.uk/pub/cpt-city/index.html
+**`sf` / `ggplot2` users:** use \code{colorRampPalette = TRUE}.
+The \code{sf} plot method and \pkg{ggplot2}'s
+\code{scale_*_gradientn} need a *function*, not a character vector.
+See the examples below.
 }
 \examples{
-{
 library(cptcity)
+
+# Character vector — use with base graphics
 image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
-find_cpt("temperature")
-image(matrix(1:100), col = cpt("idv_temperature"))
 image(matrix(1:100), col = cpt("idv_temperature", rev = TRUE))
+
+# colorRampPalette function — use with sf and ggplot2
 \dontrun{
-# Do not run
+library(sf)
+nc <- st_read(system.file("shape/nc.shp", package = "sf"))
+plot(nc["AREA"], pal = cpt("mpl_inferno", colorRampPalette = TRUE))
+
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density))
+  geom_raster(aes(fill = density)) +
+  scale_fill_gradientn(colours = cpt(n = 100, pal = "mpl_inferno"))
+}
 
- ggplot(faithfuld, aes(waiting, eruptions)) +
- geom_raster(aes(fill = density)) +
- scale_fill_gradientn(colours = cpt(n = 100))
-}
-}
+# Search for palettes by keyword
+find_cpt("temperature")
+image(matrix(1:100), col = cpt("idv_temperature"))
+
+# Tint the palette by scaling the red channel down
+image(matrix(1:100), col = cpt("mpl_inferno", frgb = c(0.3, 1, 1)))
 }

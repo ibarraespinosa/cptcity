@@ -1,12 +1,17 @@
-#' Names of the 7140 color gradients of cptcity R Package
+#' Names of all 7140 colour gradients
 #'
-#' This dataset os a vector with al the names of the gradients of the archive
-#' cptcity (http://soliton.vm.bytemark.co.uk/pub/cpt-city/) availale in this
-#' package. Please, read the documentation of each color gradient in the
-#' web page shown above.
+#' A character vector containing the names of every colour gradient
+#' bundled in the \pkg{cptcity} package. Use \code{\link{find_cpt}} to
+#' search this vector by keyword.
 #'
-#' @format A vector with the 7140 names of the color gradients
+#' @format A character vector of length 7140.
 #' @source \url{http://soliton.vm.bytemark.co.uk/pub/cpt-city/}
 #' @usage data(cpt_names)
 #' @docType data
+#' @keywords datasets
+#' @name cpt_names
+#' @examples
+#' data(cpt_names)
+#' head(cpt_names)
+#' length(cpt_names)
 "cpt_names"

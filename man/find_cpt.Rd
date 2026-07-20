@@ -2,45 +2,55 @@
 % Please edit documentation in R/find_cpt.R
 \name{find_cpt}
 \alias{find_cpt}
-\title{Function to return colour palettes names}
+\title{Find colour palette names by keyword search}
 \usage{
-find_cpt(name)
+find_cpt(name, ignore.case = TRUE, fixed = FALSE)
 }
 \arguments{
-\item{name}{character; Word to be searched among the names of the cpt gradients.}
+\item{name}{Character. Keyword to search for within palette names.}
+
+\item{ignore.case}{Logical. If \code{TRUE} (default), search is
+case-insensitive. Ignored when \code{fixed = TRUE}.}
+
+\item{fixed}{Logical. If \code{FALSE} (default), \code{name} is
+treated as a regular expression. Set to \code{TRUE} for literal
+string matching (faster, but case-sensitive).}
 }
 \value{
-names that satisfy the search.
+A character vector of palette names that contain the keyword.
+  Returns a zero-length vector if nothing matches.
 }
 \description{
-\code{\link{find_cpt}} returns the name of the colour gradient that satisfy
-the search. It is a searcher. It is a mini mini mini google.
+Searches the 7140 cpt-city palette names and returns those that match
+your search term. Case-insensitive by default.
 }
 \note{
-This functions runs grep.
+This is a thin wrapper around \code{\link{grep}}. You can pass
+  regex patterns like \code{"^oc_"} to find all palettes starting with
+  "oc_" or \code{"temperature|thermal"} to match either term.
 }
 \examples{
-{
 library(cptcity)
+
+# Case-insensitive search (default)
 find_cpt("temperature")
+
+# Case-sensitive
+find_cpt("Temperature", ignore.case = FALSE)
+
+# Regex: all palettes starting with "oc_"
+find_cpt("^oc_")
+
+# Literal match (faster, exact substring — case-sensitive)
+find_cpt("rain", fixed = TRUE)
+
+# Use the result directly
 image(matrix(1:100), col = cpt("idv_temperature"))
+
 \dontrun{
-library(cptcity)
-# Do not run
-# data names_cpt lazy loaded, already in environment
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density))
-
-find_cpt("radar")
-ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density)) +
-scale_fill_gradientn(colours = cpt(n = 10, "ncl_radar"))
-
-find_cpt("rain")
-ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density)) +
-scale_fill_gradientn(colours = cpt(pal = "pj_1_a_rainbow"))
-}
+  geom_raster(aes(fill = density)) +
+  scale_fill_gradientn(colours = cpt(pal = "ncl_radar", n = 100))
 }
 }
