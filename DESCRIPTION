@@ -1,7 +1,7 @@
 Package: cptcity
 Type: Package
 Title: 'cpt-city' Colour Gradients
-Version: 2.1.0
+Version: 2.2.0
 Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",
         role = c("aut", "cre"),
@@ -12,7 +12,7 @@ Description: Incorporates colour gradients from the 'cpt-city' web archive
     functions to search, preview, and return colour palettes as either
     interpolated hex vectors or colorRampPalette functions for use with
     base graphics, ggplot2, and sf.
-Depends: R (>= 2.10)
+Depends: R (>= 3.5.0)
 Imports: grDevices
 License: GPL-3
 URL: https://github.com/ibarraespinosa/cptcity

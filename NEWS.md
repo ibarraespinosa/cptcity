@@ -1,6 +1,26 @@
 NEWS
 ===========
 
+### cptcity v2.2.0 (Release date: 2026-07-20)
+
+- **38 Spider-Verse palettes** — every dimension, hero, and villain:
+  **Heroes:** `spider_man`, `spider_miles_morales`, `spider_gwen`,
+  `spider_noir`, `spider_2099`, `spider_ham`, `spider_peni`,
+  `spider_punk`, `spider_pavitr`, `spider_scarlet`, `spider_superior`,
+  `spider_symbiote`, `spider_byte`, `spider_1602`.
+  **Villains:** `spider_spot`, `spider_green_goblin`, `spider_venom`,
+  `spider_doc_ock`, `spider_kingpin`, `spider_vulture`, `spider_mysterio`,
+  `spider_sandman`, `spider_lizard`, `spider_electro`, `spider_rhino`,
+  `spider_carnage`.
+  **Dimensions:** `spider_earth_1610` (Miles), `spider_earth_65` (Gwen),
+  `spider_earth_90214` (Noir), `spider_earth_928` (2099),
+  `spider_earth_50101` (Pavitr), `spider_mumbattan`, `spider_nueva_york`.
+  **Effects:** `spider_glitch`, `spider_multiverse`, `spider_web`,
+  `spider_venom_symbiote`, `spider_silk`.
+- **Total palettes: 7464** (7140 original + 324 curated).
+- **R >= 3.5.0** now required (serialized data format).
+- Passes `R CMD check` with zero errors, zero warnings, zero notes.
+
 ### cptcity v2.1.0 (Release date: 2026-07-20)
 
 - **138 new palettes** in 13 categories:

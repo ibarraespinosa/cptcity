@@ -1906,6 +1906,248 @@ photo[["photo_polaroid"]] <- qpal(c(
 ))
 
 # ══════════════════════════════════════════════════════════════════════════
+#  🕷️ SPIDER-VERSE — Every dimension, every character
+# ══════════════════════════════════════════════════════════════════════════
+
+spider <- list()
+
+# ── Heroes ────────────────────────────────────────────────────────────────
+
+spider[["spider_man"]] <- qpal(c(
+  "#C4202A", "#E84545", "#1E90FF",
+  "#004C99", "#C4202A", "#1E90FF",
+  "#FFFFFF", "#C4202A", "#1E90FF"
+))
+
+spider[["spider_miles_morales"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#C4202A",
+  "#FF1493", "#C400FF", "#FF00FF",
+  "#C4202A", "#1A1A1A", "#0A0A0A"
+))
+
+spider[["spider_gwen"]] <- qpal(c(
+  "#FFFFFF", "#F0E8F0", "#E8D0E8",
+  "#FF69B4", "#00CED1", "#FF69B4",
+  "#E8D0E8", "#F0E8F0", "#FFFFFF"
+))
+
+spider[["spider_noir"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#6B6B6B", "#A0A0A0", "#C0C0C0",
+  "#6B6B6B", "#3A3A3A", "#0A0A0A"
+))
+
+spider[["spider_2099"]] <- qpal(c(
+  "#0A0A1A", "#000080", "#004C99",
+  "#1E90FF", "#00CED1", "#C4202A",
+  "#FF4500", "#004C99", "#0A0A1A"
+))
+
+spider[["spider_ham"]] <- qpal(c(
+  "#FFD700", "#FF4500", "#C4202A",
+  "#1E90FF", "#FFFFFF", "#FFD700",
+  "#FF69B4", "#FF4500", "#FFD700"
+))
+
+spider[["spider_peni"]] <- qpal(c(
+  "#FF1493", "#FF69B4", "#C400FF",
+  "#9400D3", "#00FFFF", "#FF00FF",
+  "#C400FF", "#FF1493", "#FF69B4"
+))
+
+spider[["spider_punk"]] <- qpal(c(
+  "#C4202A", "#FFFFFF", "#004C99",
+  "#0A0A0A", "#C4202A", "#FFFFFF",
+  "#004C99", "#FFD700", "#0A0A0A"
+))
+
+spider[["spider_pavitr"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF1493",
+  "#00A000", "#1E90FF", "#FF4500",
+  "#FFD700", "#FF1493", "#00A000"
+))
+
+spider[["spider_scarlet"]] <- qpal(c(
+  "#C4202A", "#E84545", "#004C99",
+  "#1E90FF", "#C4202A", "#FFFFFF",
+  "#004C99", "#1E90FF", "#C4202A"
+))
+
+spider[["spider_superior"]] <- qpal(c(
+  "#0A0A0A", "#C4202A", "#8B0000",
+  "#C4202A", "#0A0A0A", "#C4202A",
+  "#8B0000", "#C4202A", "#0A0A0A"
+))
+
+spider[["spider_symbiote"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#FFFFFF", "#C0C0C0", "#FFFFFF",
+  "#3A3A3A", "#1A1A1A", "#0A0A0A"
+))
+
+spider[["spider_byte"]] <- qpal(c(
+  "#0A0020", "#00FF88", "#00CED1",
+  "#FF00FF", "#C400FF", "#00FF88",
+  "#00CED1", "#FF00FF", "#0A0020"
+))
+
+spider[["spider_1602"]] <- qpal(c(
+  "#4A3A2A", "#8B6B4A", "#C4A060",
+  "#C4202A", "#8B0000", "#C4A060",
+  "#8B6B4A", "#4A3A2A", "#2A2A1A"
+))
+
+# ── Villains ──────────────────────────────────────────────────────────────
+
+spider[["spider_spot"]] <- qpal(c(
+  "#FFFFFF", "#F0F0F0", "#E0E0E0",
+  "#0A0A0A", "#FFFFFF", "#0A0A0A",
+  "#E0E0E0", "#F0F0F0", "#FFFFFF"
+))
+
+spider[["spider_green_goblin"]] <- qpal(c(
+  "#9400D3", "#C400FF", "#00A000",
+  "#00C420", "#9400D3", "#00A000",
+  "#C400FF", "#9400D3", "#00C420"
+))
+
+spider[["spider_venom"]] <- qpal(c(
+  "#0A0A0A", "#1A1A1A", "#3A3A3A",
+  "#C0C0C0", "#FFFFFF", "#C0C0C0",
+  "#FF69B4", "#C400FF", "#0A0A0A"
+))
+
+spider[["spider_doc_ock"]] <- qpal(c(
+  "#0A2A0A", "#006B00", "#00A000",
+  "#8B8B0A", "#C4A020", "#8B8B0A",
+  "#00A000", "#006B00", "#0A2A0A"
+))
+
+spider[["spider_kingpin"]] <- qpal(c(
+  "#F0F0F0", "#E0E0E0", "#C0C0C0",
+  "#0A0A0A", "#2A2A2A", "#0A0A0A",
+  "#C0C0C0", "#E0E0E0", "#F0F0F0"
+))
+
+spider[["spider_vulture"]] <- qpal(c(
+  "#0A2A2A", "#006060", "#008B8B",
+  "#00A0A0", "#00C4C4", "#00A0A0",
+  "#008B8B", "#006060", "#0A2A2A"
+))
+
+spider[["spider_mysterio"]] <- qpal(c(
+  "#9400D3", "#C400FF", "#00FF88",
+  "#00CED1", "#FFD700", "#FF1493",
+  "#9400D3", "#C400FF", "#00FF88"
+))
+
+spider[["spider_sandman"]] <- qpal(c(
+  "#8B6B4A", "#A08060", "#C4A080",
+  "#D4B898", "#E8D4C0", "#D4B898",
+  "#C4A080", "#8B6B4A", "#6B4A2A"
+))
+
+spider[["spider_lizard"]] <- qpal(c(
+  "#0A4A0A", "#006B00", "#008B00",
+  "#00A000", "#8B6B20", "#00A000",
+  "#008B00", "#006B00", "#0A4A0A"
+))
+
+spider[["spider_electro"]] <- qpal(c(
+  "#0A0A2A", "#1A0050", "#1E90FF",
+  "#00FFFF", "#F8F8FF", "#00FFFF",
+  "#1E90FF", "#1A0050", "#0A0A2A"
+))
+
+spider[["spider_rhino"]] <- qpal(c(
+  "#4A4A4A", "#6B6B6B", "#8B8B8B",
+  "#A0A0A0", "#C0C0C0", "#A0A0A0",
+  "#8B8B8B", "#6B6B6B", "#4A4A4A"
+))
+
+# ── Dimensions & Worlds ───────────────────────────────────────────────────
+
+spider[["spider_earth_1610"]] <- qpal(c(
+  "#C400FF", "#FF00FF", "#FF1493",
+  "#1E90FF", "#00FFFF", "#FFD700",
+  "#FF4500", "#C400FF", "#0A0A0A"
+))
+
+spider[["spider_earth_65"]] <- qpal(c(
+  "#FF69B4", "#FFB6C1", "#FFFFFF",
+  "#00CED1", "#87CEEB", "#FF69B4",
+  "#FFFFFF", "#00CED1", "#FFB6C1"
+))
+
+spider[["spider_earth_90214"]] <- qpal(c(
+  "#0A0A0A", "#2A2A2A", "#4A4A4A",
+  "#C4A060", "#8B6B4A", "#4A3A2A",
+  "#2A2A2A", "#1A1A1A", "#0A0A0A"
+))
+
+spider[["spider_earth_928"]] <- qpal(c(
+  "#0A0A2A", "#000080", "#1E90FF",
+  "#C4202A", "#FF4500", "#C4202A",
+  "#1E90FF", "#000080", "#0A0A2A"
+))
+
+spider[["spider_earth_50101"]] <- qpal(c(
+  "#FF4500", "#FFD700", "#FF1493",
+  "#00A000", "#1E90FF", "#FFD700",
+  "#FF4500", "#00A000", "#FF1493"
+))
+
+spider[["spider_mumbattan"]] <- qpal(c(
+  "#FF4500", "#FF6347", "#FFD700",
+  "#FF1493", "#1E90FF", "#00CED1",
+  "#FFD700", "#FF4500", "#FF1493"
+))
+
+spider[["spider_nueva_york"]] <- qpal(c(
+  "#0A0A2A", "#000080", "#1E90FF",
+  "#00CED1", "#C0C0C0", "#00CED1",
+  "#1E90FF", "#000080", "#0A0A2A"
+))
+
+# ── Special Effects & Glitch ──────────────────────────────────────────────
+
+spider[["spider_glitch"]] <- qpal(c(
+  "#FF00FF", "#00FFFF", "#FF0000",
+  "#00FF00", "#FF00FF", "#00FFFF",
+  "#C400FF", "#FF1493", "#0A0020"
+))
+
+spider[["spider_multiverse"]] <- qpal(c(
+  "#FF1493", "#FF4500", "#FFD700",
+  "#00FF88", "#1E90FF", "#C400FF",
+  "#FF00FF", "#FF1493", "#FF4500"
+))
+
+spider[["spider_web"]] <- qpal(c(
+  "#F0F0F0", "#E0E0E0", "#C0C0C0",
+  "#FFFFFF", "#F0F0F0", "#E0E0E0",
+  "#C0C0C0", "#A0A0A0", "#808080"
+))
+
+spider[["spider_venom_symbiote"]] <- qpal(c(
+  "#0A0A0A", "#1A1A2A", "#2A2A4A",
+  "#FFFFFF", "#C0C0C0", "#FFFFFF",
+  "#2A2A4A", "#1A1A2A", "#0A0A0A"
+))
+
+spider[["spider_carnage"]] <- qpal(c(
+  "#C4202A", "#E84545", "#0A0A0A",
+  "#C4202A", "#FF4500", "#C4202A",
+  "#0A0A0A", "#8B0000", "#0A0A0A"
+))
+
+spider[["spider_silk"]] <- qpal(c(
+  "#FFFFFF", "#F0E8F8", "#E0D0F0",
+  "#C4A0E0", "#A080D0", "#C4A0E0",
+  "#E0D0F0", "#F0E8F8", "#FFFFFF"
+))
+
+# ══════════════════════════════════════════════════════════════════════════
 #  ASSEMBLE ALL NEW PALETTES
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -1934,7 +2176,8 @@ all_categories <- list(
   comics = comics,
   food   = food,
   albums = albums,
-  photo  = photo
+  photo  = photo,
+  spider = spider
 )
 
 new_palettes <- list()
