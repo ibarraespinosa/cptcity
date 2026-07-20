@@ -6,7 +6,9 @@ Authors@R: c(
   person(given = "Sergio", family = "Ibarra-Espinosa",
         role = c("aut", "cre"),
         email = "sergio.ibarra-espinosa@noaa.gov",
-        comment = c(ORCID = "0000-0002-3162-1905"))) 
+        comment = c(ORCID = "0000-0002-3162-1905")))
+Author: Sergio Ibarra-Espinosa
+Maintainer: Sergio Ibarra-Espinosa <sergio.ibarra-espinosa@noaa.gov>
 Description: Incorporates colour gradients from the 'cpt-city' web archive
     available at <https://phillips.shef.ac.uk/pub/cpt-city/>. Provides
     functions to search, preview, and return colour palettes as either
