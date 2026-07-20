@@ -73,6 +73,8 @@ show_cpt(find_cpt("spider_miles"))
 
 ### 🎧 Miles Morales & Earth-1610 Collection
 
+![Spider-Man Miles Morales](man/figures/smmm.png)
+
 | Palette | Description / Vibe |
 |---|---|
 | `spider_miles_morales` | **Miles Morales** — stealth black suit, neon spray crimson, electric venom strike |

@@ -80,6 +80,11 @@ alt="Spider-Verse Showcase" />
 
 ### 🎧 Miles Morales & Earth-1610 Collection
 
+<figure>
+<img src="man/figures/smmm.png" alt="Spider-Man Miles Morales" />
+<figcaption aria-hidden="true">Spider-Man Miles Morales</figcaption>
+</figure>
+
 | Palette | Description / Vibe |
 |----|----|
 | `spider_miles_morales` | **Miles Morales** — stealth black suit, neon spray crimson, electric venom strike |
