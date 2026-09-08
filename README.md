@@ -50,6 +50,8 @@ albums, photography, and the entire **Spider-Verse.**
 | `lucky()` | Random palette — “I’m Feeling Lucky” for colours |
 
 ``` r
+install.packages('cptcity', repos = c('https://ibarraespinosa.r-universe.dev', 'https://cloud.r-project.org'))
+
 library(cptcity)
 
 # 🎧 Miles Morales "What's Up Danger" Search
