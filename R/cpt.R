@@ -18,7 +18,7 @@
 #'   \code{colorRampPalette = TRUE}.
 #' @param colorRampPalette Logical. If \code{FALSE} (default), returns a
 #'   character vector of \code{n} hex colours. If \code{TRUE}, returns a
-#'   \code{colorRampPalette} *function* — this is what you need for
+#'   \code{colorRampPalette} *function* -- this is what you need for
 #'   \code{\link[sf]{plot}} (\code{pal =}) and
 #'   \code{\link[ggplot2]{scale_fill_gradientn}} (\code{colours =}).
 #' @param rev Logical. If \code{TRUE}, reverses the order of colours before
@@ -37,11 +37,11 @@
 #' @examples
 #' library(cptcity)
 #'
-#' # Character vector — use with base graphics
+#' # Character vector -- use with base graphics
 #' image(matrix(1:100), col = cpt(pal = "mpl_inferno"))
 #' image(matrix(1:100), col = cpt("idv_temperature", rev = TRUE))
 #'
-#' # colorRampPalette function — use with sf and ggplot2
+#' # colorRampPalette function -- use with sf and ggplot2
 #' \dontrun{
 #' library(sf)
 #' nc <- st_read(system.file("shape/nc.shp", package = "sf"))

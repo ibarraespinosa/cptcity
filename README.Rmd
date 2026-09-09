@@ -49,6 +49,8 @@ The classic 7,140 gradients from the [cpt-city archive](https://phillips.shef.ac
 | `lucky()` | Random palette — "I'm Feeling Lucky" for colours |
 
 ```{r, eval = FALSE}
+install.packages('cptcity', repos = c('https://ibarraespinosa.r-universe.dev', 'https://cloud.r-project.org'))
+
 library(cptcity)
 
 # 🎧 Miles Morales "What's Up Danger" Search

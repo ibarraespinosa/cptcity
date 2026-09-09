@@ -7,8 +7,6 @@ Authors@R: c(
         role = c("aut", "cre"),
         email = "sergio.ibarra-espinosa@noaa.gov",
         comment = c(ORCID = "0000-0002-3162-1905")))
-Author: Sergio Ibarra-Espinosa
-Maintainer: Sergio Ibarra-Espinosa <sergio.ibarra-espinosa@noaa.gov>
 Description: Incorporates colour gradients from the 'cpt-city' web archive
     available at <https://phillips.shef.ac.uk/pub/cpt-city/>. Provides
     functions to search, preview, and return colour palettes as either
@@ -25,5 +23,6 @@ Suggests:
     covr,
     sf,
     testthat
-Date: 2026-07-20
+Date: 2026-09-09
 Config/roxygen2/version: 8.0.0
+

@@ -11,7 +11,7 @@
 #'   \item{\code{\link{cpt}}}{Return an interpolated colour palette or
 #'     \code{colorRampPalette} function.}
 #'   \item{\code{\link{find_cpt}}}{Search palette names by keyword.}
-#'   \item{\code{\link{lucky}}}{Pick a random palette —
+#'   \item{\code{\link{lucky}}}{Pick a random palette --
 #'     "I'm Feeling Lucky" for colours.}
 #'   \item{\code{\link{show_cpt}}}{Display multiple palettes side-by-side.}
 #' }

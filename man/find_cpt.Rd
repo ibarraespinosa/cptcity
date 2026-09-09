@@ -41,7 +41,7 @@ find_cpt("Temperature", ignore.case = FALSE)
 # Regex: all palettes starting with "oc_"
 find_cpt("^oc_")
 
-# Literal match (faster, exact substring — case-sensitive)
+# Literal match (faster, exact substring -- case-sensitive)
 find_cpt("rain", fixed = TRUE)
 
 # Use the result directly

@@ -1,12 +1,15 @@
 citHeader("If you want to cite the cptcity R package, please use:")
-year <- 2026
 
-citEntry(entry = "Manual",
-         title   = "cptcity: 'cpt-city' colour gradients for R",
-         author  = "Sergio Ibarra-Espinosa",
-         year    = "2017",
-         note    = sprintf("R package version %s. Colour gradients from https://phillips.shef.ac.uk/pub/cpt-city/", meta$Version),
-         url     = "https://CRAN.R-project.org/package=cptcity",
-         textVersion =
-           paste("Sergio Ibarra-Espinosa (2026) cptcity: incorporating the cpt-city archive into R. R package version 2.0.0. https://CRAN.R-project.org/package=cptcity")
+bibentry(
+  bibtype = "Manual",
+  title = "cptcity: 'cpt-city' Colour Gradients",
+  author = person(given = "Sergio", family = "Ibarra-Espinosa"),
+  year = "2026",
+  note = sprintf("R package version %s. Colour gradients from https://phillips.shef.ac.uk/pub/cpt-city/", meta$Version),
+  url = "https://CRAN.R-project.org/package=cptcity",
+  textVersion = paste0(
+    "Sergio Ibarra-Espinosa (2026). cptcity: 'cpt-city' Colour Gradients. ",
+    "R package version ", meta$Version, ". https://CRAN.R-project.org/package=cptcity"
+  )
 )
+

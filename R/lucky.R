@@ -1,6 +1,6 @@
-#' Return a random colour gradient — "I'm Feeling Lucky" for palettes
+#' Return a random colour gradient -- "I'm Feeling Lucky" for palettes
 #'
-#' Picks one of the 7140 colour gradients at random and returns it,
+#' Picks one of the colour gradients at random and returns it,
 #' optionally printing its name so you can re-use it later. Based on
 #' Google's "I'm Feeling Lucky" button.
 #'
@@ -9,7 +9,7 @@
 #'   \code{colorRampPalette = TRUE}.
 #' @param colorRampPalette Logical. If \code{FALSE} (default), returns a
 #'   character vector of \code{n} colours. If \code{TRUE}, returns a
-#'   \code{colorRampPalette} function — the right choice for
+#'   \code{colorRampPalette} function -- the right choice for
 #'   \code{\link[sf]{plot}} and \pkg{ggplot2}.
 #' @param rev Logical. If \code{TRUE}, reverse the gradient order.
 #' @param message Logical. If \code{TRUE} (default), prints the name and

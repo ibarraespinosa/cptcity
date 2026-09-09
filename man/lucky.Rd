@@ -2,7 +2,7 @@
 % Please edit documentation in R/lucky.R
 \name{lucky}
 \alias{lucky}
-\title{Return a random colour gradient — "I'm Feeling Lucky" for palettes}
+\title{Return a random colour gradient -- "I'm Feeling Lucky" for palettes}
 \usage{
 lucky(
   n = 100,
@@ -20,7 +20,7 @@ lucky(
 
 \item{colorRampPalette}{Logical. If \code{FALSE} (default), returns a
 character vector of \code{n} colours. If \code{TRUE}, returns a
-\code{colorRampPalette} function — the right choice for
+\code{colorRampPalette} function -- the right choice for
 \code{\link[sf]{plot}} and \pkg{ggplot2}.}
 
 \item{rev}{Logical. If \code{TRUE}, reverse the gradient order.}
@@ -40,7 +40,7 @@ A character vector of hex colours when
   when \code{colorRampPalette = TRUE}.
 }
 \description{
-Picks one of the 7140 colour gradients at random and returns it,
+Picks one of the colour gradients at random and returns it,
 optionally printing its name so you can re-use it later. Based on
 Google's "I'm Feeling Lucky" button.
 }

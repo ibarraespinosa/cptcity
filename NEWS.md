@@ -1,6 +1,14 @@
 NEWS
 ===========
 
+### cptcity v2.3.0 (Release date: 2026-09-09)
+
+- **215 country flag palettes:** added `flag_*` colour gradients covering UN member states and territories.
+- **Spider-Verse expanded:** 25 additional Spider-Verse palettes including `spider_prowler`, `spider_spider_society`, `spider_miles_graffiti`, and dimensions (63 Spider-Verse palettes in total).
+- **Curated collection:** expanded curated palettes across cinema, music, space, anime, and art.
+- **inst/CITATION:** updated to modern `bibentry()` format for CRAN compliance.
+- **CRAN readiness:** documentation encoding improvements and updated metadata.
+
 ### cptcity v2.2.0 (Release date: 2026-07-20)
 
 - **38 Spider-Verse palettes** — every dimension, hero, and villain:
