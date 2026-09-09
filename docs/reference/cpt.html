@@ -88,9 +88,9 @@ cpt-city archive. Default <code>"mpl_inferno"</code>.</p></dd>
 <dt id="arg-colorramppalette">colorRampPalette<a class="anchor" aria-label="anchor" href="#arg-colorramppalette"></a></dt>
 <dd><p>Logical. If <code>FALSE</code> (default), returns a
 character vector of <code>n</code> hex colours. If <code>TRUE</code>, returns a
-<code>colorRampPalette</code> *function* — this is what you need for
-<code>plot</code> (<code>pal =</code>) and
-<code>scale_fill_gradientn</code> (<code>colours =</code>).</p></dd>
+<code>colorRampPalette</code> *function* – this is what you need for
+<code><a href="https://r-spatial.github.io/sf/reference/plot.html" class="external-link">plot</a></code> (<code>pal =</code>) and
+<code><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></code> (<code>colours =</code>).</p></dd>
 
 
 <dt id="arg-rev">rev<a class="anchor" aria-label="anchor" href="#arg-rev"></a></dt>
@@ -122,22 +122,22 @@ See the examples below.</p>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ibarraespinosa/cptcity" class="external-link">cptcity</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Character vector — use with base graphics</span></span></span>
+<span class="r-in"><span><span class="co"># Character vector -- use with base graphics</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/image.html" class="external-link">image</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span><span class="op">)</span>, col <span class="op">=</span> <span class="fu">cpt</span><span class="op">(</span>pal <span class="op">=</span> <span class="st">"mpl_inferno"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cpt-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/image.html" class="external-link">image</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span><span class="op">)</span>, col <span class="op">=</span> <span class="fu">cpt</span><span class="op">(</span><span class="st">"idv_temperature"</span>, rev <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cpt-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># colorRampPalette function — use with sf and ggplot2</span></span></span>
+<span class="r-in"><span><span class="co"># colorRampPalette function -- use with sf and ggplot2</span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu">st_read</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">nc</span><span class="op">[</span><span class="st">"AREA"</span><span class="op">]</span>, pal <span class="op">=</span> <span class="fu">cpt</span><span class="op">(</span><span class="st">"mpl_inferno"</span>, colorRampPalette <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">faithfuld</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">waiting</span>, <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu">geom_raster</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu">scale_fill_gradientn</span><span class="op">(</span>colours <span class="op">=</span> <span class="fu">cpt</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">100</span>, pal <span class="op">=</span> <span class="st">"mpl_inferno"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">waiting</span>, <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_raster</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></span><span class="op">(</span>colours <span class="op">=</span> <span class="fu">cpt</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">100</span>, pal <span class="op">=</span> <span class="st">"mpl_inferno"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Search for palettes by keyword</span></span></span>

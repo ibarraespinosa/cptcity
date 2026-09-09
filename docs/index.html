@@ -116,7 +116,9 @@
 </tbody>
 </table>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ibarraespinosa/cptcity" class="external-link">cptcity</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'cptcity'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://ibarraespinosa.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ibarraespinosa/cptcity" class="external-link">cptcity</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># 🎧 Miles Morales "What's Up Danger" Search</span></span>
 <span><span class="fu"><a href="reference/find_cpt.html">find_cpt</a></span><span class="op">(</span><span class="st">"miles"</span><span class="op">)</span>         <span class="co"># → spider_miles_morales, spider_miles_leap_of_faith, spider_miles_graffiti</span></span>
@@ -189,7 +191,7 @@ Spider-Man Miles Morales
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># 🌆 Plot map in Miles Morales "Leap of Faith" palette</span></span>
-<span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu">st_read</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">nc</span><span class="op">[</span><span class="st">"AREA"</span><span class="op">]</span>, pal <span class="op">=</span> <span class="fu"><a href="reference/cpt.html">cpt</a></span><span class="op">(</span><span class="st">"spider_miles_leap_of_faith"</span>, colorRampPalette <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
 <span>     main <span class="op">=</span> <span class="st">"Leap of Faith — Miles Morales Palette"</span><span class="op">)</span></span>
 <span></span>
@@ -524,7 +526,7 @@ Decades Timeline
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
-<span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu">st_read</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">nc</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"shape/nc.shp"</span>, package <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">nc</span><span class="op">[</span><span class="st">"AREA"</span><span class="op">]</span>, pal <span class="op">=</span> <span class="fu"><a href="reference/cpt.html">cpt</a></span><span class="op">(</span><span class="st">"spider_miles_leap_of_faith"</span>, colorRampPalette <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">

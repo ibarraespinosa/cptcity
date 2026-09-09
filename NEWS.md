@@ -1,7 +1,4 @@
-NEWS
-===========
-
-### cptcity v2.3.0 (Release date: 2026-09-09)
+# cptcity 2.3.0
 
 - **215 country flag palettes:** added `flag_*` colour gradients covering UN member states and territories.
 - **Spider-Verse expanded:** 25 additional Spider-Verse palettes including `spider_prowler`, `spider_spider_society`, `spider_miles_graffiti`, and dimensions (63 Spider-Verse palettes in total).
@@ -9,9 +6,9 @@ NEWS
 - **inst/CITATION:** updated to modern `bibentry()` format for CRAN compliance.
 - **CRAN readiness:** documentation encoding improvements and updated metadata.
 
-### cptcity v2.2.0 (Release date: 2026-07-20)
+# cptcity 2.2.0
 
-- **38 Spider-Verse palettes** — every dimension, hero, and villain:
+- **38 Spider-Verse palettes** -- every dimension, hero, and villain:
   **Heroes:** `spider_man`, `spider_miles_morales`, `spider_gwen`,
   `spider_noir`, `spider_2099`, `spider_ham`, `spider_peni`,
   `spider_punk`, `spider_pavitr`, `spider_scarlet`, `spider_superior`,
@@ -29,7 +26,7 @@ NEWS
 - **R >= 3.5.0** now required (serialized data format).
 - Passes `R CMD check` with zero errors, zero warnings, zero notes.
 
-### cptcity v2.1.0 (Release date: 2026-07-20)
+# cptcity 2.1.0
 
 - **138 new palettes** in 13 categories:
   Music (16), Anime (13), Cities (10), Mythology (8),
@@ -51,7 +48,7 @@ NEWS
 - Albums: Dark Side of the Moon, Abbey Road, Nevermind...
 - Photography: Kodachrome, Tri-X, Portra, Polaroid, Lomography...
 
-### cptcity v2.0.0 (Release date: 2026-07-20)
+# cptcity 2.0.0
 
 - **148 new colour palettes** spanning 12 thematic categories:
   Art Movements (15), Architecture (12), Decades (18), Books (14),
@@ -66,41 +63,39 @@ NEWS
   for easy discovery with `find_cpt()`.
 - Generation script at `build_v2_palettes.R` for reproducibility.
 
-### cptcity v1.1.1 (Release date: 2026-07-20)
+# cptcity 1.1.1
 
 - **URL:** cpt-city archive moved from `soliton.vm.bytemark.co.uk` to `phillips.shef.ac.uk`. All documentation updated.
 - **`cpt()`:** added error message for unknown palette names.
-- **`cpt()`:** improved documentation explaining `colorRampPalette` vs character-vector return — `sf` users need `colorRampPalette = TRUE`.
+- **`cpt()`:** improved documentation explaining `colorRampPalette` vs character-vector return -- `sf` users need `colorRampPalette = TRUE`.
 - **`find_cpt()`:** now case-insensitive by default (`ignore.case = TRUE`). Added `fixed` argument for literal (non-regex) matching.
 - **`lucky()`:** deduplicated internal `runif` call. Guards against out-of-range index.
 - **`show_cpt()`:** moved `on.exit(par(oldpar))` to top of function. Cleaner grid layout logic and better margins.
 - **Tests:** added tests for sf integration, `find_cpt` case sensitivity, `frgb` scaling, unknown palette error, and `colorRampPalette` return type.
 - **Documentation:** all `.R` files re-documented with comprehensive roxygen2 entries.
 
-### cptcity v1.1.0 (Release date: 2023-08-13)
+# cptcity 1.1.0
 
 - Planned release
 
-### cptcity v1.0.5 (Release date: 2019-11-07)
+# cptcity 1.0.5
 
 - Add argument frgb to change internal rgb composition
 
-### cptcity v1.0.3 (Release date: 2018-04-17)
+# cptcity 1.0.3
 
 - Add argument colorRampPalette to return this function
 
-
-### cptcity v1.0.2 (Release date: 2018-03-09)
+# cptcity 1.0.2
 
 - Fix documentation
 
-### cptcity v1.0.1 (Release date: 2018-03-06)
+# cptcity 1.0.1
 
 - Fix documentation
 - Included *lucky* function!
 
-
-### cptcity v1.0.0 (Release date: 2018-02-23)
+# cptcity 1.0.0
 
 - Incorporated 7140 colour gradients cpt-city_2.19-1 http://soliton.vm.bytemark.co.uk/pub/cpt-city/pkg/
 - Only two gradients were not incorporated: http://soliton.vm.bytemark.co.uk/pub/cpt-city/gmt/tn/GMT_cyclic.png.index.html
@@ -110,12 +105,11 @@ NEWS
 now "mpl_inferno".
 - Added a dataset with the names of the colour gradients.
 
-### cptcity v0.1.1 (Release date: 2018-02-16)
+# cptcity 0.1.1
 
 - Adding 4 gradients
 - cptcity renamed as cpt which nows is a function
 
-### cptcity v0.1.0 (Release date: 2018-02-06)
+# cptcity 0.1.0
 
 - release including 4 gradients
-
