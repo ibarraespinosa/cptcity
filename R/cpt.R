@@ -5,11 +5,11 @@
 #' hex colours or the underlying \code{\link[grDevices]{colorRampPalette}}
 #' function itself. The package ships colour gradients from
 #' \url{https://phillips.shef.ac.uk/pub/cpt-city/}, including dedicated
-#' \strong{NOAA} ramps (\code{"space_noaa_nws"}, \code{"space_noaa_nhc"},
-#' \code{"space_noaa_nexrad"}, \code{"space_noaa_goes"}, \code{"space_noaa_buoy"},
-#' \code{"space_noaa_ncei"}, \code{"space_noaa_nmfs"}, \code{"space_noaa_jetstream"},
-#' \code{"space_noaa_tornado"}, \code{"space_noaa_wind_chill"},
-#' \code{"space_noaa_heat_index"}, \code{"space_noaa_coastal"}).
+#' \strong{NOAA} ramps (\code{"noaa"}, \code{"noaa_nws"}, \code{"noaa_nhc"},
+#' \code{"noaa_nexrad"}, \code{"noaa_goes"}, \code{"noaa_buoy"},
+#' \code{"noaa_ncei"}, \code{"noaa_nmfs"}, \code{"noaa_jetstream"},
+#' \code{"noaa_tornado"}, \code{"noaa_wind_chill"},
+#' \code{"noaa_heat_index"}, \code{"noaa_coastal"}).
 #'
 #' **`sf` / `ggplot2` users:** use \code{colorRampPalette = TRUE}.
 #' The \code{sf} plot method and \pkg{ggplot2}'s
