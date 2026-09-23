@@ -3,9 +3,9 @@
 \docType{data}
 \name{cpt_names}
 \alias{cpt_names}
-\title{Names of all 7140 colour gradients}
+\title{Names of all colour gradients}
 \format{
-A character vector of length 7140.
+A character vector.
 }
 \source{
 \url{https://phillips.shef.ac.uk/pub/cpt-city/}

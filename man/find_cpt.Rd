@@ -21,7 +21,7 @@ A character vector of palette names that contain the keyword.
   Returns a zero-length vector if nothing matches.
 }
 \description{
-Searches the 7140 cpt-city palette names and returns those that match
+Searches the cpt-city palette names and returns those that match
 your search term. Case-insensitive by default.
 }
 \note{

@@ -6,10 +6,10 @@
 \alias{cptcity-package}
 \title{cpt-city: Colour Gradients for R}
 \description{
-Incorporates 7140 colour gradients from the
+Incorporates colour gradients from the
 \href{https://phillips.shef.ac.uk/pub/cpt-city/}{cpt-city web archive}
-into R. Each palette is stored as a \code{data.frame} with columns
-\code{id}, \code{r}, \code{g}, \code{b}.
+into R, including dedicated \strong{NOAA} ramps. Each palette is stored
+as a \code{data.frame} with columns \code{id}, \code{r}, \code{g}, \code{b}.
 }
 \section{Functions}{
 

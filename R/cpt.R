@@ -3,8 +3,13 @@
 #' \code{cpt} extracts a named colour palette from the internal cpt-city
 #' database and returns either a character vector of \code{n} interpolated
 #' hex colours or the underlying \code{\link[grDevices]{colorRampPalette}}
-#' function itself. The package ships 7140 colour gradients from
-#' \url{https://phillips.shef.ac.uk/pub/cpt-city/}.
+#' function itself. The package ships colour gradients from
+#' \url{https://phillips.shef.ac.uk/pub/cpt-city/}, including dedicated
+#' \strong{NOAA} ramps (\code{"space_noaa_nws"}, \code{"space_noaa_nhc"},
+#' \code{"space_noaa_nexrad"}, \code{"space_noaa_goes"}, \code{"space_noaa_buoy"},
+#' \code{"space_noaa_ncei"}, \code{"space_noaa_nmfs"}, \code{"space_noaa_jetstream"},
+#' \code{"space_noaa_tornado"}, \code{"space_noaa_wind_chill"},
+#' \code{"space_noaa_heat_index"}, \code{"space_noaa_coastal"}).
 #'
 #' **`sf` / `ggplot2` users:** use \code{colorRampPalette = TRUE}.
 #' The \code{sf} plot method and \pkg{ggplot2}'s

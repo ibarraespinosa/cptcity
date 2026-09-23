@@ -230,6 +230,43 @@ Portal — arcade history in colour.
 NASA, NOAA, JAXA, ESA, SpaceX, Roscosmos. Plus Hubble, JWST, Mars Rover,
 Apollo, Voyager.
 
+### NOAA - 14 ramps for Earth science
+
+Built for NOAA work: NWS forecasting, NHC hurricanes, NEXRAD radar, GOES
+satellites, NDBC buoys, NCEI climate, NMFS fisheries, and more. These are
+bit-identical to the Python port
+([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
+
+``` r
+find_cpt("noaa")
+
+# Hurricane categories (Saffir-Simpson: green -> yellow -> orange -> red -> magenta)
+image(matrix(1:100), col = cpt("space_noaa_nhc"))
+
+# NEXRAD radar reflectivity (dBZ)
+image(matrix(1:100), col = cpt("space_noaa_nexrad"))
+
+# NCEI climate anomaly (cool blue -> white -> warm red)
+image(matrix(1:100), col = cpt("space_noaa_ncei"))
+```
+
+| Palette | What it is |
+|----|----|
+| `space_noaa` | NOAA blue - navy to sea mist (the classic) |
+| `space_noaa_storm` | NOAA storm - deep blue through warning orange |
+| `space_noaa_nws` | National Weather Service - NOAA navy, sky blue, white |
+| `space_noaa_nhc` | National Hurricane Center - Saffir-Simpson green to magenta |
+| `space_noaa_nexrad` | NEXRAD radar - dBZ reflectivity cyan to white |
+| `space_noaa_goes` | GOES satellite - deep space, ocean, atmosphere, cloud |
+| `space_noaa_buoy` | NDBC buoy - deep ocean to sea foam |
+| `space_noaa_ncei` | NCEI climate anomaly - cool blue, white, warm red |
+| `space_noaa_nmfs` | NMFS fisheries - deep sea, kelp green, surface gold |
+| `space_noaa_jetstream` | Jet stream - polar blue to tropical red |
+| `space_noaa_tornado` | Tornado warning - dark to warning yellow to red |
+| `space_noaa_wind_chill` | Wind chill - white to ice to deep cold navy |
+| `space_noaa_heat_index` | Heat index - mild yellow to extreme maroon |
+| `space_noaa_coastal` | NOS coastal - sand, shallow teal, deep blue |
+
 ### 🎨 Art movements
 
 <figure>
@@ -264,6 +301,7 @@ plot(nc["AREA"], pal = cpt("spider_miles_leap_of_faith", colorRampPalette = TRUE
 
 | Prefix | Palettes | Example |
 |----|----|----|
+| `space_noaa_` | 14 | `space_noaa_nws`, `space_noaa_nhc`, `space_noaa_nexrad`, `space_noaa_goes` |
 | `book_` | 14 | `book_dune_arrakis`, `book_neuromancer`, `book_1984_orwell` |
 | `cyber_` | 7 | `cyber_2077_night_city`, `cyber_blade_runner`, `cyber_matrix` |
 | `cinema_` | 8 | `cinema_mgm_lion`, `cinema_technicolor`, `cinema_film_noir` |

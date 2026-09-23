@@ -1,10 +1,10 @@
-#' Names of all 7140 colour gradients
+#' Names of all colour gradients
 #'
 #' A character vector containing the names of every colour gradient
 #' bundled in the \pkg{cptcity} package. Use \code{\link{find_cpt}} to
 #' search this vector by keyword.
 #'
-#' @format A character vector of length 7140.
+#' @format A character vector.
 #' @source \url{https://phillips.shef.ac.uk/pub/cpt-city/}
 #' @usage data(cpt_names)
 #' @docType data

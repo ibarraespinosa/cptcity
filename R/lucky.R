@@ -56,13 +56,14 @@ lucky <- function(n = 100,
     set.seed(nseed)
   }
 
-  n_palettes <- 7140L
+  pal_names <- setdiff(names(sysdata), "cpt_names")
+  n_palettes <- length(pal_names)
   numero <- round(stats::runif(n = 1L, min = 0, max = n_palettes))
-  numero <- max(numero, 1L)       # guard against runif returning exactly 0
-  numero <- min(numero, n_palettes) # guard against hitting 7141
+  numero <- max(numero, 1L)         # guard against runif returning exactly 0
+  numero <- min(numero, n_palettes) # guard against overshooting the pool
 
-  m <- sysdata[[numero]]
-  pal_name <- sysdata[["cpt_names"]][numero]
+  pal_name <- pal_names[[numero]]
+  m <- sysdata[[pal_name]]
 
   if (rev) {
     m <- m[nrow(m):1, ]

@@ -1,3 +1,27 @@
+# cptcity 2.4.0
+
+- **12 NOAA palettes:** added `space_noaa_nws`, `space_noaa_nhc`,
+  `space_noaa_nexrad`, `space_noaa_goes`, `space_noaa_buoy`, `space_noaa_ncei`,
+  `space_noaa_nmfs`, `space_noaa_jetstream`, `space_noaa_tornado`,
+  `space_noaa_wind_chill`, `space_noaa_heat_index`, `space_noaa_coastal` --
+  covering NWS forecasting, NHC hurricanes (Saffir-Simpson), NEXRAD radar,
+  GOES satellites, NDBC buoys, NCEI climate, NMFS fisheries, the jet stream,
+  and NOAA hazard products.  Palettes are bit-identical to the Python port
+  ([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
+- **Total palettes: 7716** (up from 7704).
+- **Bug fix (`lucky()`):** the random-pick helper indexed `sysdata` positionally
+  with a hard-coded pool of 7140, which (a) ignored the newest palettes and
+  (b) could land on the internal `cpt_names` entry and crash.  It now derives
+  the pool from the palette names and looks up by name.
+- **Bug fix (`find_cpt()`):** returned duplicated names (the internal names
+  vector held 8462 entries for 7704 palettes).  It now searches the unique
+  palette names, so every result is directly usable in `cpt()`.
+- **Data layout:** `cpt_names` is now stored as the last element of `sysdata`,
+  so positional access to `sysdata[[i]]` always yields a palette.
+- **Tests:** added NOAA coverage (key-colour assertions for NWS, NHC, NEXRAD,
+  wind chill) and a regression test that `lucky()` never returns the internal
+  names vector.
+
 # cptcity 2.3.0
 
 - **215 country flag palettes:** added `flag_*` colour gradients covering UN member states and territories.

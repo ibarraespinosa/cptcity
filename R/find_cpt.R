@@ -1,6 +1,6 @@
 #' Find colour palette names by keyword search
 #'
-#' Searches the 7140 cpt-city palette names and returns those that match
+#' Searches the cpt-city palette names and returns those that match
 #' your search term. Case-insensitive by default.
 #'
 #' @param name Character. Keyword to search for within palette names.
@@ -44,7 +44,7 @@
 #'   scale_fill_gradientn(colours = cpt(pal = "ncl_radar", n = 100))
 #' }
 find_cpt <- function(name, ignore.case = TRUE, fixed = FALSE) {
-  cpt_names <- sysdata[["cpt_names"]]
+  cpt_names <- setdiff(names(sysdata), "cpt_names")
 
   if (isTRUE(fixed)) {
     y <- cpt_names[grep(pattern = name, x = cpt_names, fixed = TRUE)]
