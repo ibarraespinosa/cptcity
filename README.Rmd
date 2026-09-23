@@ -215,9 +215,95 @@ to the Python port ([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
 
 The `noaa` palette itself uses the colours of the NOAA emblem: deep navy sea,
 NOAA blue sky, light and pale blues, and the white gull. A simplified,
-non-official emblem drawn in R and in Python:
+non-official replication -- here is the whole thing, code and figure:
+
+```{r, eval = FALSE, label = "emblem"}
+library(cptcity)
+NAVY <- "#0B2D72"; BLUE <- "#1E6BB8"; SKY <- "#7FB2E5"; WHITE <- "#FFFFFF"
+
+plot.new()
+plot.window(xlim = c(-1.1, 1.1), ylim = c(-1.5, 1.1), asp = 1)
+
+th <- seq(0, pi, length.out = 300)
+polygon(c(-1, cos(th), 1), c(0, sin(th), 0), col = SKY, border = NA)         # sky
+polygon(c(-1, cos(th + pi), 1), c(0, sin(th + pi), 0),
+        col = NAVY, border = NA)                                             # sea
+polygon(cos(seq(0, 2 * pi, 720)), sin(seq(0, 2 * pi, 720)),
+        border = WHITE, lwd = 3)                                             # ring
+
+cloud <- function(x, y, w, h) {                                              # clouds
+  a <- seq(0, 2 * pi, length.out = 100)
+  polygon(x + w / 2 * cos(a), y + h / 2 * sin(a), col = WHITE, border = NA)
+}
+cloud(-0.42, 0.52, 0.52, 0.20)
+cloud(0.34, 0.62, 0.46, 0.18)
+
+t <- seq(0, pi, length.out = 60)                                             # the gull
+lines(-0.30 + 0.30 * cos(t), 0.22 + 0.14 * sin(t), col = WHITE, lwd = 6)
+lines( 0.00 + 0.30 * cos(t), 0.22 + 0.14 * sin(t), col = WHITE, lwd = 6)
+
+x <- seq(-0.97, 0.97, length.out = 300)                                      # waves
+waves <- data.frame(base = c(-0.36, -0.14, 0.10),
+                    col = c(BLUE, WHITE, "#3D8FD4"),
+                    lw = c(4, 3, 3))
+for (i in seq_len(nrow(waves))) {
+  y <- waves$base[i] + 0.03 * sin(4.2 * pi * x + 5 * waves$base[i])
+  keep <- x ^ 2 + y ^ 2 <= 0.94
+  lines(x[keep], y[keep], col = waves$col[i], lwd = waves$lw[i])
+}
+
+cols <- cpt("noaa", n = 256)                                                 # the ramp
+n <- length(cols)
+for (i in seq_len(n))
+  rect(-0.9 + (i - 1) * 1.8 / n, -1.35, -0.9 + i * 1.8 / n, -1.2,
+       col = cols[i], border = NA)
+```
 
 ![NOAA emblem drawn in R](man/figures/noaa_emblem_r.png)
+
+And the same replication in Python:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.colors import to_rgb
+from matplotlib.patches import Circle, Ellipse, Wedge
+from pycptcity import cpt
+
+NAVY, BLUE, SKY, WHITE = "#0B2D72", "#1E6BB8", "#7FB2E5", "#FFFFFF"
+
+fig, ax = plt.subplots(figsize=(4, 5))
+ax.set_xlim(-1.1, 1.1); ax.set_ylim(-1.5, 1.1)
+ax.set_aspect("equal"); ax.axis("off")
+
+# sky / sea disc + white ring
+ax.add_patch(Wedge((0, 0), 1, 0, 180, fc=SKY, ec="none"))
+ax.add_patch(Wedge((0, 0), 1, 180, 360, fc=NAVY, ec="none"))
+ax.add_patch(Circle((0, 0), 1, fc="none", ec=WHITE, lw=3))
+
+# clouds
+for xy, wh in [((-0.42, 0.52), (0.52, 0.20)), ((0.34, 0.62), (0.46, 0.18))]:
+    ax.add_patch(Ellipse(xy, *wh, fc=WHITE, ec="none"))
+
+# the gull: two white arcs
+t = np.linspace(0, np.pi, 60)
+for dx in (-0.30, 0.0):
+    ax.plot(dx + 0.30 * np.cos(t), 0.22 + 0.14 * np.sin(t),
+            color=WHITE, lw=5, solid_capstyle="round")
+
+# sea waves, clipped to the disc
+x = np.linspace(-0.97, 0.97, 300)
+for base, c, lw in [(-0.36, BLUE, 4), (-0.14, WHITE, 3), (0.10, "#3D8FD4", 3)]:
+    y = base + 0.03 * np.sin(4.2 * np.pi * x + 5 * base)
+    keep = x ** 2 + y ** 2 <= 0.94
+    ax.plot(x[keep], y[keep], color=c, lw=lw)
+
+# the `noaa` ramp itself
+ramp = np.array([[to_rgb(c) for c in cpt("noaa", n=256)]])
+ax.imshow(ramp, extent=(-0.9, 0.9, -1.35, -1.2))
+ax.set_xlim(-1.1, 1.1); ax.set_ylim(-1.5, 1.1)
+plt.show()
+```
 
 ![NOAA emblem drawn in Python](man/figures/noaa_emblem_python.png)
 
