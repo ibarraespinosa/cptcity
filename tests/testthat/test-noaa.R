@@ -35,10 +35,12 @@ test_that("NOAA palettes work with colorRampPalette = TRUE", {
   }
 })
 
-test_that("noaa palette uses the emblem blues and whites", {
+test_that("noaa palette uses the official NOAA brand blues and white", {
   cols <- cpt("noaa", n = 5)
-  expect_equal(toupper(cols[1]), "#0B2D72")   # emblem deep navy sea
-  expect_equal(toupper(cols[5]), "#FFFFFF")   # emblem white gull
+  expect_equal(toupper(cols[1]), "#003087")   # NOAA dark blue, Pantone 287 C
+  expect_equal(toupper(cols[5]), "#FFFFFF")
+  expect_equal(toupper(cpt("noaa", n = 3)),
+               c("#003087", "#0085CA", "#FFFFFF"))  # dark, Process Blue, white
 })
 
 test_that("NHC palette follows the Saffir-Simpson key colours", {

@@ -1,3 +1,10 @@
+# cptcity 2.4.1
+
+- **`noaa` palette:** rebuilt from the official NOAA brand colours --
+  dark blue `#003087` (Pantone 287 C), light blue `#0085CA` (Pantone
+  Process Blue C), and white.  Bit-identical to the Python port
+  ([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
+
 # cptcity 2.4.0
 
 - **12 NOAA palettes:** added `noaa_nws`, `noaa_nhc`, `noaa_nexrad`,

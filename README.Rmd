@@ -216,7 +216,7 @@ to the Python port ([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
 ```{r, eval = FALSE}
 find_cpt("noaa")
 
-# navy to blue to pale to white
+# NOAA brand blues: dark #003087, light #0085CA, white
 image(matrix(1:100), col = cpt("noaa"))
 
 # Hurricane categories (Saffir-Simpson: green -> yellow -> orange -> red -> magenta)
@@ -231,7 +231,7 @@ image(matrix(1:100), col = cpt("noaa_ncei"))
 
 | Palette | What it is |
 |---|---|
-| `noaa` | Deep navy to blue to pale to white |
+| `noaa` | NOAA brand blues -- #003087 -> #0085CA -> white |
 | `noaa_storm` | NOAA storm - deep blue through warning orange |
 | `noaa_nws` | National Weather Service - NOAA navy, sky blue, white |
 | `noaa_nhc` | National Hurricane Center - Saffir-Simpson green to magenta |
