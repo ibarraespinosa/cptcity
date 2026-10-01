@@ -258,7 +258,7 @@ image(matrix(1:100), col = cpt("noaa_ncei"))
 |----|----|
 | `noaa` | NOAA brand blues - #003087 -> #0085CA -> white |
 | `noaa_storm` | NOAA storm - deep blue through warning orange |
-| `noaa_nws` | National Weather Service - NOAA navy, sky blue, white |
+| `noaa_nws` | National Weather Service - brand blue to logo red (#003087 -> #CE0F3E) |
 | `noaa_nhc` | National Hurricane Center - Saffir-Simpson green to magenta |
 | `noaa_nexrad` | NEXRAD radar - dBZ reflectivity cyan to white |
 | `noaa_goes` | GOES satellite - deep space, ocean, atmosphere, cloud |

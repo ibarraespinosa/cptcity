@@ -55,10 +55,12 @@ test_that("NEXRAD palette spans low to extreme reflectivity", {
   expect_equal(toupper(cols[7]), "#FFFFFF")   # extreme white
 })
 
-test_that("NWS palette runs NOAA navy to white", {
+test_that("NWS palette runs brand blue to logo red", {
+  expect_equal(toupper(cpt("noaa_nws", n = 5)),
+               c("#003087", "#1F4FA2", "#BFEAFB", "#FFFFFF", "#CE0F3E"))
   cols <- cpt("noaa_nws", n = 2)
-  expect_equal(toupper(cols[1]), "#0B2D72")   # NOAA navy
-  expect_equal(toupper(cols[2]), "#F7FBFF")   # near-white
+  expect_equal(toupper(cols[1]), "#003087")   # brand dark blue
+  expect_equal(toupper(cols[2]), "#CE0F3E")   # NWS logo red
 })
 
 test_that("wind chill runs white to deep cold navy", {

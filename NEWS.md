@@ -1,3 +1,10 @@
+# cptcity 2.4.2
+
+- **`noaa_nws` palette:** rebuilt from the NWS logo colours -- brand dark
+  blue `#003087`, badge blue `#1F4FA2`, cloud pale `#BFEAFB`, white, and
+  logo red `#CE0F3E`.  Bit-identical to the Python port
+  ([pycptcity](https://github.com/ibarraespinosa/pycptcity)).
+
 # cptcity 2.4.1
 
 - **`noaa` palette:** rebuilt from the official NOAA brand colours --
