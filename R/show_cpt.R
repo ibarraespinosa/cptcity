@@ -36,39 +36,56 @@ show_cpt <- function(x, label = TRUE) {
 
   # --- compute square-ish grid dimensions ---
   if (nx <= 2) {
-    nrow <- 1; ncol <- nx
+    nrow <- 1
+    ncol <- nx
   } else if (nx <= 4) {
-    nrow <- 2; ncol <- 2
+    nrow <- 2
+    ncol <- 2
   } else if (nx <= 6) {
-    nrow <- 2; ncol <- 3
+    nrow <- 2
+    ncol <- 3
   } else if (nx <= 9) {
-    nrow <- 3; ncol <- 3
+    nrow <- 3
+    ncol <- 3
   } else if (nx <= 12) {
-    nrow <- 3; ncol <- 4
+    nrow <- 3
+    ncol <- 4
   } else if (nx <= 16) {
-    nrow <- 4; ncol <- 4
+    nrow <- 4
+    ncol <- 4
   } else if (nx <= 20) {
-    nrow <- 4; ncol <- 5
+    nrow <- 4
+    ncol <- 5
   } else if (nx <= 25) {
-    nrow <- 5; ncol <- 5
+    nrow <- 5
+    ncol <- 5
   } else if (nx <= 30) {
-    nrow <- 5; ncol <- 6
+    nrow <- 5
+    ncol <- 6
   } else if (nx <= 36) {
-    nrow <- 6; ncol <- 6
+    nrow <- 6
+    ncol <- 6
   } else if (nx <= 49) {
-    nrow <- 7; ncol <- 7
+    nrow <- 7
+    ncol <- 7
   } else if (nx <= 64) {
-    nrow <- 8; ncol <- 8
+    nrow <- 8
+    ncol <- 8
   } else if (nx <= 100) {
-    nrow <- 10; ncol <- 10
+    nrow <- 10
+    ncol <- 10
   } else if (nx <= 150) {
-    nrow <- 10; ncol <- 15
+    nrow <- 10
+    ncol <- 15
   } else if (nx <= 216) {
-    nrow <- 12; ncol <- 18
+    nrow <- 12
+    ncol <- 18
   } else if (nx <= 304) {
-    nrow <- 16; ncol <- 19
+    nrow <- 16
+    ncol <- 19
   } else if (nx <= 572) {
-    nrow <- 22; ncol <- 26
+    nrow <- 22
+    ncol <- 26
   } else {
     stop("Please select fewer than 573 palettes at once.")
   }

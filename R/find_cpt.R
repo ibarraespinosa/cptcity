@@ -50,7 +50,7 @@ find_cpt <- function(name, ignore.case = TRUE, fixed = FALSE) {
     y <- cpt_names[grep(pattern = name, x = cpt_names, fixed = TRUE)]
   } else {
     y <- cpt_names[grep(pattern = name, x = cpt_names,
-                        ignore.case = ignore.case, fixed = FALSE)]
+      ignore.case = ignore.case, fixed = FALSE)]
   }
   return(y)
 }

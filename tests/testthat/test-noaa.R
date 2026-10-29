@@ -23,7 +23,7 @@ test_that("NOAA palettes carry no 'space_' prefix", {
 test_that("find_cpt discovers NOAA palettes", {
   found <- find_cpt("noaa")
   expect_true(all(c("noaa", "noaa_storm", "noaa_nws", "noaa_nhc",
-                    "noaa_nexrad", "noaa_goes") %in% found))
+    "noaa_nexrad", "noaa_goes") %in% found))
   expect_true(length(found) >= 14)
 })
 
@@ -40,7 +40,7 @@ test_that("noaa palette uses the official NOAA brand blues and white", {
   expect_equal(toupper(cols[1]), "#003087")   # NOAA dark blue, Pantone 287 C
   expect_equal(toupper(cols[5]), "#FFFFFF")
   expect_equal(toupper(cpt("noaa", n = 3)),
-               c("#003087", "#0085CA", "#FFFFFF"))  # dark, Process Blue, white
+    c("#003087", "#0085CA", "#FFFFFF"))  # dark, Process Blue, white
 })
 
 test_that("NHC palette follows the Saffir-Simpson key colours", {
@@ -57,7 +57,7 @@ test_that("NEXRAD palette spans low to extreme reflectivity", {
 
 test_that("NWS palette runs brand blue to logo red", {
   expect_equal(toupper(cpt("noaa_nws", n = 5)),
-               c("#003087", "#1F4FA2", "#BFEAFB", "#FFFFFF", "#CE0F3E"))
+    c("#003087", "#1F4FA2", "#BFEAFB", "#FFFFFF", "#CE0F3E"))
   cols <- cpt("noaa_nws", n = 2)
   expect_equal(toupper(cols[1]), "#003087")   # brand dark blue
   expect_equal(toupper(cols[2]), "#CE0F3E")   # NWS logo red
